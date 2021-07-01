@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>KongAobo&#39;s Blog</title>
+  
+  
+  <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://kong-aobo.github.io/"/>
+  <updated>2021-07-01T09:16:29.562Z</updated>
+  <id>https://kong-aobo.github.io/</id>
+  
+  <author>
+    <name>Kong Aobo</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/small%20stick/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/small%20stick/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-01T09:16:29.562Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="算法搜索" scheme="https://kong-aobo.github.io/tags/%E7%AE%97%E6%B3%95%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/hello-world/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/hello-world/</id>
+    <published>2021-07-01T02:53:39.677Z</published>
+    <updated>1985-10-26T08:15:00.000Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
