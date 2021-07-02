@@ -252,32 +252,6 @@
   </entry>
   
   <entry>
-    <title>生产者消费者模型 JAVA</title>
-    <link href="https://github.com/Kong-Aobo/2021/07/01/problem9/"/>
-    <id>https://github.com/Kong-Aobo/2021/07/01/problem9/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-01T12:45:25.789Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;生产者消费者问题（Producer-consumer problem），也称有限缓冲问题（Bounded-buffer</summary>
-        
-      
-    
-    
-    
-    <category term="多线程" scheme="https://github.com/Kong-Aobo/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-    
-    <category term="JAVA" scheme="https://github.com/Kong-Aobo/tags/JAVA/"/>
-    
-  </entry>
-  
-  <entry>
     <title>maze</title>
     <link href="https://github.com/Kong-Aobo/2021/07/01/problem8/"/>
     <id>https://github.com/Kong-Aobo/2021/07/01/problem8/</id>
@@ -300,6 +274,32 @@
     
     
     <category term="搜索" scheme="https://github.com/Kong-Aobo/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生产者消费者模型 JAVA</title>
+    <link href="https://github.com/Kong-Aobo/2021/07/01/problem9/"/>
+    <id>https://github.com/Kong-Aobo/2021/07/01/problem9/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-01T12:45:25.789Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;生产者消费者问题（Producer-consumer problem），也称有限缓冲问题（Bounded-buffer</summary>
+        
+      
+    
+    
+    
+    <category term="多线程" scheme="https://github.com/Kong-Aobo/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+    
+    <category term="JAVA" scheme="https://github.com/Kong-Aobo/tags/JAVA/"/>
     
   </entry>
   
