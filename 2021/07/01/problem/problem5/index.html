@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="git指令速查, Kong Aobo&#39;s Blog">
+    <meta name="keywords" content="寻找道路, Kong Aobo&#39;s Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>git指令速查 | Kong Aobo&#39;s Blog</title>
+    <title>寻找道路 | Kong Aobo&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
 </head>
 
 
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">git指令速查</h1>
+                    <h1 class="description center-align post-title">寻找道路</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">
-                                <span class="chip bg-color">软件使用</span>
+                            <a href="/tags/%E6%90%9C%E7%B4%A2/">
+                                <span class="chip bg-color">搜索</span>
                             </a>
                         
                     </div>
@@ -446,8 +446,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/git/" class="post-category">
-                                git
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                算法
                             </a>
                         
                     </div>
@@ -473,7 +473,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    798
+                    734
                 </div>
                 
 
@@ -503,118 +503,64 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>安装完成后，绑定用户名和邮箱，–global表示这台机器上所有的Git仓库都会使用这个配置</p>
-<blockquote>
-<p>git config –global user.name “Your Name”<br>git config –global user.email “<a href="mailto:email@example.com">email@example.com</a>“</p>
+                <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/16498">https://ac.nowcoder.com/acm/problem/16498</a></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>在有向图G中，每条边的长度均为1，现给定起点和终点，请你在图中找一条从起点到终点的路径，该路径满足以下条件：<br>1.路径上的所有点的出边所指向的点都直接或间接与终点连通。<br>2.在满足条件1的情况下使路径最短。<br>注意：图G中可能存在重边和自环，题目保证终点没有出边。<br>请你输出符合条件的路径的长度。</p>
 </blockquote>
-<p>创建版本库</p>
-<blockquote>
-<p>git init</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
+<p>第一行有两个用一个空格隔开的整数n和m，表示图有n个点和m条边。<br>接下来的m行每行2个整数x、y，之间用一个空格隔开，表示有一条边从点x指向点y。<br>最后一行有两个用一个空格隔开的整数s、t，表示起点为s，终点为t。</p>
 </blockquote>
-<p>添加到暂存区，提交</p>
-<blockquote>
-<p>git add 文件名<br>git commit -m “本次提交说明”</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
+<p>输出只有一行，包含一个整数，表示满足题目描述的最短路径的长度。如果这样的路径不存在，输出-1。</p>
 </blockquote>
-<p>查看当前状态</p>
-<blockquote>
-<p>git status</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><blockquote>
+<p>6 6<br>1 2<br>1 3<br>2 6<br>2 5<br>4 5<br>3 4<br>1 5  </p>
 </blockquote>
-<p>查看修改内容(add前)</p>
-<blockquote>
-<p>git diff</p>
+<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><blockquote>
+<p>3</p>
 </blockquote>
-<p>查看提交历史</p>
-<blockquote>
-<p>git log</p>
-</blockquote>
-<p>查看命令历史</p>
-<blockquote>
-<p>git reflog</p>
-</blockquote>
-<p>回退历史版本 HEAD表示当前版本 HEAD＾表示上一版本（可用这些符号代替版本号）</p>
-<blockquote>
-<p>git reset –hard 版本号</p>
-</blockquote>
-<p>让这个文件回到最近一次git commit或git add时的状态</p>
-<blockquote>
-<p>git checkout – 文件名</p>
-</blockquote>
-<p>把暂存区的修改撤销掉</p>
-<blockquote>
-<p>git reset HEAD 文件名</p>
-</blockquote>
-<p>从版本库中删除某文件 注意删除后需要commit才真正删除<br>先手动删除文件，然后使用git rm <file>和git add<file>效果是一样的。</file></file></p>
-<blockquote>
-<p>git rm 文件名</p>
-</blockquote>
-<p>把误删的文件恢复到最新版本,git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。</p>
-<blockquote>
-<p>git checkout – 文件名</p>
-</blockquote>
-<p>在GitHub创建一个repository后，将本地库添加至GitHub,origin为远程库名，后边的地址注意修改</p>
-<blockquote>
-<p>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:michaelliao/learngit.git</p>
-</blockquote>
-<p>将本地库的内容推送到远程库上,由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
-<blockquote>
-<p>git push -u origin master</p>
-</blockquote>
-<p>本地库的新的提交，同步到远程库</p>
-<blockquote>
-<p>git push origin 要合并的本地分支名</p>
-</blockquote>
-<p>删除远程库(解除本地库与远程库的绑定)</p>
-<blockquote>
-<p>git remote -v    //查看远程库的信息 删前可以确认一下 非删除步骤<br>git remote rm origin    //删除指令</p>
-</blockquote>
-<p>从GitHub上克隆一个库到本地,注意更改后面的地址(SSH协议)</p>
-<blockquote>
-<p>git clone <a href="mailto:git@github.com">git@github.com</a>:michaelliao/gitskills.git</p>
-</blockquote>
-<p>创建切换分支</p>
-<blockquote>
-<p>git checkout -b dev//命令加上-b参数表示创建并切换,也可以分成下面两条指令<br>git branch dev    //创建<br>git checkout dev    //切换</p>
-</blockquote>
-<p>查看当前分支</p>
-<blockquote>
-<p>git branch</p>
-</blockquote>
-<p>合并指定分支到当前分支</p>
-<blockquote>
-<p>git merge 指定分支</p>
-</blockquote>
-<p>删除指定分支</p>
-<blockquote>
-<p>git branch -d 指定分支</p>
-</blockquote>
-<p>最新的切换分支指令</p>
-<blockquote>
-<p>git switch -c 分支名//创建并切换<br>git switch 分支名//切换</p>
-</blockquote>
-<p>分支合并图</p>
-<blockquote>
-<p>git log –graph</p>
-</blockquote>
-<p>禁用Fast Forward模式，保留分支历史的合并,其实是在当前分支上commit了一次实现的</p>
-<blockquote>
-<p>git merge –no-ff -m “合并说明” 要合并的指定分支</p>
-</blockquote>
-<p>切换分支时，需要保留当前分支的工作现场，即暂存区和工作区的状态</p>
-<blockquote>
-<p>git stash</p>
-</blockquote>
-<p>查看工作现场</p>
-<blockquote>
-<p>git stash list</p>
-</blockquote>
-<p>恢复工作现场</p>
-<blockquote>
-<p>git stash pop//该指令同时删除了工作现场的记录</p>
-</blockquote>
-<p>丢弃一个没有被合并过的分支，强行删除</p>
-<blockquote>
-<p>git branch -D 分支名</p>
-</blockquote>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题的关键为条件1，如何才能得知一个点是否与终点连通呢？正向思考较为棘手，反向就容易许多，以终点为起点bfs就可以解决这一问题。<br>得知哪些点不与终点连通后，将这些点和被这些点波及的点从图中remove掉，正向bfs即可。<br>有一些细节需要注意，见代码注释。</p>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
+<p>```cpp<br>#include <string><br>#include <iostream><br>#include <cstring><br>#include <queue><br>using namespace std;</queue></cstring></iostream></string></p>
+<p>#define maxn 10000<br>int n, m;<br>int s, t;<br>bool graph[maxn][maxn];<br>int dis[maxn];</p>
+<p>void remove(int point) //将一个点及其相关边剔除<br>{<br>    for (int i = 0; i &lt; n; i++)<br>        graph[i][point] = 0;<br>    for (int j = 0; j &lt; n; j++)<br>        graph[point][j] = 0;<br>}</p>
+<p>void bfs1() //正向处理<br>{<br>    queue<int> q;<br>    q.push(s - 1);<br>    dis[s - 1] = 0;<br>    while (!q.empty())<br>    {<br>        int a = q.front();<br>        q.pop();<br>        for (int i = 0; i &lt; n; i++)<br>        {<br>            if (!dis[i] &amp;&amp; graph[a][i])<br>            {<br>                dis[i] = dis[a] + 1;<br>                q.push(i);<br>            }<br>        }<br>    }<br>}</int></p>
+<p>void bfs2() //反向处理<br>{<br>    queue<int> q;<br>    q.push(t - 1);<br>    dis[t - 1] = 0;<br>    while (!q.empty())<br>    {<br>        int a = q.front();<br>        q.pop();<br>        for (int i = 0; i &lt; n; i++)<br>        {<br>            if (!dis[i] &amp;&amp; graph[i][a])<br>            {<br>                dis[i] = dis[a] + 1;<br>                q.push(i);<br>            }<br>        }<br>    }<br>}</int></p>
+<p>int main()<br>{<br>    memset(graph, 0, sizeof(graph));<br>    memset(dis, 0, sizeof(dis));</p>
+<pre><code>cin &gt;&gt; n &gt;&gt; m;
+while (m--)
+{
+    int x, y;
+    cin &gt;&gt; x &gt;&gt; y;
+    if (x == y)
+        continue; //舍弃自环
+    graph[x - 1][y - 1] = 1;
+}
+cin &gt;&gt; s &gt;&gt; t;
+bfs2();
+dis[t - 1] = 1; //终点是起点 不能被剔除
+for (int i = 0; i &lt; n; i++)
+{
+    if (!dis[i])
+    {
+        for (int j = 0; j &lt; n; j++) //注意remove的先后顺序
+        {                           //“波及”关系是需要原来点的边的数据的 
+            if (graph[j][i])        //所以先清除被“波及”点再处理原来的点
+                remove(j);
+        }
+        remove(i);
+    }
+}
+
+memset(dis, 0, sizeof(dis));
+bfs1();
+if (dis[t - 1])
+    cout &lt;&lt; dis[t - 1] &lt;&lt; endl;
+else
+    cout &lt;&lt; -1 &lt;&lt; endl;
+return 0;
+</code></pre>
+<p>}</p>
 
                 
             </div>
@@ -641,7 +587,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kong-aobo.github.io/2021/07/01/problem4/">https://kong-aobo.github.io/2021/07/01/problem4/</a>
+                    <a href="https://kong-aobo.github.io/2021/07/01/problem/problem5/">https://kong-aobo.github.io/2021/07/01/problem/problem5/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -679,8 +625,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">
-                                    <span class="chip bg-color">软件使用</span>
+                                <a href="/tags/%E6%90%9C%E7%B4%A2/">
+                                    <span class="chip bg-color">搜索</span>
                                 </a>
                             
                         </div>
@@ -907,19 +853,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/01/problem3/">
+                <a href="/2021/07/01/problem/problem4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="选择困难症">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="git指令速查">
                         
-                        <span class="card-title">选择困难症</span>
+                        <span class="card-title">git指令速查</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            dfs
+                            各种常见git指令速查
                         
                     </div>
                     <div class="publish-info">
@@ -930,8 +876,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
+                            <a href="/categories/git/" class="post-category">
+                                    git
                                 </a>
                             
                             
@@ -941,8 +887,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%90%9C%E7%B4%A2/">
-                        <span class="chip bg-color">搜索</span>
+                    <a href="/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">
+                        <span class="chip bg-color">软件使用</span>
                     </a>
                     
                 </div>
@@ -956,7 +902,7 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/01/problem7/">
+                <a href="/2021/07/01/problem/problem7/">
                     <div class="card-image">
                         
                         
