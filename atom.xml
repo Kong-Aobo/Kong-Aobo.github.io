@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-07-02T08:59:00.279Z</updated>
+  <updated>2021-07-02T10:19:49.400Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>模拟战役</title>
-    <link href="https://kong-aobo.github.io/2021/07/02/problem/problem10/"/>
-    <id>https://kong-aobo.github.io/2021/07/02/problem/problem10/</id>
+    <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/problem8/"/>
+    <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/problem8/</id>
     <published>2021-07-02T00:00:18.000Z</published>
-    <updated>2021-07-02T08:59:00.279Z</updated>
+    <updated>2021-07-02T10:19:49.400Z</updated>
     
     
       
@@ -44,10 +44,10 @@
   
   <entry>
     <title>走出迷宫</title>
-    <link href="https://kong-aobo.github.io/2021/07/02/problem/problem11/"/>
-    <id>https://kong-aobo.github.io/2021/07/02/problem/problem11/</id>
+    <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/problem9/"/>
+    <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/problem9/</id>
     <published>2021-07-02T00:00:18.000Z</published>
-    <updated>2021-07-02T08:59:06.110Z</updated>
+    <updated>2021-07-02T10:19:57.215Z</updated>
     
     
       
@@ -69,11 +69,37 @@
   </entry>
   
   <entry>
-    <title>小木棍</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/problem/problem1/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/problem/problem1/</id>
+    <title>生产者消费者模型 JAVA</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/JAVA/problem1/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/JAVA/problem1/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T08:57:40.660Z</updated>
+    <updated>2021-07-02T10:28:54.715Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;生产者消费者问题（Producer-consumer problem），也称有限缓冲问题（Bounded-buffer</summary>
+        
+      
+    
+    
+    
+    <category term="多线程" scheme="https://kong-aobo.github.io/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    
+    
+    <category term="JAVA" scheme="https://kong-aobo.github.io/tags/JAVA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小木棍</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem1/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem1/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-02T10:28:06.372Z</updated>
     
     
       
@@ -96,10 +122,10 @@
   
   <entry>
     <title>靶形数独</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/problem/problem2/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/problem/problem2/</id>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem2/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem2/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T08:57:57.383Z</updated>
+    <updated>2021-07-02T10:28:15.527Z</updated>
     
     
       
@@ -121,64 +147,11 @@
   </entry>
   
   <entry>
-    <title>选择困难症</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/problem/problem3/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/problem/problem3/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T08:58:12.014Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/13594&quot;&gt;https://ac.nowcoder.com/acm/problem/13594&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>git指令速查</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/problem/problem4/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/problem/problem4/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T08:58:20.359Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;安装完成后，绑定用户名和邮箱，–global表示这台机器上所有的Git仓库都会使用这个配置&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;git config –global user.name “Your Name”&lt;br&gt;git config –global</summary>
-        
-      
-    
-    
-    
-    <category term="git" scheme="https://kong-aobo.github.io/categories/git/"/>
-    
-    
-    <category term="软件使用" scheme="https://kong-aobo.github.io/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
-    
-  </entry>
-  
-  <entry>
     <title>寻找道路</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/problem/problem5/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/problem/problem5/</id>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem4/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem4/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T08:58:27.967Z</updated>
+    <updated>2021-07-02T10:19:22.295Z</updated>
     
     
       
@@ -200,18 +173,18 @@
   </entry>
   
   <entry>
-    <title>幸运数字</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/problem/problem7/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/problem/problem7/</id>
+    <title>选择困难症</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem3/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem3/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T08:58:41.117Z</updated>
+    <updated>2021-07-02T10:28:24.061Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/15291&quot;&gt;https://ac.nowcoder.com/acm/problem/15291&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/13594&quot;&gt;https://ac.nowcoder.com/acm/problem/13594&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
         
       
@@ -227,10 +200,10 @@
   
   <entry>
     <title>合并回文字符串</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/problem/problem6/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/problem/problem6/</id>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem5/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem5/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T08:58:34.415Z</updated>
+    <updated>2021-07-02T10:19:28.958Z</updated>
     
     
       
@@ -252,11 +225,37 @@
   </entry>
   
   <entry>
-    <title>maze</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/problem/problem8/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/problem/problem8/</id>
+    <title>幸运数字</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem6/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem6/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T08:58:47.039Z</updated>
+    <updated>2021-07-02T10:19:37.065Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/15291&quot;&gt;https://ac.nowcoder.com/acm/problem/15291&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>maze</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem7/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem7/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-02T10:19:43.966Z</updated>
     
     
       
@@ -278,28 +277,29 @@
   </entry>
   
   <entry>
-    <title>生产者消费者模型 JAVA</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/problem/problem9/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/problem/problem9/</id>
+    <title>git指令速查</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Software%20Using/problem1/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Software%20Using/problem1/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T08:58:55.982Z</updated>
+    <updated>2021-07-02T10:29:06.629Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;生产者消费者问题（Producer-consumer problem），也称有限缓冲问题（Bounded-buffer</summary>
+    <summary type="html">&lt;p&gt;安装完成后，绑定用户名和邮箱，–global表示这台机器上所有的Git仓库都会使用这个配置&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git config –global user.name “Your Name”&lt;br&gt;git config –global</summary>
         
       
     
     
     
-    <category term="多线程" scheme="https://kong-aobo.github.io/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    <category term="git" scheme="https://kong-aobo.github.io/categories/git/"/>
     
     
-    <category term="JAVA" scheme="https://kong-aobo.github.io/tags/JAVA/"/>
+    <category term="软件使用" scheme="https://kong-aobo.github.io/tags/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   

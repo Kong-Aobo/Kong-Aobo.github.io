@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="maze, Kong Aobo&#39;s Blog">
+    <meta name="keywords" content="寻找道路, Kong Aobo&#39;s Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>maze | Kong Aobo&#39;s Blog</title>
+    <title>寻找道路 | Kong Aobo&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -318,7 +318,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">maze</h1>
+                    <h1 class="description center-align post-title">寻找道路</h1>
                 </div>
             </div>
         </div>
@@ -473,14 +473,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    734
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    3 分
                 </div>
                 
 
@@ -503,136 +503,65 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/15665">https://ac.nowcoder.com/acm/problem/15665</a></p>
+                <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/16498">https://ac.nowcoder.com/acm/problem/16498</a></p>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
-<p>小明来到一个由n x m个格子组成的迷宫，有些格子是陷阱，用’#‘表示，小明进入陷阱就会死亡，’.’表示没有陷阱。小明所在的位置用’S’表示，目的地用’T’表示。<br>小明只能向上下左右相邻的格子移动，每移动一次花费1秒。<br>有q个单向传送阵，每个传送阵各有一个入口和一个出口，入口和出口都在迷宫的格子里，当走到或被*传送到一个有传送阵入口的格子时，小明可以选择是否开启传送阵。如果开启传送阵,小明就会被传送到出口对应的格子里，这个过程会花费3秒；如果不开启传送阵，将不会发生任何事情，小明可以继续向上下左右四个方向移动。<br>一个格子可能既有多个入口，又有多个出口，小明可以选择任意一个入口开启传送阵。使用传送阵是非常危险的，因为有的传送阵的出口在陷阱里，如果小明使用这样的传送阵，那他就会死亡。也有一些传送阵的入口在陷阱里，这样的传送阵是没有用的，因为小明不能活着进入。请告诉小明活着到达目的地的最短时间。</p>
+<p>在有向图G中，每条边的长度均为1，现给定起点和终点，请你在图中找一条从起点到终点的路径，该路径满足以下条件：<br>1.路径上的所有点的出边所指向的点都直接或间接与终点连通。<br>2.在满足条件1的情况下使路径最短。<br>注意：图G中可能存在重边和自环，题目保证终点没有出边。<br>请你输出符合条件的路径的长度。</p>
 </blockquote>
 <h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
-<p>有多组数据。对于每组数据：<br>第一行有三个整数n,m,q(2≤ n,m≤300,0≤ q ≤ 1000)。<br>接下来是一个n行m列的矩阵，表示迷宫。<br>最后q行，每行四个整数x1,y1,x2,y2(0≤ x1,x2&lt; n,0≤ y1,y2&lt; m)，表示一个传送阵的入口在x1行y1列，出口在x2行y2列。</p>
+<p>第一行有两个用一个空格隔开的整数n和m，表示图有n个点和m条边。<br>接下来的m行每行2个整数x、y，之间用一个空格隔开，表示有一条边从点x指向点y。<br>最后一行有两个用一个空格隔开的整数s、t，表示起点为s，终点为t。</p>
 </blockquote>
 <h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
-<p>如果小明能够活着到达目的地，则输出最短时间，否则输出-1。</p>
+<p>输出只有一行，包含一个整数，表示满足题目描述的最短路径的长度。如果这样的路径不存在，输出-1。</p>
 </blockquote>
 <h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><blockquote>
-<p>5 5 1<br>..S..<br>…..<br>.###.<br>…..<br>..T..<br>1 2 3 3<br>5 5 1<br>..S..<br>…..<br>.###.<br>…..<br>..T..<br>3 3 1 2<br>5 5 1<br>S.#..<br>..#..<br>###..<br>…..<br>….T<br>0 1 0 2<br>4 4 2<br>S#.T<br>.#.#<br>.#.#<br>.#.#<br>0 0 0 3<br>2 0 2 2  </p>
+<p>6 6<br>1 2<br>1 3<br>2 6<br>2 5<br>4 5<br>3 4<br>1 5  </p>
 </blockquote>
 <h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><blockquote>
-<p>6<br>8<br>-1<br>3</p>
+<p>3</p>
 </blockquote>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题是普通迷宫问题的变种，但仍是在求迷宫中某点是否可达，以及其路径长度(本题为耗费时间)，因此我们的主要思路依然为广搜。<br>回忆一下，通常我们广搜就是按照远近，从近到远挨着搜，本题中传送阵的出现虽然有所变化，但仅仅是扩充了试探的原则，不仅仅是”挨着搜”，增加了传送阵搜，其余不变，因此为了保持由近及远的原则，我们可以使用优先队列，出队顺序由耗时决定。<br>以上即为本题主要思路，还有一些细节均在代码注释中不再赘述。</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题的关键为条件1，如何才能得知一个点是否与终点连通呢？正向思考较为棘手，反向就容易许多，以终点为起点bfs就可以解决这一问题。<br>得知哪些点不与终点连通后，将这些点和被这些点波及的点从图中remove掉，正向bfs即可。<br>有一些细节需要注意，见代码注释。</p>
 <h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;queue&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;map&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
- 
-<span class="token keyword">struct</span> <span class="token class-name">pos</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">int</span> x<span class="token punctuation">,</span>y<span class="token punctuation">;</span>
-    <span class="token keyword">int</span> time<span class="token punctuation">;</span>
-    <span class="token function">pos</span> <span class="token punctuation">(</span><span class="token keyword">int</span> X<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token keyword">int</span> Y<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token keyword">int</span> Time<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        x<span class="token operator">=</span>X<span class="token punctuation">;</span>
-        y<span class="token operator">=</span>Y<span class="token punctuation">;</span>
-        time<span class="token operator">=</span>Time<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">bool</span> <span class="token keyword">operator</span> <span class="token operator">&lt;</span> <span class="token punctuation">(</span><span class="token keyword">const</span> pos <span class="token operator">&amp;</span>a<span class="token punctuation">)</span> <span class="token keyword">const</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token operator">-&gt;</span>time <span class="token operator">&gt;=</span> a<span class="token punctuation">.</span>time<span class="token punctuation">;</span>   <span class="token comment">//重载要注意</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span>  <span class="token comment">//注意，优先队列内部排序时虽然利用小于号，但却是大的在前，我们这要求小的在前</span>
- 
- 
-<span class="token keyword">int</span> n<span class="token punctuation">,</span>m<span class="token punctuation">,</span>q<span class="token punctuation">;</span>
-<span class="token keyword">int</span> t<span class="token punctuation">,</span>s<span class="token punctuation">;</span>
-<span class="token keyword">bool</span> visited<span class="token punctuation">[</span><span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> dir<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-<span class="token keyword">bool</span> mp<span class="token punctuation">[</span><span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">;</span>          <span class="token comment">//记录地图</span>
-<span class="token keyword">int</span> dis<span class="token punctuation">[</span><span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">300</span><span class="token punctuation">]</span><span class="token punctuation">;</span>          <span class="token comment">//记录从起点到各点所需时间</span>
-priority_queue<span class="token operator">&lt;</span>pos<span class="token operator">&gt;</span> Q<span class="token punctuation">;</span>      <span class="token comment">//优先队列 排序标准为到达该点的时间</span>
-map<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;&gt;</span> z<span class="token punctuation">;</span>     <span class="token comment">//存储传送阵的数据 每一个int数表示坐标(行编号*列数+列编号)</span>
-                            <span class="token comment">//因为某个点可能是多个传送阵的起点，故此处使用vector</span>
-<span class="token keyword">int</span> <span class="token function">bfs</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token operator">!</span>Q<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        <span class="token keyword">int</span> x<span class="token operator">=</span>Q<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>x<span class="token punctuation">;</span>
-        <span class="token keyword">int</span> y<span class="token operator">=</span>Q<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>y<span class="token punctuation">;</span>
-        <span class="token keyword">int</span> time<span class="token operator">=</span>Q<span class="token punctuation">.</span><span class="token function">top</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>time<span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>x<span class="token operator">*</span>m<span class="token operator">+</span>y<span class="token operator">==</span>t<span class="token punctuation">)</span> <span class="token keyword">return</span> time<span class="token punctuation">;</span>   <span class="token comment">//注意出队时一个点的最短时间才被确定 因此终点判断放在这</span>
-        Q<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">if</span><span class="token punctuation">(</span>visited<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span> <span class="token comment">//由于传送阵的存在某个点可能在队列中不止一个 先出来的时间最短</span>
-        dis<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token operator">=</span>time<span class="token punctuation">;</span>             <span class="token comment">//并将之记录</span>
-        visited<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>         <span class="token comment">//出队后才标记该点数据已定</span>
-        <span class="token comment">//首先试探邻近点</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span><span class="token number">4</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> newx<span class="token operator">=</span>x<span class="token operator">+</span>dir<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-            <span class="token keyword">int</span> newy<span class="token operator">=</span>y<span class="token operator">+</span>dir<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>newx<span class="token operator">&lt;</span><span class="token number">0</span><span class="token operator">||</span>newy<span class="token operator">&lt;</span><span class="token number">0</span><span class="token operator">||</span>newx<span class="token operator">&gt;=</span>n<span class="token operator">||</span>newy<span class="token operator">&gt;=</span>m<span class="token punctuation">)</span>
-                <span class="token keyword">continue</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>visited<span class="token punctuation">[</span>newx<span class="token punctuation">]</span><span class="token punctuation">[</span>newy<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                <span class="token keyword">continue</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>mp<span class="token punctuation">[</span>newx<span class="token punctuation">]</span><span class="token punctuation">[</span>newy<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                <span class="token keyword">continue</span><span class="token punctuation">;</span>
-            Q<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">pos</span><span class="token punctuation">(</span>newx<span class="token punctuation">,</span>newy<span class="token punctuation">,</span>dis<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        <span class="token comment">//再试探传送</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>z<span class="token punctuation">[</span>x<span class="token operator">*</span>m<span class="token operator">+</span>y<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> newx<span class="token operator">=</span>z<span class="token punctuation">[</span>x<span class="token operator">*</span>m<span class="token operator">+</span>y<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">/</span>m<span class="token punctuation">;</span>
-            <span class="token keyword">int</span> newy<span class="token operator">=</span>z<span class="token punctuation">[</span>x<span class="token operator">*</span>m<span class="token operator">+</span>y<span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">%</span>m<span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>mp<span class="token punctuation">[</span>newx<span class="token punctuation">]</span><span class="token punctuation">[</span>newy<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                <span class="token keyword">continue</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>visited<span class="token punctuation">[</span>newx<span class="token punctuation">]</span><span class="token punctuation">[</span>newy<span class="token punctuation">]</span><span class="token punctuation">)</span>
-                <span class="token keyword">continue</span><span class="token punctuation">;</span>
-            Q<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">pos</span><span class="token punctuation">(</span>newx<span class="token punctuation">,</span>newy<span class="token punctuation">,</span>dis<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">[</span>y<span class="token punctuation">]</span><span class="token operator">+</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">while</span><span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m <span class="token operator">&gt;&gt;</span> q<span class="token punctuation">)</span>
-    <span class="token punctuation">{</span>
-        cin<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">memset</span><span class="token punctuation">(</span>visited<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token keyword">sizeof</span><span class="token punctuation">(</span>visited<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        z<span class="token punctuation">.</span><span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">while</span><span class="token punctuation">(</span><span class="token operator">!</span>Q<span class="token punctuation">.</span><span class="token function">empty</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> Q<span class="token punctuation">.</span><span class="token function">pop</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>n<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>
-        <span class="token punctuation">{</span>
-            string temp<span class="token punctuation">;</span>
-            <span class="token function">getline</span><span class="token punctuation">(</span>cin<span class="token punctuation">,</span>temp<span class="token punctuation">)</span><span class="token punctuation">;</span>
-            <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> j<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>j<span class="token operator">&lt;</span>m<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">)</span>
-            <span class="token punctuation">{</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">'#'</span><span class="token punctuation">)</span>
-                <span class="token punctuation">{</span>
-                    mp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">false</span><span class="token punctuation">;</span>
-                    <span class="token keyword">continue</span><span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                mp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token boolean">true</span><span class="token punctuation">;</span>
-                <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">'S'</span><span class="token punctuation">)</span>
-                <span class="token punctuation">{</span>
-                    Q<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">pos</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">//起点入队</span>
-                    s<span class="token operator">=</span>i<span class="token operator">*</span>m<span class="token operator">+</span>j<span class="token punctuation">;</span>
-                <span class="token punctuation">}</span>
-                <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">==</span><span class="token string">'T'</span><span class="token punctuation">)</span>   t<span class="token operator">=</span>i<span class="token operator">*</span>m<span class="token operator">+</span>j<span class="token punctuation">;</span>
-            <span class="token punctuation">}</span>
-        <span class="token punctuation">}</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>q<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span>    <span class="token comment">//存储传送阵的数据</span>
-        <span class="token punctuation">{</span>
-            <span class="token keyword">int</span> x1<span class="token punctuation">,</span>y1<span class="token punctuation">,</span>x2<span class="token punctuation">,</span>y2<span class="token punctuation">;</span>
-            cin <span class="token operator">&gt;&gt;</span>x1<span class="token operator">&gt;&gt;</span>y1<span class="token operator">&gt;&gt;</span>x2<span class="token operator">&gt;&gt;</span>y2<span class="token punctuation">;</span>
-            z<span class="token punctuation">[</span>x1<span class="token operator">*</span>m<span class="token operator">+</span>y1<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>x2<span class="token operator">*</span>m<span class="token operator">+</span>y2<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span>
-        cout <span class="token operator">&lt;&lt;</span> <span class="token function">bfs</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>```cpp<br>#include <string><br>#include <iostream><br>#include <cstring><br>#include <queue><br>using namespace std;</queue></cstring></iostream></string></p>
+<p>#define maxn 10000<br>int n, m;<br>int s, t;<br>bool graph[maxn][maxn];<br>int dis[maxn];</p>
+<p>void remove(int point) //将一个点及其相关边剔除<br>{<br>    for (int i = 0; i &lt; n; i++)<br>        graph[i][point] = 0;<br>    for (int j = 0; j &lt; n; j++)<br>        graph[point][j] = 0;<br>}</p>
+<p>void bfs1() //正向处理<br>{<br>    queue<int> q;<br>    q.push(s - 1);<br>    dis[s - 1] = 0;<br>    while (!q.empty())<br>    {<br>        int a = q.front();<br>        q.pop();<br>        for (int i = 0; i &lt; n; i++)<br>        {<br>            if (!dis[i] &amp;&amp; graph[a][i])<br>            {<br>                dis[i] = dis[a] + 1;<br>                q.push(i);<br>            }<br>        }<br>    }<br>}</int></p>
+<p>void bfs2() //反向处理<br>{<br>    queue<int> q;<br>    q.push(t - 1);<br>    dis[t - 1] = 0;<br>    while (!q.empty())<br>    {<br>        int a = q.front();<br>        q.pop();<br>        for (int i = 0; i &lt; n; i++)<br>        {<br>            if (!dis[i] &amp;&amp; graph[i][a])<br>            {<br>                dis[i] = dis[a] + 1;<br>                q.push(i);<br>            }<br>        }<br>    }<br>}</int></p>
+<p>int main()<br>{<br>    memset(graph, 0, sizeof(graph));<br>    memset(dis, 0, sizeof(dis));</p>
+<pre><code>cin &gt;&gt; n &gt;&gt; m;
+while (m--)
+{
+    int x, y;
+    cin &gt;&gt; x &gt;&gt; y;
+    if (x == y)
+        continue; //舍弃自环
+    graph[x - 1][y - 1] = 1;
+}
+cin &gt;&gt; s &gt;&gt; t;
+bfs2();
+dis[t - 1] = 1; //终点是起点 不能被剔除
+for (int i = 0; i &lt; n; i++)
+{
+    if (!dis[i])
+    {
+        for (int j = 0; j &lt; n; j++) //注意remove的先后顺序
+        {                           //“波及”关系是需要原来点的边的数据的 
+            if (graph[j][i])        //所以先清除被“波及”点再处理原来的点
+                remove(j);
+        }
+        remove(i);
+    }
+}
+
+memset(dis, 0, sizeof(dis));
+bfs1();
+if (dis[t - 1])
+    cout &lt;&lt; dis[t - 1] &lt;&lt; endl;
+else
+    cout &lt;&lt; -1 &lt;&lt; endl;
+return 0;
+</code></pre>
+<p>}</p>
+
                 
             </div>
             <hr/>
@@ -658,7 +587,7 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kong-aobo.github.io/2021/07/01/problem/problem8/">https://kong-aobo.github.io/2021/07/01/problem/problem8/</a>
+                    <a href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem4/">https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem4/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -924,19 +853,19 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/01/problem/problem6/">
+                <a href="/2021/07/01/Algrithm%20Problem/problem2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="合并回文字符串">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="靶形数独">
                         
-                        <span class="card-title">合并回文字符串</span>
+                        <span class="card-title">靶形数独</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            二维区间dp
+                            搜索
                         
                     </div>
                     <div class="publish-info">
@@ -958,8 +887,8 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
-                        <span class="chip bg-color">动态规划</span>
+                    <a href="/tags/%E6%90%9C%E7%B4%A2/">
+                        <span class="chip bg-color">搜索</span>
                     </a>
                     
                 </div>
@@ -973,19 +902,19 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/01/problem/problem9/">
+                <a href="/2021/07/01/Algrithm%20Problem/problem3/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="生产者消费者模型 JAVA">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="选择困难症">
                         
-                        <span class="card-title">生产者消费者模型 JAVA</span>
+                        <span class="card-title">选择困难症</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            多线程的经典案例 JAVA实现
+                            dfs
                         
                     </div>
                     <div class="publish-info">
@@ -996,8 +925,8 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="post-category">
-                                    多线程
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
                                 </a>
                             
                             
@@ -1007,8 +936,8 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/JAVA/">
-                        <span class="chip bg-color">JAVA</span>
+                    <a href="/tags/%E6%90%9C%E7%B4%A2/">
+                        <span class="chip bg-color">搜索</span>
                     </a>
                     
                 </div>
