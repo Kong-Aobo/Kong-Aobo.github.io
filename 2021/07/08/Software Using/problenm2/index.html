@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="寻找道路, Kong Aobo&#39;s Blog">
+    <meta name="keywords" content="JAVA(Eclipse) 连接 Sql Sever, Kong Aobo&#39;s Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>寻找道路 | Kong Aobo&#39;s Blog</title>
+    <title>JAVA(Eclipse) 连接 Sql Sever | Kong Aobo&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">寻找道路</h1>
+                    <h1 class="description center-align post-title">JAVA(Eclipse) 连接 Sql Sever</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%90%9C%E7%B4%A2/">
-                                <span class="chip bg-color">搜索</span>
+                            <a href="/tags/Sql-Sever/">
+                                <span class="chip bg-color">Sql Sever</span>
                             </a>
                         
                     </div>
@@ -446,8 +446,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                算法
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" class="post-category">
+                                软件使用
                             </a>
                         
                     </div>
@@ -459,28 +459,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-01
+                    2021-07-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-02
+                    2021-07-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    734
+                    401
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
 
@@ -503,64 +503,28 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/16498">https://ac.nowcoder.com/acm/problem/16498</a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
-<p>在有向图G中，每条边的长度均为1，现给定起点和终点，请你在图中找一条从起点到终点的路径，该路径满足以下条件：<br>1.路径上的所有点的出边所指向的点都直接或间接与终点连通。<br>2.在满足条件1的情况下使路径最短。<br>注意：图G中可能存在重边和自环，题目保证终点没有出边。<br>请你输出符合条件的路径的长度。</p>
-</blockquote>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
-<p>第一行有两个用一个空格隔开的整数n和m，表示图有n个点和m条边。<br>接下来的m行每行2个整数x、y，之间用一个空格隔开，表示有一条边从点x指向点y。<br>最后一行有两个用一个空格隔开的整数s、t，表示起点为s，终点为t。</p>
-</blockquote>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
-<p>输出只有一行，包含一个整数，表示满足题目描述的最短路径的长度。如果这样的路径不存在，输出-1。</p>
-</blockquote>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><blockquote>
-<p>6 6<br>1 2<br>1 3<br>2 6<br>2 5<br>4 5<br>3 4<br>1 5  </p>
-</blockquote>
-<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><blockquote>
-<p>3</p>
-</blockquote>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题的关键为条件1，如何才能得知一个点是否与终点连通呢？正向思考较为棘手，反向就容易许多，以终点为起点bfs就可以解决这一问题。<br>得知哪些点不与终点连通后，将这些点和被这些点波及的点从图中remove掉，正向bfs即可。<br>有一些细节需要注意，见代码注释。</p>
-<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
-<p>```cpp<br>#include <string><br>#include <iostream><br>#include <cstring><br>#include <queue><br>using namespace std;</queue></cstring></iostream></string></p>
-<p>#define maxn 10000<br>int n, m;<br>int s, t;<br>bool graph[maxn][maxn];<br>int dis[maxn];</p>
-<p>void remove(int point) //将一个点及其相关边剔除<br>{<br>    for (int i = 0; i &lt; n; i++)<br>        graph[i][point] = 0;<br>    for (int j = 0; j &lt; n; j++)<br>        graph[point][j] = 0;<br>}</p>
-<p>void bfs1() //正向处理<br>{<br>    queue<int> q;<br>    q.push(s - 1);<br>    dis[s - 1] = 0;<br>    while (!q.empty())<br>    {<br>        int a = q.front();<br>        q.pop();<br>        for (int i = 0; i &lt; n; i++)<br>        {<br>            if (!dis[i] &amp;&amp; graph[a][i])<br>            {<br>                dis[i] = dis[a] + 1;<br>                q.push(i);<br>            }<br>        }<br>    }<br>}</int></p>
-<p>void bfs2() //反向处理<br>{<br>    queue<int> q;<br>    q.push(t - 1);<br>    dis[t - 1] = 0;<br>    while (!q.empty())<br>    {<br>        int a = q.front();<br>        q.pop();<br>        for (int i = 0; i &lt; n; i++)<br>        {<br>            if (!dis[i] &amp;&amp; graph[i][a])<br>            {<br>                dis[i] = dis[a] + 1;<br>                q.push(i);<br>            }<br>        }<br>    }<br>}</int></p>
-<p>int main()<br>{<br>    memset(graph, 0, sizeof(graph));<br>    memset(dis, 0, sizeof(dis));</p>
-<pre><code>cin &gt;&gt; n &gt;&gt; m;
-while (m--)
-{
-    int x, y;
-    cin &gt;&gt; x &gt;&gt; y;
-    if (x == y)
-        continue; //舍弃自环
-    graph[x - 1][y - 1] = 1;
-}
-cin &gt;&gt; s &gt;&gt; t;
-bfs2();
-dis[t - 1] = 1; //终点是起点 不能被剔除
-for (int i = 0; i &lt; n; i++)
-{
-    if (!dis[i])
-    {
-        for (int j = 0; j &lt; n; j++) //注意remove的先后顺序
-        {                           //“波及”关系是需要原来点的边的数据的 
-            if (graph[j][i])        //所以先清除被“波及”点再处理原来的点
-                remove(j);
-        }
-        remove(i);
-    }
-}
-
-memset(dis, 0, sizeof(dis));
-bfs1();
-if (dis[t - 1])
-    cout &lt;&lt; dis[t - 1] &lt;&lt; endl;
-else
-    cout &lt;&lt; -1 &lt;&lt; endl;
-return 0;
-</code></pre>
-<p>}</p>
+                <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
+<li>Sql Sever 2019</li>
+<li>Eclipse</li>
+<li>JavaSE-15</li>
+</ul>
+<p>版本不同操作可能略有差异，但整体差别不大。</p>
+<h2 id="下载JDBC驱动程序"><a href="#下载JDBC驱动程序" class="headerlink" title="下载JDBC驱动程序"></a>下载JDBC驱动程序</h2><p>官网下载地址<br><a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/download/details.aspx?id=11774">https://www.microsoft.com/zh-cn/download/details.aspx?id=11774</a></p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708111920.png"><br>点击下载</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112117.png"><br>选择第二个下载<br>下载完成后解压并进入</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112357.png"><br>jre8中存放着我们需要的JDBC驱动程序</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112549.png"><br>将该包导入相应的java project即可<br>Build Path-&gt;Confugire Build Path-&gt;Libraries-&gt;Add External JARs</p>
+<h2 id="进行Sql-Sever相关配置"><a href="#进行Sql-Sever相关配置" class="headerlink" title="进行Sql Sever相关配置"></a>进行Sql Sever相关配置</h2><p>找到sa用户  </p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113143.png"><br>右键点击，选择属性，常规设置强制密码</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113441.png"><br>状态设置，允许连接到数据库</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113627.png"><br>找到该位置，右键属性</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113759.png"><br>安全性设置如图</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113914.png"></p>
+<h2 id="Sql-Sever-MSSQLSERVER协议配置"><a href="#Sql-Sever-MSSQLSERVER协议配置" class="headerlink" title="Sql Sever MSSQLSERVER协议配置"></a>Sql Sever MSSQLSERVER协议配置</h2><p>此电脑图标，右键点击，选择管理</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708114304.png"><br>然后，依次进入相关目录<br>服务和应用程序-&gt;Sql Server配置管理器-&gt;Sql Server网络配置-&gt;Sql Sever MSSQLSERVER协议-&gt;TCP/IP<br>右键点击，选择启动，再次右键点击选择属性，将IPAII中的端口改为1433</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708114910.png"><br>再将IP14启用(不一定是这个，你用什么IP地址，就启用相关的IP)</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708115111.png"><br>之后同样，此电脑，管理<br>服务和应用程序-&gt;服务 找到Sql Sever MSSQLSERVER协议，右键点击重新启动即可</p>
+<h2 id="可能出现的问题"><a href="#可能出现的问题" class="headerlink" title="可能出现的问题"></a>可能出现的问题</h2><p>在使数据库连接时显示如下错误<br>java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter<br>说明我们还缺少相应的库，需要下载，这个库的缺失可能与JDK版本有关<br><a target="_blank" rel="noopener" href="http://www.java2s.com/Code/Jar/j/Downloadjavaxxmlbindjar.htm">http://www.java2s.com/Code/Jar/j/Downloadjavaxxmlbindjar.htm</a><br>在该网址下载后，按照JDBC驱动的流程操作，将jar包导入即可。</p>
 
                 
             </div>
@@ -587,7 +551,7 @@ return 0;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem4/">https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem4/</a>
+                    <a href="https://kong-aobo.github.io/2021/07/08/Software%20Using/problenm2/">https://kong-aobo.github.io/2021/07/08/Software%20Using/problenm2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -625,8 +589,8 @@ return 0;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%90%9C%E7%B4%A2/">
-                                    <span class="chip bg-color">搜索</span>
+                                <a href="/tags/Sql-Sever/">
+                                    <span class="chip bg-color">Sql Sever</span>
                                 </a>
                             
                         </div>
@@ -849,46 +813,48 @@ return 0;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/problem5/">
+                <a href="/2021/07/08/Software%20Using/problenm2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="合并回文字符串">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="JAVA(Eclipse) 连接 Sql Sever">
                         
-                        <span class="card-title">合并回文字符串</span>
+                        <span class="card-title">JAVA(Eclipse) 连接 Sql Sever</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            二维区间dp
+                            JAVA与Sql Sever连接的配置步骤
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
+                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" class="post-category">
+                                    软件使用
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
-                        <span class="chip bg-color">动态规划</span>
+                    <a href="/tags/Sql-Sever/">
+                        <span class="chip bg-color">Sql Sever</span>
                     </a>
                     
                 </div>
@@ -902,24 +868,24 @@ return 0;
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/problem6/">
+                <a href="/2021/07/02/Algrithm%20Problem/problem8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="幸运数字">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="模拟战役">
                         
-                        <span class="card-title">幸运数字</span>
+                        <span class="card-title">模拟战役</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            dfs
+                            连通块，贪心与搜索的结合
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
                             </span>
                         <span class="publish-author">
                             
