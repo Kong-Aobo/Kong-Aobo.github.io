@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-07-08T03:58:54.940Z</updated>
+  <updated>2021-07-24T03:29:17.907Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>0-1背包问题</title>
+    <link href="https://kong-aobo.github.io/2021/07/24/Algrithm%20Problem/DP/problem1/"/>
+    <id>https://kong-aobo.github.io/2021/07/24/Algrithm%20Problem/DP/problem1/</id>
+    <published>2021-07-24T02:00:18.000Z</published>
+    <updated>2021-07-24T03:29:17.907Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/description/2/&quot;&gt;https://www.acwing.com/problem/content/description/2/&lt;/a&gt;&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JAVA(Eclipse) 连接 Sql Sever</title>
     <link href="https://kong-aobo.github.io/2021/07/08/Software%20Using/problenm2/"/>
     <id>https://kong-aobo.github.io/2021/07/08/Software%20Using/problenm2/</id>
     <published>2021-07-08T03:04:18.000Z</published>
-    <updated>2021-07-08T03:58:54.940Z</updated>
+    <updated>2021-07-08T04:02:34.263Z</updated>
     
     
       
@@ -44,10 +70,10 @@
   
   <entry>
     <title>模拟战役</title>
-    <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/problem8/"/>
-    <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/problem8/</id>
+    <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem7/"/>
+    <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem7/</id>
     <published>2021-07-02T00:00:18.000Z</published>
-    <updated>2021-07-02T10:19:49.400Z</updated>
+    <updated>2021-07-24T03:30:13.271Z</updated>
     
     
       
@@ -70,10 +96,10 @@
   
   <entry>
     <title>走出迷宫</title>
-    <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/problem9/"/>
-    <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/problem9/</id>
+    <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem8/"/>
+    <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem8/</id>
     <published>2021-07-02T00:00:18.000Z</published>
-    <updated>2021-07-02T10:19:57.215Z</updated>
+    <updated>2021-07-24T03:30:18.902Z</updated>
     
     
       
@@ -81,188 +107,6 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/14572&quot;&gt;https://ac.nowcoder.com/acm/problem/14572&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小木棍</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem1/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem1/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T10:28:06.372Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/50243&quot;&gt;https://ac.nowcoder.com/acm/problem/50243&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>靶形数独</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem2/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem2/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T10:28:15.527Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/16612&quot;&gt;https://ac.nowcoder.com/acm/problem/16612&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>选择困难症</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem3/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem3/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T10:28:24.061Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/13594&quot;&gt;https://ac.nowcoder.com/acm/problem/13594&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>合并回文字符串</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem5/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem5/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T10:19:28.958Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/13230&quot;&gt;https://ac.nowcoder.com/acm/problem/13230&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>寻找道路</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem4/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem4/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T10:19:22.295Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/16498&quot;&gt;https://ac.nowcoder.com/acm/problem/16498&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>幸运数字</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem6/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem6/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T10:19:37.065Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/15291&quot;&gt;https://ac.nowcoder.com/acm/problem/15291&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>maze</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem7/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/problem7/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-02T10:19:43.966Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/15665&quot;&gt;https://ac.nowcoder.com/acm/problem/15665&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
         
       
@@ -326,6 +170,188 @@
     
     
     <category term="git" scheme="https://kong-aobo.github.io/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>合并回文字符串</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/DP/problem2/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/DP/problem2/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-24T03:29:44.489Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/13230&quot;&gt;https://ac.nowcoder.com/acm/problem/13230&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>靶形数独</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem2/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem2/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-24T03:27:25.400Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/16612&quot;&gt;https://ac.nowcoder.com/acm/problem/16612&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>小木棍</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem1/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem1/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-24T03:27:14.952Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/50243&quot;&gt;https://ac.nowcoder.com/acm/problem/50243&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>选择困难症</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem3/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem3/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-24T03:27:28.018Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/13594&quot;&gt;https://ac.nowcoder.com/acm/problem/13594&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>寻找道路</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem4/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem4/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-24T03:27:29.714Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/16498&quot;&gt;https://ac.nowcoder.com/acm/problem/16498&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>幸运数字</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem5/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem5/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-24T03:30:02.103Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/15291&quot;&gt;https://ac.nowcoder.com/acm/problem/15291&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>maze</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem6/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem6/</id>
+    <published>2021-07-01T09:00:18.000Z</published>
+    <updated>2021-07-24T03:30:07.703Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/15665&quot;&gt;https://ac.nowcoder.com/acm/problem/15665&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   
