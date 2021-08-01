@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="寻找道路, Kong Aobo&#39;s Blog">
+    <meta name="keywords" content="最长公共子序列, Kong Aobo&#39;s Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>寻找道路 | Kong Aobo&#39;s Blog</title>
+    <title>最长公共子序列 | Kong Aobo&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">寻找道路</h1>
+                    <h1 class="description center-align post-title">最长公共子序列</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%90%9C%E7%B4%A2/">
-                                <span class="chip bg-color">搜索</span>
+                            <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                                <span class="chip bg-color">动态规划</span>
                             </a>
                         
                     </div>
@@ -459,21 +459,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-01
+                    2021-08-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-24
+                    2021-08-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    734
+                    909
                 </div>
                 
 
@@ -503,64 +503,71 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/16498">https://ac.nowcoder.com/acm/problem/16498</a></p>
+                <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/899/">https://www.acwing.com/problem/content/899/</a></p>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
-<p>在有向图G中，每条边的长度均为1，现给定起点和终点，请你在图中找一条从起点到终点的路径，该路径满足以下条件：<br>1.路径上的所有点的出边所指向的点都直接或间接与终点连通。<br>2.在满足条件1的情况下使路径最短。<br>注意：图G中可能存在重边和自环，题目保证终点没有出边。<br>请你输出符合条件的路径的长度。</p>
+<p>给定两个长度分别为 N 和 M 的字符串 A 和 B，求既是 A 的子序列又是 B 的子序列的字符串长度最长是多少。</p>
 </blockquote>
 <h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
-<p>第一行有两个用一个空格隔开的整数n和m，表示图有n个点和m条边。<br>接下来的m行每行2个整数x、y，之间用一个空格隔开，表示有一条边从点x指向点y。<br>最后一行有两个用一个空格隔开的整数s、t，表示起点为s，终点为t。</p>
+<p>第一行包含两个整数 N 和 M。<br>第二行包含一个长度为 N 的字符串，表示字符串 A。<br>第三行包含一个长度为 M 的字符串，表示字符串 B。<br>字符串均由小写字母构成。</p>
 </blockquote>
 <h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
-<p>输出只有一行，包含一个整数，表示满足题目描述的最短路径的长度。如果这样的路径不存在，输出-1。</p>
+<p>输出一个整数，表示最大长度。<br>1≤N,M≤1000</p>
 </blockquote>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><blockquote>
-<p>6 6<br>1 2<br>1 3<br>2 6<br>2 5<br>4 5<br>3 4<br>1 5  </p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote>
+<p>4 5<br>acbd<br>abedc</p>
 </blockquote>
-<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><blockquote>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><blockquote>
 <p>3</p>
 </blockquote>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题的关键为条件1，如何才能得知一个点是否与终点连通呢？正向思考较为棘手，反向就容易许多，以终点为起点bfs就可以解决这一问题。<br>得知哪些点不与终点连通后，将这些点和被这些点波及的点从图中remove掉，正向bfs即可。<br>有一些细节需要注意，见代码注释。</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="约定"><a href="#约定" class="headerlink" title="约定"></a>约定</h3><p>记第一个字符串为a，第二个为b</p>
+<h3 id="状态表示"><a href="#状态表示" class="headerlink" title="状态表示"></a>状态表示</h3><p>f(i,j)所代表的集合和属性如下：</p>
+<ul>
+<li>集合：从a中前i个字母，b中前j个字母中选择出的公共子序列</li>
+<li>属性：所有子序列长度的最大值</li>
+</ul>
+<h3 id="状态划分与计算"><a href="#状态划分与计算" class="headerlink" title="状态划分与计算"></a>状态划分与计算</h3><p>从状态表示中集合的角度切入，对于f(i,j),其集合中的公共子序列存在四种情况：</p>
+<ul>
+<li>有a[i],b[j]，且a[i]=b[j]</li>
+<li>有a[i]，无b[j]</li>
+<li>无a[i]，有b[j]</li>
+<li>无a[i],b[j]</li>
+</ul>
+<p>我们要做的就是先求出各种情况的最大长度，再求四种情况的最大长度。<br>显然，有a[i],b[j]和无a[i],b[j]的情况较为简单，分别为：<br>f(i-1,j-1)+1<br>f(i-1,j-1)<br>另外两种才是难点，以有a[i]，无b[j]为例分析。<br>我们一般会想到f(i,j-1)，但请思考这个式子所代表的集合与我们要求解的情况一致吗？<br>肯定不一致，f(i,j-1)是一个包含了该情况的更大的集合，但恰恰该情况的最大值已经被f(i,j-1)所考虑了。即我们虽然不能说f(i,j-1)就是该情况的最大值，但通过它就能将该情况的最大值考虑进去。<br>另一种情况同理，通过f(i-1,j)间接考虑。  </p>
+<h3 id="状态转移方程"><a href="#状态转移方程" class="headerlink" title="状态转移方程"></a>状态转移方程</h3><p>由上一步的分析，我们得到状态转移方程如下：</p>
+<ul>
+<li>f(i,j)=max(f(i-1,j-1),f(i,j-1),f(i-1,j))&nbsp;&nbsp;&nbsp;a[i]!=b[j]</li>
+<li>f(i,j)=max(f(i-1,j-1),f(i,j-1),f(i-1,j),f(i-1,j-1)+1)&nbsp;&nbsp;&nbsp;a[i]=b[j]</li>
+</ul>
+<p>在此，再对我们的状态计算的方法进行说明，我们的目的是求出四种情况中的最大值，但我们并不是通过先分别求出最大值再比较得到的，而是间接的实现，状态转移方程中的各个比较项是存在交叉的，但它们的并集涵盖了f(i,j)集合中的所有元素，从而实现的求解，这是集合思想的巧妙运用。<br>另外，虽然状态转移方程中有f(i-1,j-1)，但该值其实已经被f(i,j-1)或f(i-1,j)所考虑，因此实际编程时我们通常不写它。<br>本题可以通过滚动数组将f(i,j)改成一维的，不再赘述，代码不再展示。</p>
 <h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
-<p>```cpp<br>#include <string><br>#include <iostream><br>#include <cstring><br>#include <queue><br>using namespace std;</queue></cstring></iostream></string></p>
-<p>#define maxn 10000<br>int n, m;<br>int s, t;<br>bool graph[maxn][maxn];<br>int dis[maxn];</p>
-<p>void remove(int point) //将一个点及其相关边剔除<br>{<br>    for (int i = 0; i &lt; n; i++)<br>        graph[i][point] = 0;<br>    for (int j = 0; j &lt; n; j++)<br>        graph[point][j] = 0;<br>}</p>
-<p>void bfs1() //正向处理<br>{<br>    queue<int> q;<br>    q.push(s - 1);<br>    dis[s - 1] = 0;<br>    while (!q.empty())<br>    {<br>        int a = q.front();<br>        q.pop();<br>        for (int i = 0; i &lt; n; i++)<br>        {<br>            if (!dis[i] &amp;&amp; graph[a][i])<br>            {<br>                dis[i] = dis[a] + 1;<br>                q.push(i);<br>            }<br>        }<br>    }<br>}</int></p>
-<p>void bfs2() //反向处理<br>{<br>    queue<int> q;<br>    q.push(t - 1);<br>    dis[t - 1] = 0;<br>    while (!q.empty())<br>    {<br>        int a = q.front();<br>        q.pop();<br>        for (int i = 0; i &lt; n; i++)<br>        {<br>            if (!dis[i] &amp;&amp; graph[i][a])<br>            {<br>                dis[i] = dis[a] + 1;<br>                q.push(i);<br>            }<br>        }<br>    }<br>}</int></p>
-<p>int main()<br>{<br>    memset(graph, 0, sizeof(graph));<br>    memset(dis, 0, sizeof(dis));</p>
-<pre><code>cin &gt;&gt; n &gt;&gt; m;
-while (m--)
-{
-    int x, y;
-    cin &gt;&gt; x &gt;&gt; y;
-    if (x == y)
-        continue; //舍弃自环
-    graph[x - 1][y - 1] = 1;
-}
-cin &gt;&gt; s &gt;&gt; t;
-bfs2();
-dis[t - 1] = 1; //终点是起点 不能被剔除
-for (int i = 0; i &lt; n; i++)
-{
-    if (!dis[i])
-    {
-        for (int j = 0; j &lt; n; j++) //注意remove的先后顺序
-        {                           //“波及”关系是需要原来点的边的数据的 
-            if (graph[j][i])        //所以先清除被“波及”点再处理原来的点
-                remove(j);
-        }
-        remove(i);
-    }
-}
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
 
-memset(dis, 0, sizeof(dis));
-bfs1();
-if (dis[t - 1])
-    cout &lt;&lt; dis[t - 1] &lt;&lt; endl;
-else
-    cout &lt;&lt; -1 &lt;&lt; endl;
-return 0;
-</code></pre>
-<p>}</p>
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1001</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
+string a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>
+<span class="token keyword">int</span> f<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
+	cin <span class="token operator">&gt;&gt;</span> a <span class="token operator">&gt;&gt;</span> b<span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> a<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;=</span> b<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> b<span class="token punctuation">[</span>j<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+				f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>f<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> f<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+	cout <span class="token operator">&lt;&lt;</span> f<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">[</span>m<span class="token punctuation">]</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -587,7 +594,7 @@ return 0;
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem4/">https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem4/</a>
+                    <a href="https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/">https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -625,8 +632,8 @@ return 0;
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%90%9C%E7%B4%A2/">
-                                    <span class="chip bg-color">搜索</span>
+                                <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                                    <span class="chip bg-color">动态规划</span>
                                 </a>
                             
                         </div>
@@ -849,29 +856,30 @@ return 0;
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem3/">
+                <a href="/2021/08/01/Algrithm%20Problem/DP/problem7/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="选择困难症">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="最长公共子序列">
                         
-                        <span class="card-title">选择困难症</span>
+                        <span class="card-title">最长公共子序列</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            dfs
+                            运用闫总的DP分析方法的范例
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-01
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -884,11 +892,12 @@ return 0;
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%90%9C%E7%B4%A2/">
-                        <span class="chip bg-color">搜索</span>
+                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                        <span class="chip bg-color">动态规划</span>
                     </a>
                     
                 </div>
@@ -902,24 +911,24 @@ return 0;
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem5/">
+                <a href="/2021/07/27/Algrithm%20Problem/DP/problem6/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="幸运数字">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="数字三角形">
                         
-                        <span class="card-title">幸运数字</span>
+                        <span class="card-title">数字三角形</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            dfs
+                            DP的入门经典题
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-27
                             </span>
                         <span class="publish-author">
                             
@@ -936,8 +945,8 @@ return 0;
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%90%9C%E7%B4%A2/">
-                        <span class="chip bg-color">搜索</span>
+                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                        <span class="chip bg-color">动态规划</span>
                     </a>
                     
                 </div>
