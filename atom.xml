@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-08-01T06:18:29.200Z</updated>
+  <updated>2021-08-02T09:09:47.130Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -17,18 +17,43 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>最长公共子序列</title>
-    <link href="https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/"/>
-    <id>https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/</id>
-    <published>2021-08-01T06:18:18.000Z</published>
-    <updated>2021-08-01T06:18:29.200Z</updated>
+    <title>最短编辑距离</title>
+    <link href="https://kong-aobo.github.io/2021/08/02/Algrithm%20Problem/DP/problem10/"/>
+    <id>https://kong-aobo.github.io/2021/08/02/Algrithm%20Problem/DP/problem10/</id>
+    <published>2021-08-02T08:55:18.000Z</published>
+    <updated>2021-08-02T09:09:47.130Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/899/&quot;&gt;https://www.acwing.com/problem/content/899/&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;题目链接：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最长上升子序列</title>
+    <link href="https://kong-aobo.github.io/2021/08/02/Algrithm%20Problem/DP/problem9/"/>
+    <id>https://kong-aobo.github.io/2021/08/02/Algrithm%20Problem/DP/problem9/</id>
+    <published>2021-08-02T05:55:18.000Z</published>
+    <updated>2021-08-02T06:29:00.557Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/898/&quot;&gt;https://www.acwing.com/problem/content/898/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
@@ -44,10 +69,10 @@
   
   <entry>
     <title>石子合并</title>
-    <link href="https://kong-aobo.github.io/2021/07/27/Algrithm%20Problem/DP/problem8/"/>
-    <id>https://kong-aobo.github.io/2021/07/27/Algrithm%20Problem/DP/problem8/</id>
-    <published>2021-07-27T11:32:18.000Z</published>
-    <updated>2021-08-01T14:12:55.532Z</updated>
+    <link href="https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem8/"/>
+    <id>https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem8/</id>
+    <published>2021-08-01T14:51:18.000Z</published>
+    <updated>2021-08-01T14:51:34.252Z</updated>
     
     
       
@@ -55,6 +80,32 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>最长公共子序列</title>
+    <link href="https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/"/>
+    <id>https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/</id>
+    <published>2021-08-01T06:18:18.000Z</published>
+    <updated>2021-08-01T06:18:29.200Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/899/&quot;&gt;https://www.acwing.com/problem/content/899/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -407,32 +458,6 @@
   </entry>
   
   <entry>
-    <title>寻找道路</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem4/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem4/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-24T03:27:29.714Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/16498&quot;&gt;https://ac.nowcoder.com/acm/problem/16498&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
     <title>选择困难症</title>
     <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem3/"/>
     <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem3/</id>
@@ -459,18 +484,18 @@
   </entry>
   
   <entry>
-    <title>幸运数字</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem5/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem5/</id>
+    <title>寻找道路</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem4/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem4/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-24T03:30:02.103Z</updated>
+    <updated>2021-07-24T03:27:29.714Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/15291&quot;&gt;https://ac.nowcoder.com/acm/problem/15291&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/16498&quot;&gt;https://ac.nowcoder.com/acm/problem/16498&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
         
       
@@ -485,18 +510,18 @@
   </entry>
   
   <entry>
-    <title>maze</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem6/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem6/</id>
+    <title>幸运数字</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem5/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Algrithm%20Problem/Search/problem5/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-24T03:30:07.703Z</updated>
+    <updated>2021-07-24T03:30:02.103Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/15665&quot;&gt;https://ac.nowcoder.com/acm/problem/15665&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/15291&quot;&gt;https://ac.nowcoder.com/acm/problem/15291&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
         
       
