@@ -466,14 +466,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-25
+                    2021-08-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.3k
                 </div>
                 
 
@@ -542,12 +542,12 @@
 <li>f(i,j)=max(f(i-1,j),<strong>f(i-1,j-v[i])+w[i],f(i-1,j-2*v[i])+2*w[i],f(i-1,j-3*v[i])+3*w[i],—</strong>)</li>
 <li>f(i,j-v[i])=max(<strong>f(i-1,j-v[i]),f(i-1,j-2*v[i])+w[i],f(i-1,j-3*v[i])+2*w[i],—</strong>)</li>
 </ul>
-<p>显然，我们在计算f(i,j)时可以利用f(i,j-v[i])，得到新的状态转移方程如下：<br>f(i,j)=max(f(i-1,j)+f(i,j-v[i])+w[i])&nbsp;&nbsp;&nbsp;(j-v[i]&gt;=0)<br>利用该方程，我们只需要两层循环便能解决问题，时间复杂度降低。</p>
+<p>显然，我们在计算f(i,j)时可以利用f(i,j-v[i])，得到新的状态转移方程如下：<br>f(i,j)=max(f(i-1,j),f(i,j-v[i])+w[i])&nbsp;&nbsp;&nbsp;(j-v[i]&gt;=0)<br>利用该方程，我们只需要两层循环便能解决问题，时间复杂度降低。</p>
 <h3 id="再优化"><a href="#再优化" class="headerlink" title="再优化"></a>再优化</h3><p>类比0-1背包问题优化的思路:</p>
 <blockquote>
 <p>以上，是以f(i,j)这样一个二维的函数来求解本问题的思路，我们可以想象出一张二维的表格，行对应i，列对应j，求解的过程其实就是一行一行填表的过程，不断利用之前求出的结果，最终得到最终答案。</p>
 </blockquote>
-<p>此时我们依然可以这样考虑，对于一个f(i,j)，在表中我们仅需要它正上方的元素和它左边的元素，因此采用滚动数组的思想，将原数组改为一维，减少空间开销，略微加快时间。</p>
+<p>此时我们依然可以这样考虑，对于一个f(i,j)，在表中我们仅需要它正上方的元素和它左边的元素，因此采用滚动数组的思想，将原数组改为一维，减少空间开销，略微加快时间。<br>另外需要注意第二层循环的顺序：0-1背包问题，需要的<strong>正上方和左上方</strong>的数据，从后往前循环才不会覆盖计算新行需要的数据，但是本问题中需要的是<strong>正上方和左边</strong>的数据，必须从前往后循环。</p>
 <h2 id="朴素解法AC代码"><a href="#朴素解法AC代码" class="headerlink" title="朴素解法AC代码"></a>朴素解法AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
@@ -1256,7 +1256,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">17.9k</span>&nbsp;字
+                class="white-color">19.1k</span>&nbsp;字
             
             
             
