@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
 </head>
 
 
@@ -466,14 +466,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-01
+                    2021-08-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    759
+                    761
                 </div>
                 
 
@@ -521,7 +521,7 @@
 </blockquote>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="约定"><a href="#约定" class="headerlink" title="约定"></a>约定</h3><p>记第i堆石子的质量为w[i]。<br>为后续解题做准备，记前i堆石子的质量和为s[i]。</p>
 <h3 id="状态表示"><a href="#状态表示" class="headerlink" title="状态表示"></a>状态表示</h3><p>f(i,j)表示合并第i堆到第j堆石子的最小代价。</p>
-<h3 id="状态划分与计算"><a href="#状态划分与计算" class="headerlink" title="状态划分与计算"></a>状态划分与计算</h3><p>对于[i,j]这样一个区间，该区间合并的最后一步必是两个子区间的合并。<br>两个子区间合并的代价必然为s[j]-s[i]，与是哪两个子区间无关。(此处使用前缀和优化时间)<br>因此，求解f(i,j)就只需要枚举每一种双子区间划分方案，取最小代价和加上s[j]-s[i]即可。  </p>
+<h3 id="状态划分与计算"><a href="#状态划分与计算" class="headerlink" title="状态划分与计算"></a>状态划分与计算</h3><p>对于[i,j]这样一个区间，该区间合并的最后一步必是两个子区间的合并。<br>两个子区间合并的代价必然为s[j]-s[i-1]，与是哪两个子区间无关。(此处使用前缀和优化时间)<br>因此，求解f(i,j)就只需要枚举每一种双子区间划分方案，取最小代价和加上s[j]-s[i-1]即可。  </p>
 <h3 id="状态转移方程"><a href="#状态转移方程" class="headerlink" title="状态转移方程"></a>状态转移方程</h3><p>由上一步的分析，我们得到状态转移方程如下：<br>f(i,j)=min(f(i,k)+f(k+1,j)+s[j]-s[i]) &nbsp;&nbsp;&nbsp;&nbsp;(k=i,i+1,···,j-1)<br>k对于[i,j]是左闭右开的，以每一种划分前面那个元素的序号代表该种划分，不一定非要这样，保持一致，能遍历所有划分都可。</p>
 <h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
@@ -1179,7 +1179,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">20.1k</span>&nbsp;字
+                class="white-color">21.7k</span>&nbsp;字
             
             
             
