@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JAVA(Eclipse) 连接 Sql Sever, Kong Aobo&#39;s Blog">
+    <meta name="keywords" content="计数问题, Kong Aobo&#39;s Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JAVA(Eclipse) 连接 Sql Sever | Kong Aobo&#39;s Blog</title>
+    <title>计数问题 | Kong Aobo&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JAVA(Eclipse) 连接 Sql Sever</h1>
+                    <h1 class="description center-align post-title">计数问题</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Sql-Sever/">
-                                <span class="chip bg-color">Sql Sever</span>
+                            <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                                <span class="chip bg-color">动态规划</span>
                             </a>
                         
                     </div>
@@ -446,8 +446,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" class="post-category">
-                                软件使用
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                算法
                             </a>
                         
                     </div>
@@ -459,28 +459,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-07-08
+                    2021-08-14
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-07-08
+                    2021-08-14
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    399
+                    989
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -503,29 +503,116 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
-<li>Sql Sever 2019</li>
-<li>Eclipse</li>
-<li>JavaSE-15</li>
-</ul>
-<p>版本不同操作可能略有差异，但整体差别不大。</p>
-<h2 id="下载JDBC驱动程序"><a href="#下载JDBC驱动程序" class="headerlink" title="下载JDBC驱动程序"></a>下载JDBC驱动程序</h2><p>官网下载地址<br><a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/download/details.aspx?id=11774">https://www.microsoft.com/zh-cn/download/details.aspx?id=11774</a></p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708111920.png"><br>点击下载</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112117.png"><br>选择第二个下载<br>下载完成后解压并进入</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112357.png"><br>jre8中存放着我们需要的JDBC驱动程序</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112549.png"><br>将该包导入相应的java project即可<br>Build Path-&gt;Confugire Build Path-&gt;Libraries-&gt;Add External JARs</p>
-<h2 id="Sql-Sever相关配置"><a href="#Sql-Sever相关配置" class="headerlink" title="Sql Sever相关配置"></a>Sql Sever相关配置</h2><p>找到sa用户  </p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113143.png"><br>右键点击，选择属性，常规设置强制密码</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113441.png"><br>状态设置，允许连接到数据库</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113627.png"><br>找到该位置，右键属性</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113759.png"><br>安全性设置如图</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113914.png"></p>
-<h2 id="Sql-Sever-MSSQLSERVER协议配置"><a href="#Sql-Sever-MSSQLSERVER协议配置" class="headerlink" title="Sql Sever MSSQLSERVER协议配置"></a>Sql Sever MSSQLSERVER协议配置</h2><p>此电脑图标，右键点击，选择管理</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708114304.png"><br>然后，依次进入相关目录<br>服务和应用程序-&gt;Sql Server配置管理器-&gt;Sql Server网络配置-&gt;Sql Sever MSSQLSERVER协议-&gt;TCP/IP<br>右键点击，选择启动，再次右键点击选择属性，将IPAII中的端口改为1433</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708114910.png"><br>再将IP14启用(不一定是这个，你用什么IP地址，就启用相关的IP)</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708115111.png"><br>之后同样，此电脑，管理<br>服务和应用程序-&gt;服务 找到Sql Sever MSSQLSERVER协议，右键点击重新启动即可</p>
-<h2 id="可能出现的问题"><a href="#可能出现的问题" class="headerlink" title="可能出现的问题"></a>可能出现的问题</h2><p>在使数据库连接时显示如下错误<br>java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter<br>说明我们还缺少相应的库，需要下载，这个库的缺失可能与JDK版本有关<br><a target="_blank" rel="noopener" href="http://www.java2s.com/Code/Jar/j/Downloadjavaxxmlbindjar.htm">http://www.java2s.com/Code/Jar/j/Downloadjavaxxmlbindjar.htm</a><br>在该网址下载后，按照JDBC驱动的流程操作，将jar包导入即可。</p>
+                <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/340/">https://www.acwing.com/problem/content/340/</a></p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>给定两个整数 a 和 b，求 a 和 b 之间的所有数字中 0∼9 的出现次数。<br>例如，a=1024，b=1032，则 a 和 b 之间共有 9 个数如下：<br>1024 1025 1026 1027 1028 1029 1030 1031 1032<br>其中 0 出现 10 次，1 出现 10 次，2 出现 7 次，3 出现 3 次等等…</p>
+</blockquote>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
+<p>输入包含多组测试数据。<br>每组测试数据占一行，包含两个整数 a 和 b。<br>当读入一行为 0 0 时，表示输入终止，且该行不作处理。</p>
+</blockquote>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
+<p>每组数据输出一个结果，每个结果占一行。<br>每个结果包含十个用空格隔开的数字，第一个数字表示 0 出现的次数，第二个数字表示 1 出现的次数，以此类推。<br>0&lt;a,b&lt;100000000</p>
+</blockquote>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote>
+<p>1 10<br>44 497<br>346 542<br>1199 1748<br>1496 1403<br>1004 503<br>1714 190<br>1317 854<br>1976 494<br>1001 1960<br>0 0</p>
+</blockquote>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><blockquote>
+<p>1 2 1 1 1 1 1 1 1 1<br>85 185 185 185 190 96 96 96 95 93<br>40 40 40 93 136 82 40 40 40 40<br>115 666 215 215 214 205 205 154 105 106<br>16 113 19 20 114 20 20 19 19 16<br>107 105 100 101 101 197 200 200 200 200<br>413 1133 503 503 503 502 502 417 402 412<br>196 512 186 104 87 93 97 97 142 196<br>398 1375 398 398 405 499 499 495 488 471<br>294 1256 296 296 296 296 287 286 286 247</p>
+</blockquote>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题虽然顶着数位DP的标签，但我目前实在是不明白跟DP啥关系，以后了解更多了再来更新。</p>
+<h3 id="问题转换"><a href="#问题转换" class="headerlink" title="问题转换"></a>问题转换</h3><p>我们要求给定x，y闭区间上所有数字上，0,1,2,···,9出现的次数。<br>我们可以将问题转换，运用类似前缀和的思想来思考。<br>count(i,j)表示在[1,i]这个闭区间上所有的数字中j出现的次数，如果我们可以求解这个问题，那我们就可以解决本题。</p>
+<h3 id="核心思路"><a href="#核心思路" class="headerlink" title="核心思路"></a>核心思路</h3><p>对于这类问题，核心思路就是<strong>分类讨论</strong>。<br>对于给定的一个数 m=abcdefg 作为上界，以求解n(1 &lt;= n &lt;= 9)在第四位的出现次数为例进行分析。<br>第四位位y的数形如: xxxdyyy<br>当d!=0时：  </p>
+<ol>
+<li>xxx -&gt; [000,abc-1]<br>yyy -&gt; [000,999] 共abc*1000次</li>
+<li>xxx=abc<br>d=n yyy -&gt; [000,efg] 则共efg+1次<br>d&lt;n yyy -&gt; [000,999] 则共1000次<br>d&gt;n 显然共0次</li>
+</ol>
+<p>当d=0时：  </p>
+<ol>
+<li>xxx -&gt; [001,abc-1]<br>yyyy -&gt; [000,999] 共(abc-1)*1000次<br>因为 000 0 yyy 这个数实际上不存在第4位，所以000开头不能被计入。</li>
+<li>xxx=abc<br>d=n yyy -&gt; [000,efg] 则共efg+1次<br>d&lt;n yyy -&gt; [000,999] 则共1000次  </li>
+</ol>
+<p>以上就是对d位于中间数的情况的讨论，按照同样的方式就可以对d在最高位或最低位的情况进行讨论，从而高效解决计数。</p>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cmath&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
 
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> <span class="token function">get</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> num<span class="token punctuation">,</span> <span class="token keyword">int</span> l<span class="token punctuation">,</span> <span class="token keyword">int</span> r<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> r<span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> l<span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		res <span class="token operator">=</span> res <span class="token operator">*</span> <span class="token number">10</span> <span class="token operator">+</span> num<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> n<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token comment">//如果传入的x等于0 返回的res为0</span>
+	vector<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token operator">&gt;</span> num<span class="token punctuation">;</span>
+	<span class="token keyword">while</span> <span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		num<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span>x <span class="token operator">%</span> <span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		x <span class="token operator">/=</span> <span class="token number">10</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> num<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">//对最低位的处理</span>
+		<span class="token punctuation">{</span>
+			res <span class="token operator">+=</span> <span class="token function">get</span><span class="token punctuation">(</span>num<span class="token punctuation">,</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> num<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+				res<span class="token operator">--</span><span class="token punctuation">;</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&lt;=</span> num<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+				res<span class="token operator">++</span><span class="token punctuation">;</span>
+			<span class="token keyword">continue</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">==</span> num<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment">//对最高位的处理</span>
+		<span class="token punctuation">{</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment">//最高位是0直接pass</span>
+				<span class="token keyword">continue</span><span class="token punctuation">;</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&lt;</span> num<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+				res <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> num<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> num<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+				res <span class="token operator">+=</span> <span class="token function">get</span><span class="token punctuation">(</span>num<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+			<span class="token keyword">continue</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+
+		<span class="token comment">//对中间位的处理</span>
+		res <span class="token operator">+=</span> <span class="token function">get</span><span class="token punctuation">(</span>num<span class="token punctuation">,</span> i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> num<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+			res <span class="token operator">-=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">&lt;</span> num<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+			res <span class="token operator">+=</span> <span class="token punctuation">(</span><span class="token keyword">int</span><span class="token punctuation">)</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> num<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+			res <span class="token operator">+=</span> <span class="token function">get</span><span class="token punctuation">(</span>num<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">int</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>
+	<span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> a <span class="token operator">&gt;&gt;</span> b<span class="token punctuation">,</span> a <span class="token operator">||</span> b<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">&gt;</span> b<span class="token punctuation">)</span>
+			<span class="token function">swap</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+				cout <span class="token operator">&lt;&lt;</span> <span class="token string">" "</span> <span class="token operator">&lt;&lt;</span> <span class="token function">count</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> i<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token function">count</span><span class="token punctuation">(</span>a <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">else</span>
+				cout <span class="token operator">&lt;&lt;</span> <span class="token function">count</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span> i<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token function">count</span><span class="token punctuation">(</span>a <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+		cout <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -551,7 +638,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kong-aobo.github.io/2021/07/08/Software%20Using/problenm2/">https://kong-aobo.github.io/2021/07/08/Software%20Using/problenm2/</a>
+                    <a href="https://kong-aobo.github.io/2021/08/14/Algrithm%20Problem/DP/problem15/">https://kong-aobo.github.io/2021/08/14/Algrithm%20Problem/DP/problem15/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -589,8 +676,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Sql-Sever/">
-                                    <span class="chip bg-color">Sql Sever</span>
+                                <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                                    <span class="chip bg-color">动态规划</span>
                                 </a>
                             
                         </div>
@@ -813,29 +900,30 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/07/24/Algrithm%20Problem/DP/problem1/">
+                <a href="/2021/08/14/Algrithm%20Problem/DP/problem15/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="0-1背包问题">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="计数问题">
                         
-                        <span class="card-title">0-1背包问题</span>
+                        <span class="card-title">计数问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            背包问题的基础类型
+                            数位统计DP
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -848,6 +936,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -866,24 +955,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/02/Algrithm%20Problem/Search/problem7/">
+                <a href="/2021/08/13/Algrithm%20Problem/DP/problem14/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="模拟战役">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="滑雪">
                         
-                        <span class="card-title">模拟战役</span>
+                        <span class="card-title">滑雪</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            连通块，贪心与搜索的结合
+                            DP的另一种实现方式：记忆化搜索
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-13
                             </span>
                         <span class="publish-author">
                             
@@ -900,8 +989,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%90%9C%E7%B4%A2/">
-                        <span class="chip bg-color">搜索</span>
+                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                        <span class="chip bg-color">动态规划</span>
                     </a>
                     
                 </div>
