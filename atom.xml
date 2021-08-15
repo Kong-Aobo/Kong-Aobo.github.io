@@ -479,32 +479,6 @@
   </entry>
   
   <entry>
-    <title>走出迷宫</title>
-    <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem8/"/>
-    <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem8/</id>
-    <published>2021-07-02T00:00:18.000Z</published>
-    <updated>2021-07-24T03:30:18.902Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/14572&quot;&gt;https://ac.nowcoder.com/acm/problem/14572&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
     <title>模拟战役</title>
     <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem7/"/>
     <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem7/</id>
@@ -531,28 +505,55 @@
   </entry>
   
   <entry>
-    <title>生产者消费者模型 JAVA</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/JAVA/problem1/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/JAVA/problem1/</id>
+    <title>走出迷宫</title>
+    <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem8/"/>
+    <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem8/</id>
+    <published>2021-07-02T00:00:18.000Z</published>
+    <updated>2021-07-24T03:30:18.902Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/14572&quot;&gt;https://ac.nowcoder.com/acm/problem/14572&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git指令速查</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/Software%20Using/problem1/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/Software%20Using/problem1/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-08T03:09:40.370Z</updated>
+    <updated>2021-07-08T03:07:25.362Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;生产者消费者问题（Producer-consumer problem），也称有限缓冲问题（Bounded-buffer</summary>
+    <summary type="html">&lt;p&gt;安装完成后，绑定用户名和邮箱，–global表示这台机器上所有的Git仓库都会使用这个配置&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;git config –global user.name “Your Name”&lt;br&gt;git config –global</summary>
         
       
     
     
     
-    <category term="多线程" scheme="https://kong-aobo.github.io/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
+    <category term="软件使用" scheme="https://kong-aobo.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
     
     
-    <category term="JAVA" scheme="https://kong-aobo.github.io/tags/JAVA/"/>
+    <category term="git" scheme="https://kong-aobo.github.io/tags/git/"/>
     
   </entry>
   
