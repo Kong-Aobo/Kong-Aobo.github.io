@@ -46,7 +46,7 @@
     <link href="https://kong-aobo.github.io/2021/08/14/Algrithm%20Problem/DP/problem15/"/>
     <id>https://kong-aobo.github.io/2021/08/14/Algrithm%20Problem/DP/problem15/</id>
     <published>2021-08-14T11:12:18.000Z</published>
-    <updated>2021-08-14T12:29:19.696Z</updated>
+    <updated>2021-08-15T09:15:56.877Z</updated>
     
     
       
@@ -64,6 +64,8 @@
     
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="数位统计DP" scheme="https://kong-aobo.github.io/tags/%E6%95%B0%E4%BD%8D%E7%BB%9F%E8%AE%A1DP/"/>
     
   </entry>
   
@@ -98,7 +100,7 @@
     <link href="https://kong-aobo.github.io/2021/08/13/Algrithm%20Problem/DP/problem13/"/>
     <id>https://kong-aobo.github.io/2021/08/13/Algrithm%20Problem/DP/problem13/</id>
     <published>2021-08-13T02:12:18.000Z</published>
-    <updated>2021-08-15T03:59:22.305Z</updated>
+    <updated>2021-08-15T09:15:30.254Z</updated>
     
     
       
@@ -117,6 +119,8 @@
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
+    <category term="状压DP" scheme="https://kong-aobo.github.io/tags/%E7%8A%B6%E5%8E%8BDP/"/>
+    
   </entry>
   
   <entry>
@@ -124,7 +128,7 @@
     <link href="https://kong-aobo.github.io/2021/08/12/Algrithm%20Problem/DP/problem12/"/>
     <id>https://kong-aobo.github.io/2021/08/12/Algrithm%20Problem/DP/problem12/</id>
     <published>2021-08-12T01:12:18.000Z</published>
-    <updated>2021-08-12T03:10:07.825Z</updated>
+    <updated>2021-08-15T09:15:17.817Z</updated>
     
     
       
@@ -141,6 +145,8 @@
     
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="状压DP" scheme="https://kong-aobo.github.io/tags/%E7%8A%B6%E5%8E%8BDP/"/>
     
   </entry>
   
@@ -149,7 +155,7 @@
     <link href="https://kong-aobo.github.io/2021/08/07/Algrithm%20Problem/DP/problem11/"/>
     <id>https://kong-aobo.github.io/2021/08/07/Algrithm%20Problem/DP/problem11/</id>
     <published>2021-08-07T08:12:18.000Z</published>
-    <updated>2021-08-07T14:31:32.244Z</updated>
+    <updated>2021-08-15T09:15:03.122Z</updated>
     
     
       
@@ -166,6 +172,8 @@
     
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="计数类DP" scheme="https://kong-aobo.github.io/tags/%E8%AE%A1%E6%95%B0%E7%B1%BBDP/"/>
     
   </entry>
   
@@ -199,7 +207,7 @@
     <link href="https://kong-aobo.github.io/2021/08/02/Algrithm%20Problem/DP/problem10/"/>
     <id>https://kong-aobo.github.io/2021/08/02/Algrithm%20Problem/DP/problem10/</id>
     <published>2021-08-02T08:55:18.000Z</published>
-    <updated>2021-08-02T09:09:47.130Z</updated>
+    <updated>2021-08-15T09:14:26.991Z</updated>
     
     
       
@@ -217,6 +225,8 @@
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
+    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
+    
   </entry>
   
   <entry>
@@ -224,7 +234,7 @@
     <link href="https://kong-aobo.github.io/2021/08/02/Algrithm%20Problem/DP/problem9/"/>
     <id>https://kong-aobo.github.io/2021/08/02/Algrithm%20Problem/DP/problem9/</id>
     <published>2021-08-02T05:55:18.000Z</published>
-    <updated>2021-08-02T09:15:06.850Z</updated>
+    <updated>2021-08-15T09:14:15.853Z</updated>
     
     
       
@@ -243,6 +253,8 @@
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
+    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
+    
   </entry>
   
   <entry>
@@ -250,7 +262,7 @@
     <link href="https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem8/"/>
     <id>https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem8/</id>
     <published>2021-08-01T14:51:18.000Z</published>
-    <updated>2021-08-12T03:29:40.177Z</updated>
+    <updated>2021-08-15T09:14:05.213Z</updated>
     
     
       
@@ -268,6 +280,8 @@
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
+    <category term="区间DP" scheme="https://kong-aobo.github.io/tags/%E5%8C%BA%E9%97%B4DP/"/>
+    
   </entry>
   
   <entry>
@@ -275,7 +289,7 @@
     <link href="https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/"/>
     <id>https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/</id>
     <published>2021-08-01T06:18:18.000Z</published>
-    <updated>2021-08-15T02:40:44.087Z</updated>
+    <updated>2021-08-15T09:13:46.119Z</updated>
     
     
       
@@ -294,6 +308,8 @@
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
+    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
+    
   </entry>
   
   <entry>
@@ -301,7 +317,7 @@
     <link href="https://kong-aobo.github.io/2021/07/27/Algrithm%20Problem/DP/problem6/"/>
     <id>https://kong-aobo.github.io/2021/07/27/Algrithm%20Problem/DP/problem6/</id>
     <published>2021-07-27T03:32:18.000Z</published>
-    <updated>2021-07-27T05:51:21.928Z</updated>
+    <updated>2021-08-15T09:13:35.324Z</updated>
     
     
       
@@ -319,6 +335,8 @@
     
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
     
   </entry>
   
@@ -327,7 +345,7 @@
     <link href="https://kong-aobo.github.io/2021/07/26/Algrithm%20Problem/DP/problem5/"/>
     <id>https://kong-aobo.github.io/2021/07/26/Algrithm%20Problem/DP/problem5/</id>
     <published>2021-07-26T14:09:18.000Z</published>
-    <updated>2021-07-26T14:21:44.571Z</updated>
+    <updated>2021-08-15T09:13:27.679Z</updated>
     
     
       
@@ -346,6 +364,8 @@
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
+    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
+    
   </entry>
   
   <entry>
@@ -353,7 +373,7 @@
     <link href="https://kong-aobo.github.io/2021/07/26/Algrithm%20Problem/DP/problem4/"/>
     <id>https://kong-aobo.github.io/2021/07/26/Algrithm%20Problem/DP/problem4/</id>
     <published>2021-07-26T06:30:18.000Z</published>
-    <updated>2021-07-26T06:29:25.906Z</updated>
+    <updated>2021-08-15T09:13:19.674Z</updated>
     
     
       
@@ -372,6 +392,8 @@
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
+    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
+    
   </entry>
   
   <entry>
@@ -379,7 +401,7 @@
     <link href="https://kong-aobo.github.io/2021/07/25/Algrithm%20Problem/DP/problem3/"/>
     <id>https://kong-aobo.github.io/2021/07/25/Algrithm%20Problem/DP/problem3/</id>
     <published>2021-07-25T12:00:18.000Z</published>
-    <updated>2021-08-07T02:25:37.842Z</updated>
+    <updated>2021-08-15T09:13:12.158Z</updated>
     
     
       
@@ -398,6 +420,8 @@
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
+    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
+    
   </entry>
   
   <entry>
@@ -405,7 +429,7 @@
     <link href="https://kong-aobo.github.io/2021/07/24/Algrithm%20Problem/DP/problem1/"/>
     <id>https://kong-aobo.github.io/2021/07/24/Algrithm%20Problem/DP/problem1/</id>
     <published>2021-07-24T02:00:18.000Z</published>
-    <updated>2021-08-15T06:47:21.488Z</updated>
+    <updated>2021-08-15T09:12:36.528Z</updated>
     
     
       
@@ -423,6 +447,8 @@
     
     
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
     
   </entry>
   
@@ -505,29 +531,28 @@
   </entry>
   
   <entry>
-    <title>git指令速查</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/Software%20Using/problem1/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/Software%20Using/problem1/</id>
+    <title>生产者消费者模型 JAVA</title>
+    <link href="https://kong-aobo.github.io/2021/07/01/JAVA/problem1/"/>
+    <id>https://kong-aobo.github.io/2021/07/01/JAVA/problem1/</id>
     <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-08T03:07:25.362Z</updated>
+    <updated>2021-07-08T03:09:40.370Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;安装完成后，绑定用户名和邮箱，–global表示这台机器上所有的Git仓库都会使用这个配置&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;git config –global user.name “Your Name”&lt;br&gt;git config –global</summary>
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;生产者消费者问题（Producer-consumer problem），也称有限缓冲问题（Bounded-buffer</summary>
         
       
     
     
     
-    <category term="软件使用" scheme="https://kong-aobo.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/"/>
+    <category term="多线程" scheme="https://kong-aobo.github.io/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
     
     
-    <category term="git" scheme="https://kong-aobo.github.io/tags/git/"/>
+    <category term="JAVA" scheme="https://kong-aobo.github.io/tags/JAVA/"/>
     
   </entry>
   
