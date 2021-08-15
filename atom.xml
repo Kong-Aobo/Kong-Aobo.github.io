@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-08-14T12:29:19.696Z</updated>
+  <updated>2021-08-15T06:47:38.504Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>动态规划总结</title>
+    <link href="https://kong-aobo.github.io/2021/08/15/Algrithm%20Problem/DP/summary/"/>
+    <id>https://kong-aobo.github.io/2021/08/15/Algrithm%20Problem/DP/summary/</id>
+    <published>2021-08-15T06:12:18.000Z</published>
+    <updated>2021-08-15T06:47:38.504Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;动态规划算法&quot;&gt;&lt;a href=&quot;#动态规划算法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+  </entry>
   
   <entry>
     <title>计数问题</title>
@@ -73,7 +98,7 @@
     <link href="https://kong-aobo.github.io/2021/08/13/Algrithm%20Problem/DP/problem13/"/>
     <id>https://kong-aobo.github.io/2021/08/13/Algrithm%20Problem/DP/problem13/</id>
     <published>2021-08-13T02:12:18.000Z</published>
-    <updated>2021-08-13T02:25:42.405Z</updated>
+    <updated>2021-08-15T03:59:22.305Z</updated>
     
     
       
@@ -250,7 +275,7 @@
     <link href="https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/"/>
     <id>https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/</id>
     <published>2021-08-01T06:18:18.000Z</published>
-    <updated>2021-08-01T06:18:29.200Z</updated>
+    <updated>2021-08-15T02:40:44.087Z</updated>
     
     
       
@@ -380,7 +405,7 @@
     <link href="https://kong-aobo.github.io/2021/07/24/Algrithm%20Problem/DP/problem1/"/>
     <id>https://kong-aobo.github.io/2021/07/24/Algrithm%20Problem/DP/problem1/</id>
     <published>2021-07-24T02:00:18.000Z</published>
-    <updated>2021-08-08T12:39:14.636Z</updated>
+    <updated>2021-08-15T06:47:21.488Z</updated>
     
     
       
@@ -406,7 +431,7 @@
     <link href="https://kong-aobo.github.io/2021/07/08/Software%20Using/problenm2/"/>
     <id>https://kong-aobo.github.io/2021/07/08/Software%20Using/problenm2/</id>
     <published>2021-07-08T03:04:18.000Z</published>
-    <updated>2021-07-08T04:02:34.263Z</updated>
+    <updated>2021-08-15T06:42:48.288Z</updated>
     
     
       
@@ -476,32 +501,6 @@
     
     
     <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>生产者消费者模型 JAVA</title>
-    <link href="https://kong-aobo.github.io/2021/07/01/JAVA/problem1/"/>
-    <id>https://kong-aobo.github.io/2021/07/01/JAVA/problem1/</id>
-    <published>2021-07-01T09:00:18.000Z</published>
-    <updated>2021-07-08T03:09:40.370Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;生产者消费者问题（Producer-consumer problem），也称有限缓冲问题（Bounded-buffer</summary>
-        
-      
-    
-    
-    
-    <category term="多线程" scheme="https://kong-aobo.github.io/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/"/>
-    
-    
-    <category term="JAVA" scheme="https://kong-aobo.github.io/tags/JAVA/"/>
     
   </entry>
   

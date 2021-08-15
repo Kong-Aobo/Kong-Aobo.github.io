@@ -466,14 +466,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-01
+                    2021-08-15
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    909
+                    880
                 </div>
                 
 
@@ -538,7 +538,7 @@
 <li>f(i,j)=max(f(i-1,j-1),f(i,j-1),f(i-1,j))&nbsp;&nbsp;&nbsp;a[i]!=b[j]</li>
 <li>f(i,j)=max(f(i-1,j-1),f(i,j-1),f(i-1,j),f(i-1,j-1)+1)&nbsp;&nbsp;&nbsp;a[i]=b[j]</li>
 </ul>
-<p>在此，再对我们的状态计算的方法进行说明，我们的目的是求出四种情况中的最大值，但我们并不是通过先分别求出最大值再比较得到的，而是间接的实现，状态转移方程中的各个比较项是存在交叉的，但它们的并集涵盖了f(i,j)集合中的所有元素，从而实现的求解，这是集合思想的巧妙运用。<br>另外，虽然状态转移方程中有f(i-1,j-1)，但该值其实已经被f(i,j-1)或f(i-1,j)所考虑，因此实际编程时我们通常不写它。<br>本题可以通过滚动数组将f(i,j)改成一维的，不再赘述，代码不再展示。</p>
+<p>在此，再对我们的状态计算的方法进行说明，我们的目的是求出四种情况中的最大值，但我们并不是通过先分别求出最大值再比较得到的，而是间接的实现，状态转移方程中的各个比较项是存在交叉的，但它们的并集涵盖了f(i,j)集合中的所有元素，从而实现的求解，这是集合思想的巧妙运用。<br>另外，虽然状态转移方程中有f(i-1,j-1)，但该值其实已经被f(i,j-1)或f(i-1,j)所考虑，因此实际编程时我们通常不写它。  </p>
 <h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
@@ -1184,7 +1184,7 @@ string a<span class="token punctuation">,</span> b<span class="token punctuation
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">22.6k</span>&nbsp;字
+                class="white-color">23.2k</span>&nbsp;字
             
             
             
