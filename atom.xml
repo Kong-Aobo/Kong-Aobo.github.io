@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-08-16T12:27:59.950Z</updated>
+  <updated>2021-08-17T12:01:03.162Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>树的重心</title>
+    <link href="https://kong-aobo.github.io/2021/08/17/Algrithm%20Problem/Search/problem10/"/>
+    <id>https://kong-aobo.github.io/2021/08/17/Algrithm%20Problem/Search/problem10/</id>
+    <published>2021-08-17T11:12:18.000Z</published>
+    <updated>2021-08-17T12:01:03.162Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/847/&quot;&gt;https://www.acwing.com/problem/content/847/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="DFS" scheme="https://kong-aobo.github.io/tags/DFS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>八数码</title>
+    <link href="https://kong-aobo.github.io/2021/08/17/Algrithm%20Problem/Search/problem9/"/>
+    <id>https://kong-aobo.github.io/2021/08/17/Algrithm%20Problem/Search/problem9/</id>
+    <published>2021-08-17T03:12:18.000Z</published>
+    <updated>2021-08-17T11:07:11.232Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/847/&quot;&gt;https://www.acwing.com/problem/content/847/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
+    
+    <category term="BFS" scheme="https://kong-aobo.github.io/tags/BFS/"/>
+    
+  </entry>
   
   <entry>
     <title>没有上司的舞会</title>
@@ -503,58 +559,6 @@
     
     
     <category term="Sql Sever" scheme="https://kong-aobo.github.io/tags/Sql-Sever/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>模拟战役</title>
-    <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem7/"/>
-    <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem7/</id>
-    <published>2021-07-02T00:00:18.000Z</published>
-    <updated>2021-07-24T03:30:13.271Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/14698&quot;&gt;https://ac.nowcoder.com/acm/problem/14698&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>走出迷宫</title>
-    <link href="https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem8/"/>
-    <id>https://kong-aobo.github.io/2021/07/02/Algrithm%20Problem/Search/problem8/</id>
-    <published>2021-07-02T00:00:18.000Z</published>
-    <updated>2021-07-24T03:30:18.902Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://ac.nowcoder.com/acm/problem/14572&quot;&gt;https://ac.nowcoder.com/acm/problem/14572&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   
