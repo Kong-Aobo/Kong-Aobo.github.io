@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-08-23T01:39:45.398Z</updated>
+  <updated>2021-08-24T03:38:26.337Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>BP神经网络</title>
+    <link href="https://kong-aobo.github.io/2021/08/24/Mathematical%20Modeling/BP%20Neural%20Network/"/>
+    <id>https://kong-aobo.github.io/2021/08/24/Mathematical%20Modeling/BP%20Neural%20Network/</id>
+    <published>2021-08-24T02:30:18.000Z</published>
+    <updated>2021-08-24T03:38:26.337Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;BP神经网络介绍&quot;&gt;&lt;a href=&quot;#BP神经网络介绍&quot; class=&quot;headerlink&quot; title=&quot;BP神经网络介绍&quot;&gt;&lt;/a&gt;BP神经网络介绍&lt;/h2&gt;&lt;p&gt;BP(back</summary>
+        
+      
+    
+    
+    
+    <category term="数学建模" scheme="https://kong-aobo.github.io/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
+    
+    
+    <category term="matlab" scheme="https://kong-aobo.github.io/tags/matlab/"/>
+    
+    <category term="BP神经网络" scheme="https://kong-aobo.github.io/tags/BP%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
     <title>堆</title>
     <link href="https://kong-aobo.github.io/2021/08/22/Data%20Structure/heap/"/>
     <id>https://kong-aobo.github.io/2021/08/22/Data%20Structure/heap/</id>
     <published>2021-08-22T02:12:18.000Z</published>
-    <updated>2021-08-23T01:39:45.398Z</updated>
+    <updated>2021-08-23T02:07:46.787Z</updated>
     
     
       
@@ -519,34 +546,6 @@
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/3/&quot;&gt;https://www.acwing.com/problem/content/3/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>0-1背包问题</title>
-    <link href="https://kong-aobo.github.io/2021/07/24/Algrithm%20Problem/DP/problem1/"/>
-    <id>https://kong-aobo.github.io/2021/07/24/Algrithm%20Problem/DP/problem1/</id>
-    <published>2021-07-24T02:00:18.000Z</published>
-    <updated>2021-08-15T09:12:36.528Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/description/2/&quot;&gt;https://www.acwing.com/problem/content/description/2/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
         
       
     
