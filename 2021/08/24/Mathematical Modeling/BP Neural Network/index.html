@@ -313,7 +313,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -512,7 +512,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="BP神经网络介绍"><a href="#BP神经网络介绍" class="headerlink" title="BP神经网络介绍"></a>BP神经网络介绍</h2><p>BP(back propagation)神经网络是1986年由Rumelhart和McClelland为首的科学家提出的概念，是一种按照误差逆向传播算法训练的多层前馈神经网络，是应用最广泛的神经网络。<br>神经网络的基本结构如下：</p>
+                <h2 id="BP神经网络介绍"><a href="#BP神经网络介绍" class="headerlink" title="BP神经网络介绍"></a>BP神经网络介绍</h2><p>BP（back propagation）神经网络是1986年由Rumelhart和McClelland为首的科学家提出的概念，是一种按照误差逆向传播算法训练的多层前馈神经网络，是应用最广泛的神经网络。<br>神经网络的基本结构如下：</p>
 <p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210824111313.png"></p>
 <p>给定一组样本，样本中有输入数据和输出数据。<br>神经网络通过各神经元的权值与阈值来对样本中的输入数据进行计算，得出一组输出，计算的输出数据与样本的输出数据必然存在误差，神经网络会通过梯度下降法利用这个误差逐层去向前修改神经元的权值和阈值，以得到减小误差的效果。<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Y64y1z7jM?from=search&amp;seid=3525522625444409143">具体原理的推导</a></p>
 <h3 id="BP神经网络的功能"><a href="#BP神经网络的功能" class="headerlink" title="BP神经网络的功能"></a>BP神经网络的功能</h3><p>BP神经网络在数学建模中的主要功能如下：</p>
@@ -581,7 +581,7 @@ YYY<span class="token operator">=</span><span class="token function">mapminmax</
 <span class="token comment">% figure, ploterrhist(e)</span>
 <span class="token comment">% figure, plotregression(t,y)</span>
 <span class="token comment">% figure, plotfit(net,x,t)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="分类实例"><a href="#分类实例" class="headerlink" title="分类实例"></a>分类实例</h3><p>一个数字，1<del>10为类别1，11</del>20为类别2，21~30为类别3。<br>对于该数字的类别用一个向量来表示：<br>$$\begin{bmatrix}<br>{x_1}\<br>{x_2}\<br>{x_3}\<br>\end{bmatrix}$$<br>数字属于哪个类别，对于的x值为1，其余值为0。<br>之后直接按照拟合实例的操作对样本进行拟合，output有三个，为$x_1\ x_2\ x_3$。<br>因此分类问题就是将类别解析成一个向量，对向量的每一个元素进行拟合即可。<br>本例较为简单，但对于复杂问题依然可以采用这种处理方法。</p>
+<h3 id="分类实例"><a href="#分类实例" class="headerlink" title="分类实例"></a>分类实例</h3><p>一个数字，1~10为类别1，11~20为类别2，21~30为类别3。<br>对于该数字的类别用一个向量来表示：<br>$$\begin{bmatrix}<br>{x_1}\<br>{x_2}\<br>{x_3}\<br>\end{bmatrix}$$<br>数字属于哪个类别，对于的x值为1，其余值为0。<br>之后直接按照拟合实例的操作对样本进行拟合，output有三个，为$x_1\ x_2\ x_3$。<br>因此分类问题就是将类别解析成一个向量，对向量的每一个元素进行拟合即可。<br>本例较为简单，但对于复杂问题依然可以采用这种处理方法。</p>
 <pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token comment">%% 制造数据</span>
 A<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token operator">:</span><span class="token number">0.1</span><span class="token operator">:</span><span class="token number">10</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 B<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">11</span><span class="token operator">:</span><span class="token number">0.1</span><span class="token operator">:</span><span class="token number">20</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
@@ -950,7 +950,7 @@ YYY<span class="token operator">=</span><span class="token function">mapminmax</
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="BP神经网络">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="BP神经网络">
                         
                         <span class="card-title">BP神经网络</span>
                     </div>
@@ -1004,7 +1004,7 @@ YYY<span class="token operator">=</span><span class="token function">mapminmax</
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="堆">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="堆">
                         
                         <span class="card-title">堆</span>
                     </div>
