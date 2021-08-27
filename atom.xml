@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-08-26T13:43:28.386Z</updated>
+  <updated>2021-08-27T15:10:32.261Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -15,6 +15,62 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>匈牙利算法</title>
+    <link href="https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/hungarian%20algorithm/"/>
+    <id>https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/hungarian%20algorithm/</id>
+    <published>2021-08-27T14:55:18.000Z</published>
+    <updated>2021-08-27T15:10:32.261Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/863/&quot;&gt;https://www.acwing.com/problem/content/863/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="二分图" scheme="https://kong-aobo.github.io/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>染色法判定二分图</title>
+    <link href="https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/ran%20se/"/>
+    <id>https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/ran%20se/</id>
+    <published>2021-08-27T14:54:18.000Z</published>
+    <updated>2021-08-27T15:09:10.805Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/862/&quot;&gt;https://www.acwing.com/problem/content/862/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="二分图" scheme="https://kong-aobo.github.io/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
+    
+  </entry>
   
   <entry>
     <title>Floyd算法</title>
@@ -500,62 +556,6 @@
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
     <category term="区间DP" scheme="https://kong-aobo.github.io/tags/%E5%8C%BA%E9%97%B4DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最长公共子序列</title>
-    <link href="https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/"/>
-    <id>https://kong-aobo.github.io/2021/08/01/Algrithm%20Problem/DP/problem7/</id>
-    <published>2021-08-01T06:18:18.000Z</published>
-    <updated>2021-08-15T09:13:46.119Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/899/&quot;&gt;https://www.acwing.com/problem/content/899/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数字三角形</title>
-    <link href="https://kong-aobo.github.io/2021/07/27/Algrithm%20Problem/DP/problem6/"/>
-    <id>https://kong-aobo.github.io/2021/07/27/Algrithm%20Problem/DP/problem6/</id>
-    <published>2021-07-27T03:32:18.000Z</published>
-    <updated>2021-08-15T09:13:35.324Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/9/&quot;&gt;https://www.acwing.com/problem/content/9/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-    <category term="线性DP" scheme="https://kong-aobo.github.io/tags/%E7%BA%BF%E6%80%A7DP/"/>
     
   </entry>
   
