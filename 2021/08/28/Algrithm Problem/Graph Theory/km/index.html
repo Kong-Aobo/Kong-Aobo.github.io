@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="匈牙利算法, Kong Aobo&#39;s Blog">
+    <meta name="keywords" content="KM算法, Kong Aobo&#39;s Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>匈牙利算法 | Kong Aobo&#39;s Blog</title>
+    <title>KM算法 | Kong Aobo&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">匈牙利算法</h1>
+                    <h1 class="description center-align post-title">KM算法</h1>
                 </div>
             </div>
         </div>
@@ -463,7 +463,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-27
+                    2021-08-28
                 </div>
                 
 
@@ -477,14 +477,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    659
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    5 分
                 </div>
                 
 
@@ -512,24 +512,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/863/">https://www.acwing.com/problem/content/863/</a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
-<p>给定一个二分图，其中左半部包含 n1 个点（编号 1∼n1），右半部包含 n2 个点（编号 1∼n2），二分图共包含 m 条边。<br>数据保证任意一条边的两个端点都不可能在同一部分中。<br>请你求出二分图的最大匹配数。<br>二分图的匹配：给定一个二分图 G，在 G 的一个子图 M 中，M 的边集 {E} 中的任意两条边都不依附于同一个顶点，则称 M 是一个匹配。<br>二分图的最大匹配：所有匹配中包含边数最多的一组匹配被称为二分图的最大匹配，其边数即为最大匹配数。</p>
-</blockquote>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
-<p>第一行包含三个整数 n1、 n2 和 m。<br>接下来 m 行，每行包含两个整数 u 和 v，表示左半部点集中的点 u 和右半部点集中的点 v 之间存在一条边。</p>
-</blockquote>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
-<p>输出一个整数，表示二分图的最大匹配数。<br>1≤n1,n2≤500<br>1≤u≤n1<br>1≤v≤n2<br>1≤m≤105</p>
-</blockquote>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote>
-<p>2 2 4<br>1 1<br>1 2<br>2 1<br>2 2</p>
-</blockquote>
-<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><blockquote>
-<p>2</p>
-</blockquote>
-<h2 id="匈牙利算法"><a href="#匈牙利算法" class="headerlink" title="匈牙利算法"></a>匈牙利算法</h2><p>匈牙利算法可以求解二分图的最大匹配问题。<br>设点的数量为n，边的数量为m，则时间复杂度为O(nm)，但实际执行时一般都很快。<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/208596378">算法流程及相关说明</a><br>算法实现直接见代码。</p>
-<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
+                <h2 id="KM算法"><a href="#KM算法" class="headerlink" title="KM算法"></a>KM算法</h2><p>KM算法是一种计算机算法，功能是求完备匹配下的最大权匹配。在一个二分图内，左顶点为X，右顶点为Y，现对于每组左右连接XiYj有权wij，求一种匹配使得所有wij的和最大。</p>
+<p>KM算法将二分图的最大权匹配问题转化为最大匹配问题，从而通过匈牙利算法解决。</p>
+<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/KM%E7%AE%97%E6%B3%95/711839">原理证明</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/wenruo/p/5264235.html">流程说明</a></p>
+<h2 id="最大权匹配"><a href="#最大权匹配" class="headerlink" title="最大权匹配"></a>最大权匹配</h2><p>题目链接：<a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/showproblem.php?pid=2255">https://acm.hdu.edu.cn/showproblem.php?pid=2255</a></p>
+<h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
@@ -593,6 +581,164 @@
 	cout <span class="token operator">&lt;&lt;</span> res <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="最小权匹配"><a href="#最小权匹配" class="headerlink" title="最小权匹配"></a>最小权匹配</h2><p>求最小权匹配只需要将所有权重取反，然后将最后求出的结果再取反即可。</p>
+<p>题目链接：<a target="_blank" rel="noopener" href="http://poj.org/problem?id=2195">http://poj.org/problem?id=2195</a></p>
+<h3 id="AC代码-1"><a href="#AC代码-1" class="headerlink" title="AC代码"></a>AC代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdio&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
+<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdlib&gt;</span></span>
+
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> MAXN <span class="token operator">=</span> <span class="token number">110</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token keyword">int</span> INF <span class="token operator">=</span> <span class="token number">0x3f3f3f3f</span><span class="token punctuation">;</span>
+
+<span class="token keyword">int</span> love<span class="token punctuation">[</span>MAXN<span class="token punctuation">]</span><span class="token punctuation">[</span>MAXN<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">// 记录每个妹子和每个男生的好感度</span>
+<span class="token keyword">int</span> ex_girl<span class="token punctuation">[</span>MAXN<span class="token punctuation">]</span><span class="token punctuation">;</span>	  <span class="token comment">// 每个妹子的期望值</span>
+<span class="token keyword">int</span> ex_boy<span class="token punctuation">[</span>MAXN<span class="token punctuation">]</span><span class="token punctuation">;</span>	  <span class="token comment">// 每个男生的期望值</span>
+<span class="token keyword">bool</span> vis_girl<span class="token punctuation">[</span>MAXN<span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">// 记录每一轮匹配匹配过的女生</span>
+<span class="token keyword">bool</span> vis_boy<span class="token punctuation">[</span>MAXN<span class="token punctuation">]</span><span class="token punctuation">;</span>	  <span class="token comment">// 记录每一轮匹配匹配过的男生</span>
+<span class="token keyword">int</span> match<span class="token punctuation">[</span>MAXN<span class="token punctuation">]</span><span class="token punctuation">;</span>	  <span class="token comment">// 记录每个男生匹配到的妹子 如果没有则为-1</span>
+<span class="token keyword">int</span> slack<span class="token punctuation">[</span>MAXN<span class="token punctuation">]</span><span class="token punctuation">;</span>	  <span class="token comment">// 记录每个汉子如果能被妹子倾心最少还需要多少期望值</span>
+
+<span class="token keyword">int</span> N<span class="token punctuation">;</span>
+
+<span class="token keyword">typedef</span> pair<span class="token operator">&lt;</span><span class="token keyword">int</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">&gt;</span> P<span class="token punctuation">;</span>
+
+<span class="token keyword">bool</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> girl<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	vis_girl<span class="token punctuation">[</span>girl<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> boy <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> boy <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>boy<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>vis_boy<span class="token punctuation">[</span>boy<span class="token punctuation">]</span><span class="token punctuation">)</span>
+			<span class="token keyword">continue</span><span class="token punctuation">;</span> <span class="token comment">// 每一轮匹配 每个男生只尝试一次</span>
+
+		<span class="token keyword">int</span> gap <span class="token operator">=</span> ex_girl<span class="token punctuation">[</span>girl<span class="token punctuation">]</span> <span class="token operator">+</span> ex_boy<span class="token punctuation">[</span>boy<span class="token punctuation">]</span> <span class="token operator">-</span> love<span class="token punctuation">[</span>girl<span class="token punctuation">]</span><span class="token punctuation">[</span>boy<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+		<span class="token keyword">if</span> <span class="token punctuation">(</span>gap <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span> <span class="token comment">// 如果符合要求</span>
+			vis_boy<span class="token punctuation">[</span>boy<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>match<span class="token punctuation">[</span>boy<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token operator">-</span><span class="token number">1</span> <span class="token operator">||</span> <span class="token function">dfs</span><span class="token punctuation">(</span>match<span class="token punctuation">[</span>boy<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+			<span class="token punctuation">{</span> <span class="token comment">// 找到一个没有匹配的男生 或者该男生的妹子可以找到其他人</span>
+				match<span class="token punctuation">[</span>boy<span class="token punctuation">]</span> <span class="token operator">=</span> girl<span class="token punctuation">;</span>
+				<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+		<span class="token keyword">else</span>
+		<span class="token punctuation">{</span>
+			slack<span class="token punctuation">[</span>boy<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>slack<span class="token punctuation">[</span>boy<span class="token punctuation">]</span><span class="token punctuation">,</span> gap<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// slack 可以理解为该男生要得到女生的倾心 还需多少期望值 取最小值 备胎的样子【捂脸</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">KM</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token function">memset</span><span class="token punctuation">(</span>match<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> match<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 初始每个男生都没有匹配的女生</span>
+	<span class="token function">memset</span><span class="token punctuation">(</span>ex_boy<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> ex_boy<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 初始每个男生的期望值为0</span>
+
+	<span class="token comment">// 每个女生的初始期望值是与她相连的男生最大的好感度</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		ex_girl<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> love<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			ex_girl<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">max</span><span class="token punctuation">(</span>ex_girl<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> love<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 尝试为每一个女生解决归宿问题</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+
+		<span class="token function">fill</span><span class="token punctuation">(</span>slack<span class="token punctuation">,</span> slack <span class="token operator">+</span> N<span class="token punctuation">,</span> INF<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 因为要取最小值 初始化为无穷大</span>
+
+		<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			<span class="token comment">// 为每个女生解决归宿问题的方法是 ：如果找不到就降低期望值，直到找到为止</span>
+
+			<span class="token comment">// 记录每轮匹配中男生女生是否被尝试匹配过</span>
+			<span class="token function">memset</span><span class="token punctuation">(</span>vis_girl<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> vis_girl<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token function">memset</span><span class="token punctuation">(</span>vis_boy<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span> vis_boy<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+			<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token function">dfs</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
+				<span class="token keyword">break</span><span class="token punctuation">;</span> <span class="token comment">// 找到归宿 退出</span>
+
+			<span class="token comment">// 如果不能找到 就降低期望值</span>
+			<span class="token comment">// 最小可降低的期望值</span>
+			<span class="token keyword">int</span> d <span class="token operator">=</span> INF<span class="token punctuation">;</span>
+			<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>vis_boy<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+					d <span class="token operator">=</span> <span class="token function">min</span><span class="token punctuation">(</span>d<span class="token punctuation">,</span> slack<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+			<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>j<span class="token punctuation">)</span>
+			<span class="token punctuation">{</span>
+				<span class="token comment">// 所有访问过的女生降低期望值</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>vis_girl<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+					ex_girl<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">-=</span> d<span class="token punctuation">;</span>
+
+				<span class="token comment">// 所有访问过的男生增加期望值</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>vis_boy<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
+					ex_boy<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+=</span> d<span class="token punctuation">;</span>
+				<span class="token comment">// 没有访问过的boy 因为girl们的期望值降低，距离得到女生倾心又进了一步！</span>
+				<span class="token keyword">else</span>
+					slack<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">-=</span> d<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// 匹配完成 求出所有配对的好感度的和</span>
+	<span class="token keyword">int</span> res <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span>
+		res <span class="token operator">+=</span> love<span class="token punctuation">[</span>match<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+	<span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">void</span> <span class="token function">convert</span><span class="token punctuation">(</span>vector<span class="token operator">&lt;</span>P<span class="token operator">&gt;</span> <span class="token operator">&amp;</span>H<span class="token punctuation">,</span> vector<span class="token operator">&lt;</span>P<span class="token operator">&gt;</span> <span class="token operator">&amp;</span>M<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	N <span class="token operator">=</span> H<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> N<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			<span class="token keyword">int</span> x <span class="token operator">=</span> <span class="token function">abs</span><span class="token punctuation">(</span>H<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>first <span class="token operator">-</span> M<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>first<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token keyword">int</span> y <span class="token operator">=</span> <span class="token function">abs</span><span class="token punctuation">(</span>H<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>second <span class="token operator">-</span> M<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">.</span>second<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			love<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token punctuation">(</span>x <span class="token operator">+</span> y<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token punctuation">}</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+	<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
+	<span class="token keyword">while</span> <span class="token punctuation">(</span>cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">,</span> n <span class="token operator">||</span> m<span class="token punctuation">)</span>
+	<span class="token punctuation">{</span>
+		vector<span class="token operator">&lt;</span>P<span class="token operator">&gt;</span> H<span class="token punctuation">;</span>
+		vector<span class="token operator">&lt;</span>P<span class="token operator">&gt;</span> M<span class="token punctuation">;</span>
+		<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
+		<span class="token punctuation">{</span>
+			string t<span class="token punctuation">;</span>
+			cin <span class="token operator">&gt;&gt;</span> t<span class="token punctuation">;</span>
+			<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> m<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span>
+			<span class="token punctuation">{</span>
+				<span class="token keyword">if</span> <span class="token punctuation">(</span>t<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'.'</span><span class="token punctuation">)</span>
+					<span class="token keyword">continue</span><span class="token punctuation">;</span>
+				<span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>t<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'H'</span><span class="token punctuation">)</span>
+					H<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token punctuation">{</span>i<span class="token punctuation">,</span> j<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				<span class="token keyword">else</span>
+					M<span class="token punctuation">.</span><span class="token function">push_back</span><span class="token punctuation">(</span><span class="token punctuation">{</span>i<span class="token punctuation">,</span> j<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span>
+		<span class="token function">convert</span><span class="token punctuation">(</span>H<span class="token punctuation">,</span> M<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		cout <span class="token operator">&lt;&lt;</span> <span class="token operator">-</span><span class="token function">KM</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> <span class="token string">'\n'</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -618,7 +764,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/hungarian%20algorithm/">https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/hungarian%20algorithm/</a>
+                    <a href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/km/">https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/km/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -884,9 +1030,64 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2021/08/28/Algrithm%20Problem/Graph%20Theory/km/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="KM算法">
+                        
+                        <span class="card-title">KM算法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            KM算法求解二分图的最大权、最小权匹配
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-28
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/">
+                        <span class="chip bg-color">二分图</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%9B%BE%E8%AE%BA/">
+                        <span class="chip bg-color">图论</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2021/08/28/Algrithm%20Problem/Graph%20Theory/spfa/">
                     <div class="card-image">
@@ -904,9 +1105,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-28
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-28
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -928,59 +1129,6 @@
                     
                     <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%9B%BE/">
                         <span class="chip bg-color">最短路图</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/08/27/Algrithm%20Problem/Graph%20Theory/ran%20se/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="染色法判定二分图">
-                        
-                        <span class="card-title">染色法判定二分图</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            利用染色法判定二分图
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-27
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/">
-                        <span class="chip bg-color">二分图</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%9B%BE%E8%AE%BA/">
-                        <span class="chip bg-color">图论</span>
                     </a>
                     
                 </div>
