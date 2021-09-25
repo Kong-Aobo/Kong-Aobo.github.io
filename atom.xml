@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-09-22T03:15:43.127Z</updated>
+  <updated>2021-09-25T07:01:45.131Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -15,6 +15,83 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>食物链</title>
+    <link href="https://kong-aobo.github.io/2021/09/25/Data%20Structure/problem2/"/>
+    <id>https://kong-aobo.github.io/2021/09/25/Data%20Structure/problem2/</id>
+    <published>2021-09-25T06:30:18.000Z</published>
+    <updated>2021-09-25T07:01:45.131Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。&lt;br&gt;A 吃 B，B 吃</summary>
+        
+      
+    
+    
+    
+    <category term="数据结构" scheme="https://kong-aobo.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="并查集" scheme="https://kong-aobo.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>连通块中点的数量</title>
+    <link href="https://kong-aobo.github.io/2021/09/25/Data%20Structure/problem1/"/>
+    <id>https://kong-aobo.github.io/2021/09/25/Data%20Structure/problem1/</id>
+    <published>2021-09-25T03:30:18.000Z</published>
+    <updated>2021-09-25T06:22:00.548Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个包含 n 个点（编号为 1∼n）的无向图，初始时图中没有边。&lt;br&gt;现在要进行 m</summary>
+        
+      
+    
+    
+    
+    <category term="数据结构" scheme="https://kong-aobo.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="并查集" scheme="https://kong-aobo.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>并查集</title>
+    <link href="https://kong-aobo.github.io/2021/09/25/Data%20Structure/union-find%20set/"/>
+    <id>https://kong-aobo.github.io/2021/09/25/Data%20Structure/union-find%20set/</id>
+    <published>2021-09-25T03:29:18.000Z</published>
+    <updated>2021-09-25T03:55:56.234Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;并查集的概念&quot;&gt;&lt;a href=&quot;#并查集的概念&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="数据结构" scheme="https://kong-aobo.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="并查集" scheme="https://kong-aobo.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+  </entry>
   
   <entry>
     <title>子序列的平均值</title>
@@ -175,34 +252,6 @@
   </entry>
   
   <entry>
-    <title>Kruskal算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/"/>
-    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/</id>
-    <published>2021-08-28T06:55:18.000Z</published>
-    <updated>2021-08-29T02:17:39.736Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/861/&quot;&gt;https://www.acwing.com/problem/content/861/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-    <category term="最小生成树" scheme="https://kong-aobo.github.io/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
-    
-  </entry>
-  
-  <entry>
     <title>KM算法</title>
     <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/km/"/>
     <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/km/</id>
@@ -242,6 +291,34 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/860/&quot;&gt;https://www.acwing.com/problem/content/860/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="最小生成树" scheme="https://kong-aobo.github.io/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kruskal算法</title>
+    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/"/>
+    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/</id>
+    <published>2021-08-28T06:55:18.000Z</published>
+    <updated>2021-08-29T02:17:39.736Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/861/&quot;&gt;https://www.acwing.com/problem/content/861/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
@@ -472,90 +549,6 @@
     
     
     <category term="堆" scheme="https://kong-aobo.github.io/tags/%E5%A0%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>树的重心</title>
-    <link href="https://kong-aobo.github.io/2021/08/17/Algrithm%20Problem/Search/problem10/"/>
-    <id>https://kong-aobo.github.io/2021/08/17/Algrithm%20Problem/Search/problem10/</id>
-    <published>2021-08-17T11:12:18.000Z</published>
-    <updated>2021-08-17T12:01:03.162Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/847/&quot;&gt;https://www.acwing.com/problem/content/847/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-    <category term="DFS" scheme="https://kong-aobo.github.io/tags/DFS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>八数码</title>
-    <link href="https://kong-aobo.github.io/2021/08/17/Algrithm%20Problem/Search/problem9/"/>
-    <id>https://kong-aobo.github.io/2021/08/17/Algrithm%20Problem/Search/problem9/</id>
-    <published>2021-08-17T03:12:18.000Z</published>
-    <updated>2021-08-17T11:07:11.232Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/847/&quot;&gt;https://www.acwing.com/problem/content/847/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="搜索" scheme="https://kong-aobo.github.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-    <category term="BFS" scheme="https://kong-aobo.github.io/tags/BFS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>没有上司的舞会</title>
-    <link href="https://kong-aobo.github.io/2021/08/16/Algrithm%20Problem/DP/problem16/"/>
-    <id>https://kong-aobo.github.io/2021/08/16/Algrithm%20Problem/DP/problem16/</id>
-    <published>2021-08-16T11:12:18.000Z</published>
-    <updated>2021-08-16T12:27:59.950Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/287/&quot;&gt;https://www.acwing.com/problem/content/287/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
-    <category term="树形DP" scheme="https://kong-aobo.github.io/tags/%E6%A0%91%E5%BD%A2DP/"/>
     
   </entry>
   
