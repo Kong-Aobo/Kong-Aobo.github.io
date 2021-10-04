@@ -470,7 +470,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-22
+                    2021-10-02
                 </div>
                 
 
@@ -523,8 +523,9 @@
 <p>总体思路如上，但还有两个关键问题：</p>
 <ol>
 <li>是否存在一组长度不小于L的子数组的和大于等于0</li>
-<li>二分得精度应该取多少，达到精度后怎样处理<h3 id="存在长度限制的最大连续子序列和"><a href="#存在长度限制的最大连续子序列和" class="headerlink" title="存在长度限制的最大连续子序列和"></a>存在长度限制的最大连续子序列和</h3>若不能存在长度限制，则可以通过动态规划求解。</li>
+<li>二分得精度应该取多少，达到精度后怎样处理</li>
 </ol>
+<h3 id="存在长度限制的最大连续子序列和"><a href="#存在长度限制的最大连续子序列和" class="headerlink" title="存在长度限制的最大连续子序列和"></a>存在长度限制的最大连续子序列和</h3><p>若不能存在长度限制，则可以通过动态规划求解。</p>
 <p>记a[i]为第i个数的值，f[i]为以第i个数结尾的最大连续子序列和，则状态转移方程如下：<br>f[i]=max(a[i],a[i]+f[i])</p>
 <p>若存在长度限制L，要求子序列的长度不小于L，则需要变更方法。</p>
 <p>字段和可以转化成为前缀和相减的形式，也就是说sum[i] = (a[1] + a[2] + … + a[i])，因此：<br>max(i-j&gt;=L){a[j]+a[j+1]+…+a[i]} = max(L&lt;=i&lt;=n){sum[i]-min(0&lt;=j&lt;=i-L){sum[j]}}</p>
@@ -1142,7 +1143,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">41.9k</span>&nbsp;字
+                class="white-color">43.3k</span>&nbsp;字
             
             
             
