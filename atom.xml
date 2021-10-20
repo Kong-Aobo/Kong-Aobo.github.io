@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-10-04T09:20:05.215Z</updated>
+  <updated>2021-10-20T11:00:40.301Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二叉树后序+中序序列求前序序列</title>
+    <link href="https://kong-aobo.github.io/2021/10/20/Data%20Structure/problem4/"/>
+    <id>https://kong-aobo.github.io/2021/10/20/Data%20Structure/problem4/</id>
+    <published>2021-10-20T06:30:18.000Z</published>
+    <updated>2021-10-20T11:00:40.301Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;后序+中序序列构造二叉树。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;输入描述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="数据结构" scheme="https://kong-aobo.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+    <category term="二叉树" scheme="https://kong-aobo.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
   
   <entry>
     <title>树状数组</title>
@@ -46,15 +74,15 @@
     <link href="https://kong-aobo.github.io/2021/10/03/Data%20Structure/problem3/"/>
     <id>https://kong-aobo.github.io/2021/10/03/Data%20Structure/problem3/</id>
     <published>2021-10-03T03:30:18.000Z</published>
-    <updated>2021-10-04T09:19:47.036Z</updated>
+    <updated>2021-10-11T04:30:09.907Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;在完成了分配任务之后，西部 314</summary>
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/243/&quot;&gt;https://www.acwing.com/problem/content/243/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -330,6 +358,34 @@
   </entry>
   
   <entry>
+    <title>Prim算法</title>
+    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/"/>
+    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/</id>
+    <published>2021-08-28T06:55:18.000Z</published>
+    <updated>2021-08-28T12:03:05.874Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/860/&quot;&gt;https://www.acwing.com/problem/content/860/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
+    
+    <category term="最小生成树" scheme="https://kong-aobo.github.io/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Kruskal算法</title>
     <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/"/>
     <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/</id>
@@ -381,34 +437,6 @@
     <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
     
     <category term="最短路图" scheme="https://kong-aobo.github.io/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Prim算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/"/>
-    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/</id>
-    <published>2021-08-28T06:55:18.000Z</published>
-    <updated>2021-08-28T12:03:05.874Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/860/&quot;&gt;https://www.acwing.com/problem/content/860/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-    <category term="最小生成树" scheme="https://kong-aobo.github.io/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
     
   </entry>
   
@@ -520,33 +548,6 @@
     <category term="matlab" scheme="https://kong-aobo.github.io/tags/matlab/"/>
     
     <category term="BP神经网络" scheme="https://kong-aobo.github.io/tags/BP%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Bellman Ford算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/22/Algrithm%20Problem/Graph%20Theory/bellman%20ford/"/>
-    <id>https://kong-aobo.github.io/2021/08/22/Algrithm%20Problem/Graph%20Theory/bellman%20ford/</id>
-    <published>2021-08-22T12:55:18.000Z</published>
-    <updated>2021-08-26T14:07:06.193Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;p&gt;给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环， 边权可能为负数。&lt;br&gt;请你求出从 1 号点到 n</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="最短路" scheme="https://kong-aobo.github.io/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-    
-    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
     
   </entry>
   
