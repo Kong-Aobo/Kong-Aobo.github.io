@@ -358,18 +358,18 @@
   </entry>
   
   <entry>
-    <title>Prim算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/"/>
-    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/</id>
+    <title>Kruskal算法</title>
+    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/"/>
+    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/</id>
     <published>2021-08-28T06:55:18.000Z</published>
-    <updated>2021-08-28T12:03:05.874Z</updated>
+    <updated>2021-08-29T02:17:39.736Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/860/&quot;&gt;https://www.acwing.com/problem/content/860/&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/861/&quot;&gt;https://www.acwing.com/problem/content/861/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
@@ -386,18 +386,18 @@
   </entry>
   
   <entry>
-    <title>Kruskal算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/"/>
-    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/</id>
+    <title>Prim算法</title>
+    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/"/>
+    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/</id>
     <published>2021-08-28T06:55:18.000Z</published>
-    <updated>2021-08-29T02:17:39.736Z</updated>
+    <updated>2021-08-28T12:03:05.874Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/861/&quot;&gt;https://www.acwing.com/problem/content/861/&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/860/&quot;&gt;https://www.acwing.com/problem/content/860/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
