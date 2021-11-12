@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-10-20T11:00:40.301Z</updated>
+  <updated>2021-11-12T00:46:15.556Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>利用python发送邮件</title>
+    <link href="https://kong-aobo.github.io/2021/11/12/Python/mail/"/>
+    <id>https://kong-aobo.github.io/2021/11/12/Python/mail/</id>
+    <published>2021-11-12T00:00:18.000Z</published>
+    <updated>2021-11-12T00:46:15.556Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;电子邮件系统简述&quot;&gt;&lt;a href=&quot;#电子邮件系统简述&quot; class=&quot;headerlink&quot; title=&quot;电子邮件系统简述&quot;&gt;&lt;/a&gt;电子邮件系统简述&lt;/h2&gt;&lt;p&gt;电子邮件系统的组成如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="python自动化" scheme="https://kong-aobo.github.io/categories/python%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    
+    
+    <category term="python" scheme="https://kong-aobo.github.io/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>二叉树后序+中序序列求前序序列</title>
@@ -358,18 +384,18 @@
   </entry>
   
   <entry>
-    <title>Kruskal算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/"/>
-    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/</id>
+    <title>Prim算法</title>
+    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/"/>
+    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/</id>
     <published>2021-08-28T06:55:18.000Z</published>
-    <updated>2021-08-29T02:17:39.736Z</updated>
+    <updated>2021-08-28T12:03:05.874Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/861/&quot;&gt;https://www.acwing.com/problem/content/861/&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/860/&quot;&gt;https://www.acwing.com/problem/content/860/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
@@ -386,18 +412,18 @@
   </entry>
   
   <entry>
-    <title>Prim算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/"/>
-    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/</id>
+    <title>Kruskal算法</title>
+    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/"/>
+    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/</id>
     <published>2021-08-28T06:55:18.000Z</published>
-    <updated>2021-08-28T12:03:05.874Z</updated>
+    <updated>2021-08-29T02:17:39.736Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/860/&quot;&gt;https://www.acwing.com/problem/content/860/&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/861/&quot;&gt;https://www.acwing.com/problem/content/861/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
@@ -521,33 +547,6 @@
     <category term="最短路" scheme="https://kong-aobo.github.io/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
     
     <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>BP神经网络</title>
-    <link href="https://kong-aobo.github.io/2021/08/24/Mathematical%20Modeling/BP%20Neural%20Network/"/>
-    <id>https://kong-aobo.github.io/2021/08/24/Mathematical%20Modeling/BP%20Neural%20Network/</id>
-    <published>2021-08-24T02:30:18.000Z</published>
-    <updated>2021-08-24T03:50:52.484Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;BP神经网络介绍&quot;&gt;&lt;a href=&quot;#BP神经网络介绍&quot; class=&quot;headerlink&quot; title=&quot;BP神经网络介绍&quot;&gt;&lt;/a&gt;BP神经网络介绍&lt;/h2&gt;&lt;p&gt;BP（back</summary>
-        
-      
-    
-    
-    
-    <category term="数学建模" scheme="https://kong-aobo.github.io/categories/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/"/>
-    
-    
-    <category term="matlab" scheme="https://kong-aobo.github.io/tags/matlab/"/>
-    
-    <category term="BP神经网络" scheme="https://kong-aobo.github.io/tags/BP%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
