@@ -466,14 +466,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-10-20
+                    2021-11-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    408
+                    401
                 </div>
                 
 
@@ -521,7 +521,7 @@
 
 <span class="token keyword">int</span> n<span class="token punctuation">;</span>
 string in<span class="token punctuation">,</span> po<span class="token punctuation">;</span>
-unordered_map<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">&gt;</span> mp1<span class="token punctuation">,</span> mp2<span class="token punctuation">;</span>  <span class="token comment">//预处理，降低时间复杂度</span>
+unordered_map<span class="token operator">&lt;</span><span class="token keyword">char</span><span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">&gt;</span> mp<span class="token punctuation">;</span>  <span class="token comment">//预处理，降低时间复杂度</span>
 
 <span class="token keyword">void</span> <span class="token function">build</span><span class="token punctuation">(</span>string<span class="token operator">&amp;</span> in<span class="token punctuation">,</span> string<span class="token operator">&amp;</span> po<span class="token punctuation">,</span> <span class="token keyword">int</span> root<span class="token punctuation">,</span> <span class="token keyword">int</span> l<span class="token punctuation">,</span> <span class="token keyword">int</span> r<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
@@ -529,9 +529,9 @@ unordered_map<span class="token operator">&lt;</span><span class="token keyword"
      * root为该中序范围对应二叉树的根节点在后序序列的下标 */</span>
     <span class="token keyword">if</span><span class="token punctuation">(</span>l <span class="token operator">&gt;</span> r<span class="token punctuation">)</span>
         <span class="token keyword">return</span><span class="token punctuation">;</span>
-    <span class="token keyword">int</span> idx <span class="token operator">=</span> mp1<span class="token punctuation">[</span>po<span class="token punctuation">[</span>root<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">int</span> idx <span class="token operator">=</span> mp<span class="token punctuation">[</span>po<span class="token punctuation">[</span>root<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
     cout <span class="token operator">&lt;&lt;</span> in<span class="token punctuation">[</span>idx<span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token function">build</span><span class="token punctuation">(</span>in<span class="token punctuation">,</span> po<span class="token punctuation">,</span> mp2<span class="token punctuation">[</span>po<span class="token punctuation">[</span>root <span class="token operator">-</span> r <span class="token operator">+</span> idx <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> l<span class="token punctuation">,</span> idx <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">build</span><span class="token punctuation">(</span>in<span class="token punctuation">,</span> po<span class="token punctuation">,</span> root <span class="token operator">-</span> r <span class="token operator">+</span> idx <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> l<span class="token punctuation">,</span> idx <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token comment">/* 利用后序的性质来确定左子树的根节点的下标
      * 即用根节点在后序中的索引减去右子树的长度得到左子树的根 */</span>
     <span class="token function">build</span><span class="token punctuation">(</span>in<span class="token punctuation">,</span> po<span class="token punctuation">,</span> root <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> idx <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -542,13 +542,10 @@ unordered_map<span class="token operator">&lt;</span><span class="token keyword"
 <span class="token punctuation">{</span>
     cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> po <span class="token operator">&gt;&gt;</span> in<span class="token punctuation">;</span>
     <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>  <span class="token comment">//预处理</span>
-    <span class="token punctuation">{</span>
-        mp1<span class="token punctuation">[</span>in<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
-        mp2<span class="token punctuation">[</span>po<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
+        mp<span class="token punctuation">[</span>in<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
     <span class="token function">build</span><span class="token punctuation">(</span>in<span class="token punctuation">,</span> po<span class="token punctuation">,</span> po<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> po<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
