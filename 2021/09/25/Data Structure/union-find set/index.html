@@ -503,8 +503,7 @@
 <li>合并（Union）：把两个不相交的集合合并为一个集合</li>
 <li>查询（Find）：查询两个元素是否在同一个集合中</li>
 </ul>
-<p><strong>基础并查集的核心思想在于，用集合中的一个元素代表集合。</strong>判断两个元素是否在同一集合，只需判断这两个元素所在集合的代表元素是否相同，相同则在一个集合。而若要合并两个集合，只需让其中一个集合的代表元素的父节点等于另一个集合的代表元素即可。代码模板如下：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> p<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">//存储每个点的祖宗节点</span>
+<p><strong>基础并查集的核心思想在于，用集合中的一个元素代表集合。</strong>判断两个元素是否在同一集合，只需判断这两个元素所在集合的代表元素是否相同，相同则在一个集合。而若要合并两个集合，只需让其中一个集合的代表元素的父节点等于另一个集合的代表元素即可。代码模板如下：<br></p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> p<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token comment">//存储每个点的祖宗节点</span>
 
 <span class="token comment">// 返回x的祖宗节点</span>
 <span class="token keyword">int</span> <span class="token function">find</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
@@ -519,7 +518,7 @@
 	p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> i<span class="token punctuation">;</span>
 
 <span class="token comment">// 合并a和b所在的两个集合：</span>
-p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+p<span class="token punctuation">[</span><span class="token function">find</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token function">find</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
 <h2 id="基础并查集问题的变种"><a href="#基础并查集问题的变种" class="headerlink" title="基础并查集问题的变种"></a>基础并查集问题的变种</h2><p>并查集存在两种变种：</p>
 <ol>
 <li>维护并查集的额外信息，如集合中的元素数量等。</li>
@@ -1045,7 +1044,7 @@ p<span class="token punctuation">[</span><span class="token function">find</span
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Kong Aobo</a>
@@ -1054,7 +1053,7 @@ p<span class="token punctuation">[</span><span class="token function">find</span
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44k</span>&nbsp;字
+                class="white-color">43.8k</span>&nbsp;字
             
             
             

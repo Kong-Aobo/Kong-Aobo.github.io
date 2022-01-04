@@ -505,25 +505,17 @@
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/899/">https://www.acwing.com/problem/content/899/</a></p>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
 <p>给定两个长度分别为 N 和 M 的字符串 A 和 B，求既是 A 的子序列又是 B 的子序列的字符串长度最长是多少。</p>
-</blockquote>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
-<p>第一行包含两个整数 N 和 M。<br>第二行包含一个长度为 N 的字符串，表示字符串 A。<br>第三行包含一个长度为 M 的字符串，表示字符串 B。<br>字符串均由小写字母构成。</p>
-</blockquote>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
-<p>输出一个整数，表示最大长度。<br>1≤N,M≤1000</p>
-</blockquote>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote>
-<p>4 5<br>acbd<br>abedc</p>
-</blockquote>
-<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><blockquote>
-<p>3</p>
-</blockquote>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行包含两个整数 N 和 M。<br>第二行包含一个长度为 N 的字符串，表示字符串 A。<br>第三行包含一个长度为 M 的字符串，表示字符串 B。<br>字符串均由小写字母构成。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出一个整数，表示最大长度。<br>1≤N,M≤1000</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>4 5<br>acbd<br>abedc</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>3</p>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="约定"><a href="#约定" class="headerlink" title="约定"></a>约定</h3><p>记第一个字符串为a，第二个为b</p>
 <h3 id="状态表示"><a href="#状态表示" class="headerlink" title="状态表示"></a>状态表示</h3><p>f(i,j)所代表的集合和属性如下：</p>
 <ul>
 <li>集合：从a中前i个字母，b中前j个字母中选择出的公共子序列</li>
 <li>属性：所有子序列长度的最大值</li>
 </ul>
+</blockquote>
 <h3 id="状态划分与计算"><a href="#状态划分与计算" class="headerlink" title="状态划分与计算"></a>状态划分与计算</h3><p>从状态表示中集合的角度切入，对于f(i,j),其集合中的公共子序列存在四种情况：</p>
 <ul>
 <li>有a[i],b[j]，且a[i]=b[j]</li>
@@ -1095,7 +1087,7 @@ string a<span class="token punctuation">,</span> b<span class="token punctuation
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Kong Aobo</a>
@@ -1104,7 +1096,7 @@ string a<span class="token punctuation">,</span> b<span class="token punctuation
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44k</span>&nbsp;字
+                class="white-color">43.8k</span>&nbsp;字
             
             
             

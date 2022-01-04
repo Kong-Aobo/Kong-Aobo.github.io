@@ -509,20 +509,12 @@
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/50243">https://ac.nowcoder.com/acm/problem/50243</a></p>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
 <p>乔治有一些同样长的小木棍，他把这些木棍随意砍成几段，直到每段的长都不超过50。现在，他想把小木棍拼接成原来的样子，但是却忘记了自己开始时有多少根木棍和它们的长度。给出每段小木棍的长度，编程帮他找出原始木棍的最小可能长度。</p>
-</blockquote>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
-<p>第一行为一个单独的整数N表示砍过以后的小木棍的总数。第二行为N个用空格隔开的正整数，表示N根小木棍的长度。 1≤N≤60</p>
-</blockquote>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
-<p>输出仅一行，表示要求的原始木棍的最小可能长度。</p>
-</blockquote>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><blockquote>
-<p>9<br>5 2 1 5 2 1 5 2 1</p>
-</blockquote>
-<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><blockquote>
-<p>6</p>
-</blockquote>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行为一个单独的整数N表示砍过以后的小木棍的总数。第二行为N个用空格隔开的正整数，表示N根小木棍的长度。 1≤N≤60</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出仅一行，表示要求的原始木棍的最小可能长度。</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>9<br>5 2 1 5 2 1 5 2 1</p>
+<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>6</p>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题采用深搜加剪枝的算法。<br>首先，N个小木棍的长度均为整数，因此原长度必为整数(若原长为小数，则进行分割必产生小数长度的木棍)。<br>题目要求找出可能的最小木棒长度，所以我们可以想到通过深搜一个数一个数的去验证，但显然单纯深搜会相当耗时，最多有<br>60个木棍，不优化的话每确定一个木棍都要遍历60次，总共确定60次，且仅仅完成一个长度的试探。<br>因此，我们就要通过一些优化技巧和剪枝来提高效率。</p>
+</blockquote>
 <p><strong>优化技巧：</strong></p>
 <ul>
 <li>深搜时从长度大的木棍开始试探，可以减小搜索树的规模。</li>
@@ -1122,7 +1114,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Kong Aobo</a>
@@ -1131,7 +1123,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44k</span>&nbsp;字
+                class="white-color">43.8k</span>&nbsp;字
             
             
             

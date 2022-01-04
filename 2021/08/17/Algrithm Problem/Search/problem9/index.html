@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    764
+                    760
                 </div>
                 
 
@@ -505,25 +505,17 @@
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/847/">https://www.acwing.com/problem/content/847/</a></p>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
 <p>在一个 3×3 的网格中，1∼8 这 8 个数字和一个 x 恰好不重不漏地分布在这 3×3 的网格中。<br>例如：<br>1 2 3<br>x 4 6<br>7 5 8<br>在游戏过程中，可以把 x 与其上、下、左、右四个方向之一的数字交换（如果存在）。<br>我们的目的是通过交换，使得网格变为如下排列（称为正确排列）：<br>1 2 3<br>4 5 6<br>7 8 x<br>例如，示例中图形就可以通过让 x 先后与右、下、右三个方向的数字交换成功得到正确排列。<br>交换过程如下：<br>1 2 3&nbsp;&nbsp;&nbsp;1 2 3&nbsp;&nbsp;&nbsp;1 2 3&nbsp;&nbsp;&nbsp;1 2 3<br>x 4 6&nbsp;&nbsp;&nbsp;4 x 6&nbsp;&nbsp;&nbsp;4 5 6&nbsp;&nbsp;&nbsp;4 5 6<br>7 5 8&nbsp;&nbsp;&nbsp;7 5 8&nbsp;&nbsp;&nbsp;7 x 8&nbsp;&nbsp;&nbsp;7 8 x<br>现在，给你一个初始网格，请你求出得到正确排列至少需要进行多少次交换。</p>
-</blockquote>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
-<p>输入占一行，将 3×3 的初始网格描绘出来。<br>例如，如果初始网格如下所示：<br>1 2 3<br>x 4 6<br>7 5 8<br>则输入为：1 2 3 x 4 6 7 5 8</p>
-</blockquote>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
-<p>输出占一行，包含一个整数，表示最少交换次数。<br>如果不存在解决方案，则输出 −1。</p>
-</blockquote>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote>
-<p>2  3  4  1  5  x  7  6  8</p>
-</blockquote>
-<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><blockquote>
-<p>19</p>
-</blockquote>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>输入占一行，将 3×3 的初始网格描绘出来。<br>例如，如果初始网格如下所示：<br>1 2 3<br>x 4 6<br>7 5 8<br>则输入为：1 2 3 x 4 6 7 5 8</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出占一行，包含一个整数，表示最少交换次数。<br>如果不存在解决方案，则输出 −1。</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>2  3  4  1  5  x  7  6  8</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>19</p>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>既然题目要求的是最小交换次数，我们就可以首先排除DFS(一般不用来求最小值)，选择BFS。<br>让我们试着将本题向BFS求最短路径的方向迁移。<br>显然，本题存在如下性质：  </p>
 <ul>
 <li>网格的每一种状态可以看作是一个节点</li>
 <li>相邻状态的迁移只需要1步</li>
 </ul>
-<p>这恰恰就是BFS求解最短路径的模型。<br>本题的难点在于如何去表示这个状态。考虑一下，可以用string来表示，比如：<br>1 2 3<br>x 4 6<br>7 5 8<br>用string表示就是”123x46758”。<br>同时，我们采用unordered_map&lt;string,int&gt;来表示从初始状态转移到当前状态最少需要几步。<br>之后，这个问题就转换成了BFS求最短路的问题了。</p>
+</blockquote>
+<p>这恰恰就是BFS求解最短路径的模型。<br>本题的难点在于如何去表示这个状态。考虑一下，可以用string来表示，比如：<br>1 2 3<br>x 4 6<br>7 5 8<br>用string表示就是”123x46758”。<br>同时，我们采用unordered_map<string,int>来表示从初始状态转移到当前状态最少需要几步。<br>之后，这个问题就转换成了BFS求最短路的问题了。</string,int></p>
 <h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
@@ -1108,7 +1100,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Kong Aobo</a>
@@ -1117,7 +1109,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44k</span>&nbsp;字
+                class="white-color">43.8k</span>&nbsp;字
             
             
             

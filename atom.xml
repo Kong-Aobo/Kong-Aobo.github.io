@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2021-11-12T00:46:15.556Z</updated>
+  <updated>2022-01-04T12:19:59.656Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>泛化误差的定义和推导</title>
+    <link href="https://kong-aobo.github.io/2022/01/04/Machine%20Learning/problem1/"/>
+    <id>https://kong-aobo.github.io/2022/01/04/Machine%20Learning/problem1/</id>
+    <published>2022-01-04T12:00:18.000Z</published>
+    <updated>2022-01-04T12:19:59.656Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;符号约定&quot;&gt;&lt;a href=&quot;#符号约定&quot; class=&quot;headerlink&quot; title=&quot;符号约定&quot;&gt;&lt;/a&gt;符号约定&lt;/h2&gt;&lt;p&gt;数据集：$D$&lt;/p&gt;
+&lt;p&gt;$x$ 在数据集中的标记：$y_D$&lt;/p&gt;
+&lt;p&gt;$x$</summary>
+        
+      
+    
+    
+    
+    <category term="机器学习" scheme="https://kong-aobo.github.io/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="深度学习" scheme="https://kong-aobo.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>lower_bound和upper_bound的C++实现</title>
+    <link href="https://kong-aobo.github.io/2022/01/02/Algrithm%20Problem/Search/problem11/"/>
+    <id>https://kong-aobo.github.io/2022/01/02/Algrithm%20Problem/Search/problem11/</id>
+    <published>2022-01-02T03:12:18.000Z</published>
+    <updated>2022-01-02T03:51:29.990Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;lower-bound&quot;&gt;&lt;a href=&quot;#lower-bound&quot; class=&quot;headerlink&quot; title=&quot;lower_bound&quot;&gt;&lt;/a&gt;lower_bound&lt;/h3&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="二分" scheme="https://kong-aobo.github.io/tags/%E4%BA%8C%E5%88%86/"/>
+    
+  </entry>
   
   <entry>
     <title>利用python发送邮件</title>
@@ -56,8 +108,7 @@
         
     <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;后序+中序序列构造二叉树。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;输入描述&quot;&gt;&lt;a</summary>
+&lt;h2 id=&quot;输入描述&quot;&gt;&lt;a href=&quot;#输入描述&quot;</summary>
         
       
     
@@ -384,18 +435,18 @@
   </entry>
   
   <entry>
-    <title>Prim算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/"/>
-    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/</id>
+    <title>Kruskal算法</title>
+    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/"/>
+    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/</id>
     <published>2021-08-28T06:55:18.000Z</published>
-    <updated>2021-08-28T12:03:05.874Z</updated>
+    <updated>2021-08-29T02:17:39.736Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/860/&quot;&gt;https://www.acwing.com/problem/content/860/&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/861/&quot;&gt;https://www.acwing.com/problem/content/861/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
@@ -412,18 +463,18 @@
   </entry>
   
   <entry>
-    <title>Kruskal算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/"/>
-    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/</id>
+    <title>Prim算法</title>
+    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/"/>
+    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/</id>
     <published>2021-08-28T06:55:18.000Z</published>
-    <updated>2021-08-29T02:17:39.736Z</updated>
+    <updated>2021-08-28T12:03:05.874Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/861/&quot;&gt;https://www.acwing.com/problem/content/861/&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/860/&quot;&gt;https://www.acwing.com/problem/content/860/&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
@@ -491,62 +542,6 @@
     <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
     
     <category term="二分图" scheme="https://kong-aobo.github.io/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>染色法判定二分图</title>
-    <link href="https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/ran%20se/"/>
-    <id>https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/ran%20se/</id>
-    <published>2021-08-27T14:54:18.000Z</published>
-    <updated>2021-08-27T15:09:10.805Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/862/&quot;&gt;https://www.acwing.com/problem/content/862/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-    <category term="二分图" scheme="https://kong-aobo.github.io/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Floyd算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/26/Algrithm%20Problem/Graph%20Theory/floyd/"/>
-    <id>https://kong-aobo.github.io/2021/08/26/Algrithm%20Problem/Graph%20Theory/floyd/</id>
-    <published>2021-08-26T12:55:18.000Z</published>
-    <updated>2021-08-26T13:43:28.386Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/856/&quot;&gt;https://www.acwing.com/problem/content/856/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="最短路" scheme="https://kong-aobo.github.io/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/"/>
-    
-    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
     
   </entry>
   

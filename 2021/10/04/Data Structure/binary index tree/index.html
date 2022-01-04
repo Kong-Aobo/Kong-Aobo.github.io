@@ -513,15 +513,13 @@
 </ol>
 <h2 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h2><p>lowbit()运算：非负整数x在二进制表示下最低位1及其后面的0构成的数值。</p>
 <p>举例说明：<br>lowbit(12)=lowbit([1100]2)=[100]2=4</p>
-<p>函数实现：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">lowbit</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
+<p>函数实现：<br></p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">lowbit</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     <span class="token keyword">return</span> x <span class="token operator">&amp;</span> <span class="token operator">-</span>x<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre><p></p>
 <h2 id="树状数组的思想"><a href="#树状数组的思想" class="headerlink" title="树状数组的思想"></a>树状数组的思想</h2><p>树状数组的本质思想是使用树结构维护“前缀和”，从而把时间复杂度降为O(logn)。</p>
 <p>对于一个序列，对其建立如下树形结构： </p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211004171130.png"></p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211004171130.png" alt=""></p>
 <ol>
 <li>每个结点t[x]保存以x为根的子树中叶结点值的和</li>
 <li>每个结点覆盖的长度为lowbit(x)</li>
@@ -529,24 +527,22 @@
 <li>树的深度为log2n + 1</li>
 </ol>
 <h2 id="树状数组的操作"><a href="#树状数组的操作" class="headerlink" title="树状数组的操作"></a>树状数组的操作</h2><h3 id="add"><a href="#add" class="headerlink" title="add"></a>add</h3><p>add(x, k)表示将序列中第x个数加上k。</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211004171447.png"></p>
-<p>以add(3, 5)为例：  在整棵树上维护这个值，需要一层一层向上找到父结点，并将这些结点上的t[x]值都加上k，这样保证计算区间和时的结果正确。时间复杂度为O(logn)。</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211004171447.png" alt=""></p>
+<p>以add(3, 5)为例：  在整棵树上维护这个值，需要一层一层向上找到父结点，并将这些结点上的t[x]值都加上k，这样保证计算区间和时的结果正确。时间复杂度为O(logn)。<br></p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> x<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">+=</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
         t<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> k<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
 <h3 id="ask"><a href="#ask" class="headerlink" title="ask"></a>ask</h3><p>ask(x)表示将查询序列前x个数的和。</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211004171626.png"></p>
-<p>以ask(7)为例：查询这个点的前缀和，需要从这个点向左上找到上一个结点，将加上其结点的值。向左上找到上一个结点，只需要将下标 x -= lowbit(x)，例如 7 - lowbit(7) = 6。</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">ask</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211004171626.png" alt=""></p>
+<p>以ask(7)为例：查询这个点的前缀和，需要从这个点向左上找到上一个结点，将加上其结点的值。向左上找到上一个结点，只需要将下标 x -= lowbit(x)，例如 7 - lowbit(7) = 6。<br></p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">ask</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
 <span class="token punctuation">{</span>
     <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
     <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> x<span class="token punctuation">;</span> i<span class="token punctuation">;</span> i <span class="token operator">-=</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
         sum <span class="token operator">+=</span> t<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
     <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
+
                 
             </div>
             <hr/>
@@ -1062,7 +1058,7 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Kong Aobo</a>
@@ -1071,7 +1067,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44k</span>&nbsp;字
+                class="white-color">43.8k</span>&nbsp;字
             
             
             

@@ -500,16 +500,12 @@
             <div id="articleContent">
                 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
 <p>后序+中序序列构造二叉树。</p>
-</blockquote>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
-<p>第一行输入序列长度n，第二行输入n个字符表示二叉树后序遍历的序列，第三行输入n个字符表示二叉树中序遍历的序列。</p>
-</blockquote>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
-<p>输出二叉树先序遍历的序列。</p>
-</blockquote>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行输入序列长度n，第二行输入n个字符表示二叉树后序遍历的序列，第三行输入n个字符表示二叉树中序遍历的序列。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出二叉树先序遍历的序列。</p>
 <h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>9<br>GHDBEIFCA<br>GDHBAECIF</p>
 <h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>ABDGHCEFI</p>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>前序：根-左-右<br>中序：左-根-右<br>后序：左-右-根</p>
+</blockquote>
 <p>利用后序得到根节点，再通过中序查找根节点划分左右子树，递归的重复这个过程就可以得到二叉树。</p>
 <p>提前对序列进行预处理可以将整个过程的时间复杂度降为O(n)，详见代码。</p>
 <h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
@@ -1061,7 +1057,7 @@ unordered_map<span class="token operator">&lt;</span><span class="token keyword"
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2021</span>
+                <span id="year">2021-2022</span>
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Kong Aobo</a>
@@ -1070,7 +1066,7 @@ unordered_map<span class="token operator">&lt;</span><span class="token keyword"
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44k</span>&nbsp;字
+                class="white-color">43.8k</span>&nbsp;字
             
             
             
