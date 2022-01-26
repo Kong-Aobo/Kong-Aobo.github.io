@@ -473,7 +473,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    896
+                    901
                 </div>
                 
 
@@ -499,17 +499,54 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/903/">https://www.acwing.com/problem/content/903/</a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
-<p>给定一个 R 行 C 列的矩阵，表示一个矩形网格滑雪场。<br>矩阵中第 i 行第 j 列的点表示滑雪场的第 i 行第 j 列区域的高度。<br>一个人从滑雪场中的某个区域内出发，每次可以向上下左右任意一个方向滑动一个单位距离。<br>当然，一个人能够滑动到某相邻区域的前提是该区域的高度低于自己目前所在区域的高度。<br>现在给定你一个二维矩阵表示滑雪场各区域的高度，请你找出在该滑雪场中能够完成的最长滑雪轨迹，并输出其长度(可经过最大区域数)。</p>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行包含两个整数 R 和 C。<br>接下来 R 行，每行包含 C 个整数，表示完整的二维矩阵。</p>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出一个整数，表示可完成的最长滑雪长度。<br>1≤R,C≤300,<br>0≤矩阵中整数≤10000</p>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>5 5<br>1 2 3 4 5<br>16 17 18 19 6<br>15 24 25 20 7<br>14 23 22 21 8<br>13 12 11 10 9</p>
-<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>25</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="约定"><a href="#约定" class="headerlink" title="约定"></a>约定</h3><p>记坐标为i,j的点的高度为h[i][j]</p>
-<h3 id="状态表示"><a href="#状态表示" class="headerlink" title="状态表示"></a>状态表示</h3><p>f(i,j)表示从坐标为(i,j)的点开始的最大滑雪长度。</p>
-<h3 id="状态划分与计算"><a href="#状态划分与计算" class="headerlink" title="状态划分与计算"></a>状态划分与计算</h3><p>本题的状态划分比较简单，在点(i,j)有四个滑雪方向，分别是上下左右，分别求解选择最大的那个即可，因此状态转移方程如下：<br>f(i,j)=max(f(i+1,j),f(i,j+1),f(i-1,j),f(i,j-1))+1<br>注意这四个方向只有高度小于(i,j)的我们才去考虑，其余的直接忽略。</p>
-<h3 id="实现方式"><a href="#实现方式" class="headerlink" title="实现方式"></a>实现方式</h3><p>本题，如果采用过去for循环的实现方式其实不太方便，<strong>求解任一点的解时我们需要已知相邻点的解</strong>，所以求解顺序应该是从高度低的点开始，以保证求解高度高的点时需要的数据已被求解，这就需要排序和存储排序的结果，比较麻烦，所以本题适合记忆化搜索的实现方式。<br>记忆化搜索采取递归的方式，不存在for循环实现的一些局限，不过要对搜索算法具有良好的基础，不然容易出错。<br>记忆化搜索的范式以及本题中存在一些易错点，详见代码。</p>
-<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
+<h2 id="题目描述-11">题目描述</h2>
+<blockquote>
+<p>给定一个 R 行 C 列的矩阵，表示一个矩形网格滑雪场。<br>
+矩阵中第 i 行第 j 列的点表示滑雪场的第 i 行第 j 列区域的高度。<br>
+一个人从滑雪场中的某个区域内出发，每次可以向上下左右任意一个方向滑动一个单位距离。<br>
+当然，一个人能够滑动到某相邻区域的前提是该区域的高度低于自己目前所在区域的高度。<br>
+现在给定你一个二维矩阵表示滑雪场各区域的高度，请你找出在该滑雪场中能够完成的最长滑雪轨迹，并输出其长度(可经过最大区域数)。</p>
+</blockquote>
+<h2 id="输入描述-11">输入描述</h2>
+<blockquote>
+<p>第一行包含两个整数 R 和 C。<br>
+接下来 R 行，每行包含 C 个整数，表示完整的二维矩阵。</p>
+</blockquote>
+<h2 id="输出描述-11">输出描述</h2>
+<blockquote>
+<p>输出一个整数，表示可完成的最长滑雪长度。<br>
+1≤R,C≤300,<br>
+0≤矩阵中整数≤10000</p>
+</blockquote>
+<h2 id="示例-11">示例</h2>
+<h3 id="输入-11">输入</h3>
+<blockquote>
+<p>5 5<br>
+1 2 3 4 5<br>
+16 17 18 19 6<br>
+15 24 25 20 7<br>
+14 23 22 21 8<br>
+13 12 11 10 9</p>
+</blockquote>
+<h3 id="输出-11">输出</h3>
+<blockquote>
+<p>25</p>
+</blockquote>
+<h2 id="分析-10">分析</h2>
+<h3 id="约定-5">约定</h3>
+<p>记坐标为i,j的点的高度为h[i][j]</p>
+<h3 id="状态表示-7">状态表示</h3>
+<p>f(i,j)表示从坐标为(i,j)的点开始的最大滑雪长度。</p>
+<h3 id="状态划分与计算-6">状态划分与计算</h3>
+<p>本题的状态划分比较简单，在点(i,j)有四个滑雪方向，分别是上下左右，分别求解选择最大的那个即可，因此状态转移方程如下：<br>
+f(i,j)=max(f(i+1,j),f(i,j+1),f(i-1,j),f(i,j-1))+1<br>
+注意这四个方向只有高度小于(i,j)的我们才去考虑，其余的直接忽略。</p>
+<h3 id="实现方式">实现方式</h3>
+<p>本题，如果采用过去for循环的实现方式其实不太方便，<strong>求解任一点的解时我们需要已知相邻点的解</strong>，所以求解顺序应该是从高度低的点开始，以保证求解高度高的点时需要的数据已被求解，这就需要排序和存储排序的结果，比较麻烦，所以本题适合记忆化搜索的实现方式。<br>
+记忆化搜索采取递归的方式，不存在for循环实现的一些局限，不过要对搜索算法具有良好的基础，不然容易出错。<br>
+记忆化搜索的范式以及本题中存在一些易错点，详见代码。</p>
+<h2 id="AC代码-9">AC代码</h2>
+<hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
@@ -561,8 +598,7 @@
 
 	cout <span class="token operator">&lt;&lt;</span> res <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
-
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -1095,7 +1131,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">43.9k</span>&nbsp;字
+                class="white-color">45k</span>&nbsp;字
             
             
             

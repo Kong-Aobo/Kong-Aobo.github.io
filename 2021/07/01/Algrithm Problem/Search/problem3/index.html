@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    546
+                    552
                 </div>
                 
 
@@ -503,14 +503,45 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/13594">https://ac.nowcoder.com/acm/problem/13594</a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
-<p>小L有严重的选择困难症。<br>早上起床后，需要花很长时间决定今天穿什么出门。<br>假设一共有k类物品需要搭配选择，每类物品的个数为Ai，每个物品有一个喜欢值Vj，代表小L对这件物品的喜欢程度。<br>小L想知道，有多少种方案，使得选出来的总喜欢值&gt;M<br>需要注意，每类物品，至多选择1件，可以不选。</p>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>多组输入<br>每组数据第一行输入k M(k&lt;=6,1&lt;=M&lt;=1e8)，表示有多少类物品<br>接下来k行，每行以Ai(1&lt;=Ai&lt;=100)开头，表示这类物品有多少个，接下来Ai个数，第j个为Vj(1&lt;=Vj&lt;=1e8),表示小L对这类物品的第j个的喜欢值是多少。</p>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>每组输出一行，表示方案数</p>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>2 5<br>3 1 3 4<br>2 2 3<br>2 1<br>2 2 2<br>2 2 2  </p>
-<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>3<br>8</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题是非常经典的入门型深搜题目，重点是掌握这种写法，观察这个dfs函数。<br>这个题需要注意一下优化，一旦某一层已经出现喜好度之和大于m，就不必再搜下去了，处理见代码。<br>另外 注意数据范围 必须上long long。</p>
-<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
+<h2 id="题目描述-35">题目描述</h2>
+<blockquote>
+<p>小L有严重的选择困难症。<br>
+早上起床后，需要花很长时间决定今天穿什么出门。<br>
+假设一共有k类物品需要搭配选择，每类物品的个数为Ai，每个物品有一个喜欢值Vj，代表小L对这件物品的喜欢程度。<br>
+小L想知道，有多少种方案，使得选出来的总喜欢值&gt;M<br>
+需要注意，每类物品，至多选择1件，可以不选。</p>
+</blockquote>
+<h2 id="输入描述-35">输入描述</h2>
+<blockquote>
+<p>多组输入<br>
+每组数据第一行输入k M(k&lt;=6,1&lt;=M&lt;=1e8)，表示有多少类物品<br>
+接下来k行，每行以Ai(1&lt;=Ai&lt;=100)开头，表示这类物品有多少个，接下来Ai个数，第j个为Vj(1&lt;=Vj&lt;=1e8),表示小L对这类物品的第j个的喜欢值是多少。</p>
+</blockquote>
+<h2 id="输出描述-35">输出描述</h2>
+<blockquote>
+<p>每组输出一行，表示方案数</p>
+</blockquote>
+<h2 id="示例-32">示例</h2>
+<h2 id="输入-32">输入</h2>
+<blockquote>
+<p>2 5<br>
+3 1 3 4<br>
+2 2 3<br>
+2 1<br>
+2 2 2<br>
+2 2 2</p>
+</blockquote>
+<h2 id="输出-32">输出</h2>
+<blockquote>
+<p>3<br>
+8</p>
+</blockquote>
+<h2 id="分析-25">分析</h2>
+<p>本题是非常经典的入门型深搜题目，重点是掌握这种写法，观察这个dfs函数。<br>
+这个题需要注意一下优化，一旦某一层已经出现喜好度之和大于m，就不必再搜下去了，处理见代码。<br>
+另外 注意数据范围 必须上long long。</p>
+<h2 id="AC代码-31">AC代码</h2>
+<hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
@@ -557,8 +588,7 @@
         cout <span class="token operator">&lt;&lt;</span> ans <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
-
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -854,19 +884,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem2/">
+                <a href="/2021/07/01/Algrithm%20Problem/Search/problem1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="靶形数独">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="小木棍">
                         
-                        <span class="card-title">靶形数独</span>
+                        <span class="card-title">小木棍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            搜索顺序影响算法速度
+                            剪枝的典型例题
                         
                     </div>
                     <div class="publish-info">
@@ -896,6 +926,10 @@
                         <span class="chip bg-color">DFS</span>
                     </a>
                     
+                    <a href="/tags/%E5%89%AA%E6%9E%9D/">
+                        <span class="chip bg-color">剪枝</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -907,19 +941,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem4/">
+                <a href="/2021/07/01/Algrithm%20Problem/Search/problem2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="寻找道路">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="靶形数独">
                         
-                        <span class="card-title">寻找道路</span>
+                        <span class="card-title">靶形数独</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            BFS与图论
+                            搜索顺序影响算法速度
                         
                     </div>
                     <div class="publish-info">
@@ -945,8 +979,8 @@
                         <span class="chip bg-color">搜索</span>
                     </a>
                     
-                    <a href="/tags/BFS/">
-                        <span class="chip bg-color">BFS</span>
+                    <a href="/tags/DFS/">
+                        <span class="chip bg-color">DFS</span>
                     </a>
                     
                 </div>
@@ -1095,7 +1129,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">43.9k</span>&nbsp;字
+                class="white-color">45k</span>&nbsp;字
             
             
             
