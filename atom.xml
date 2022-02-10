@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2022-01-04T12:19:59.656Z</updated>
+  <updated>2022-02-10T05:07:47.749Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Minimum Window Substring</title>
+    <link href="https://kong-aobo.github.io/2022/02/10/Algrithm%20Problem/Sliding%20Window/new/"/>
+    <id>https://kong-aobo.github.io/2022/02/10/Algrithm%20Problem/Sliding%20Window/new/</id>
+    <published>2022-02-10T06:30:18.000Z</published>
+    <updated>2022-02-10T05:07:47.749Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given two strings s and t of lengths m and n</summary>
+        
+      
+    
+    
+    
+    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+    <category term="滑动窗口" scheme="https://kong-aobo.github.io/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/"/>
+    
+  </entry>
   
   <entry>
     <title>泛化误差的定义和推导</title>
@@ -28,11 +54,9 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;符号约定&quot;&gt;符号约定&lt;/h2&gt;
-&lt;p&gt;数据集：$D$&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;符号约定&quot;&gt;&lt;a href=&quot;#符号约定&quot; class=&quot;headerlink&quot; title=&quot;符号约定&quot;&gt;&lt;/a&gt;符号约定&lt;/h2&gt;&lt;p&gt;数据集：$D$&lt;/p&gt;
 &lt;p&gt;$x$ 在数据集中的标记：$y_D$&lt;/p&gt;
-&lt;p&gt;$x$ 的真实标记：$y$&lt;/p&gt;
-&lt;p&gt;由训练集D学得的模型对 $x$ 的预测输出：$f(\boldsymbol{x} ;</summary>
+&lt;p&gt;$x$</summary>
         
       
     
@@ -57,8 +81,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;lower-bound&quot;&gt;lower_bound&lt;/h3&gt;
-&lt;pre class=&quot;line-numbers language-cpp&quot; data-language=&quot;cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span</summary>
+    <summary type="html">&lt;h3 id=&quot;lower-bound&quot;&gt;&lt;a href=&quot;#lower-bound&quot; class=&quot;headerlink&quot; title=&quot;lower_bound&quot;&gt;&lt;/a&gt;lower_bound&lt;/h3&gt;&lt;pre class=&quot;line-numbers</summary>
         
       
     
@@ -83,9 +106,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;电子邮件系统简述&quot;&gt;电子邮件系统简述&lt;/h2&gt;
-&lt;p&gt;电子邮件系统的组成如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/kong-aobo/figurebed/raw/master/20211112083215.png&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;电子邮件系统简述&quot;&gt;&lt;a href=&quot;#电子邮件系统简述&quot; class=&quot;headerlink&quot; title=&quot;电子邮件系统简述&quot;&gt;&lt;/a&gt;电子邮件系统简述&lt;/h2&gt;&lt;p&gt;电子邮件系统的组成如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
         
       
     
@@ -110,11 +132,9 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述-5&quot;&gt;题目描述&lt;/h2&gt;
-&lt;blockquote&gt;
+    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;后序+中序序列构造二叉树。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;输入描述&quot;&gt;&lt;a href=&quot;#输入描述&quot;</summary>
         
       
     
@@ -139,13 +159,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;引入问题&quot;&gt;引入问题&lt;/h2&gt;
-&lt;p&gt;给出一个长度为nn的数组，完成以下两种操作：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;将第i个数加上k&lt;/li&gt;
-&lt;li&gt;输出区间[i,j]内每个数的和&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3</summary>
+    <summary type="html">&lt;h2 id=&quot;引入问题&quot;&gt;&lt;a href=&quot;#引入问题&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -171,7 +185,7 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/243/&quot;&gt;https://www.acwing.com/problem/content/243/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -196,12 +210,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述-3&quot;&gt;题目描述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。&lt;br&gt;
-A 吃 B，B 吃 C，C 吃 A。&lt;br&gt;
-现有 N 个动物，以 1∼N 编号。&lt;br&gt;
-每个动物都是</summary>
+    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。&lt;br&gt;A 吃 B，B 吃</summary>
         
       
     
@@ -226,11 +236,8 @@ A 吃 B，B 吃 C，C 吃 A。&lt;br&gt;
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述-2&quot;&gt;题目描述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;给定一个包含 n 个点（编号为 1∼n）的无向图，初始时图中没有边。&lt;br&gt;
-现在要进行 m 个操作，操作共有三种：&lt;br&gt;
-C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
+    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;给定一个包含 n 个点（编号为 1∼n）的无向图，初始时图中没有边。&lt;br&gt;现在要进行 m</summary>
         
       
     
@@ -255,7 +262,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
       
         
         
-    <summary type="html">&lt;h2</summary>
+    <summary type="html">&lt;h2 id=&quot;并查集的概念&quot;&gt;&lt;a href=&quot;#并查集的概念&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -270,8 +277,8 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
   
   <entry>
     <title>子序列的平均值</title>
-    <link href="https://kong-aobo.github.io/2021/09/22/Dichotomy/problem1/"/>
-    <id>https://kong-aobo.github.io/2021/09/22/Dichotomy/problem1/</id>
+    <link href="https://kong-aobo.github.io/2021/09/22/Algrithm%20Problem/Dichotomy/problem1/"/>
+    <id>https://kong-aobo.github.io/2021/09/22/Algrithm%20Problem/Dichotomy/problem1/</id>
     <published>2021-09-22T08:54:18.000Z</published>
     <updated>2021-10-02T07:16:49.943Z</updated>
     
@@ -281,7 +288,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
         
         
     <summary type="html">&lt;p&gt;题目连接：&lt;a href=&quot;http://poj.org/problem?id=2018&quot;&gt;http://poj.org/problem?id=2018&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -290,9 +297,9 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
     <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="二分" scheme="https://kong-aobo.github.io/tags/%E4%BA%8C%E5%88%86/"/>
-    
     <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="二分" scheme="https://kong-aobo.github.io/tags/%E4%BA%8C%E5%88%86/"/>
     
   </entry>
   
@@ -309,7 +316,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
         
         
     <summary type="html">&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/909/&quot;&gt;https://www.acwing.com/problem/content/909/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -335,7 +342,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
         
         
     <summary type="html">&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/908/&quot;&gt;https://www.acwing.com/problem/content/908/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -360,8 +367,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
       
         
         
-    <summary type="html">&lt;p&gt;区间选点：&lt;a href=&quot;https://www.acwing.com/problem/content/907/&quot;&gt;https://www.acwing.com/problem/content/907/&lt;/a&gt;&lt;br&gt;
-最大不相交区间数：&lt;a</summary>
+    <summary type="html">&lt;p&gt;区间选点：&lt;a href=&quot;https://www.acwing.com/problem/content/907/&quot;&gt;https://www.acwing.com/problem/content/907/&lt;/a&gt;&lt;br&gt;最大不相交区间数：&lt;a</summary>
         
       
     
@@ -386,8 +392,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
       
         
         
-    <summary type="html">&lt;h2 id=&quot;算法介绍&quot;&gt;算法介绍&lt;/h2&gt;
-&lt;p&gt;遗传算法（Genetic Algorithm，GA）最早是由美国的 John</summary>
+    <summary type="html">&lt;h2 id=&quot;算法介绍&quot;&gt;&lt;a href=&quot;#算法介绍&quot; class=&quot;headerlink&quot; title=&quot;算法介绍&quot;&gt;&lt;/a&gt;算法介绍&lt;/h2&gt;&lt;p&gt;遗传算法（Genetic Algorithm，GA）最早是由美国的 John</summary>
         
       
     
@@ -414,9 +419,8 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
       
         
         
-    <summary type="html">&lt;h2 id=&quot;最短路-2&quot;&gt;最短路&lt;/h2&gt;
-&lt;p&gt;各种最短路算法的适用情况及时间复杂度如下：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/kong-aobo/figurebed/raw/master/20210828162100.png&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;最短路&quot;&gt;&lt;a href=&quot;#最短路&quot; class=&quot;headerlink&quot; title=&quot;最短路&quot;&gt;&lt;/a&gt;最短路&lt;/h2&gt;&lt;p&gt;各种最短路算法的适用情况及时间复杂度如下：&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
         
       
     
@@ -441,7 +445,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
       
         
         
-    <summary type="html">&lt;h2</summary>
+    <summary type="html">&lt;h2 id=&quot;KM算法&quot;&gt;&lt;a href=&quot;#KM算法&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -469,7 +473,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/861/&quot;&gt;https://www.acwing.com/problem/content/861/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -497,7 +501,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/860/&quot;&gt;https://www.acwing.com/problem/content/860/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -524,8 +528,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
       
         
         
-    <summary type="html">&lt;h2 id=&quot;算法介绍-6&quot;&gt;算法介绍&lt;/h2&gt;
-&lt;p&gt;SPFA算法是在Bellman Ford算法的基础上进行优化的，存在&lt;strong&gt;负权边的最短路问题和判断负环&lt;/strong&gt;通常采用SPFA算法。Bellman</summary>
+    <summary type="html">&lt;h2 id=&quot;算法介绍&quot;&gt;&lt;a href=&quot;#算法介绍&quot; class=&quot;headerlink&quot; title=&quot;算法介绍&quot;&gt;&lt;/a&gt;算法介绍&lt;/h2&gt;&lt;p&gt;SPFA算法是在Bellman</summary>
         
       
     
@@ -537,34 +540,6 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
     <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
     
     <category term="最短路图" scheme="https://kong-aobo.github.io/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%9B%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>匈牙利算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/hungarian%20algorithm/"/>
-    <id>https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/hungarian%20algorithm/</id>
-    <published>2021-08-27T14:55:18.000Z</published>
-    <updated>2022-01-24T08:35:27.462Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/863/&quot;&gt;https://www.acwing.com/problem/content/863/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-    <category term="二分图" scheme="https://kong-aobo.github.io/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/"/>
     
   </entry>
   

@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
 </head>
 
 
@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1k
                 </div>
                 
 
@@ -503,72 +503,29 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/description/293/">https://www.acwing.com/problem/content/description/293/</a></p>
-<h2 id="题目描述-9">题目描述</h2>
-<blockquote>
-<p>求把 N×M 的棋盘分割成若干个 1×2 的的长方形，有多少种方案。<br>
-例如当 N=2，M=4 时，共有 5 种方案。当 N=2，M=3 时，共有 3 种方案。</p>
-</blockquote>
-<h2 id="输入描述-9">输入描述</h2>
-<blockquote>
-<p>输入包含多组测试用例。<br>
-每组测试用例占一行，包含两个整数 N 和 M。<br>
-当输入用例 N=0，M=0 时，表示输入终止，且该用例无需处理。</p>
-</blockquote>
-<h2 id="输出描述-9">输出描述</h2>
-<blockquote>
-<p>每个测试用例输出一个结果，每个结果占一行。<br>
-1≤N,M≤11</p>
-</blockquote>
-<h2 id="示例-9">示例</h2>
-<h3 id="输入-9">输入</h3>
-<blockquote>
-<p>1 2<br>
-1 3<br>
-1 4<br>
-2 2<br>
-2 3<br>
-2 4<br>
-2 11<br>
-4 11<br>
-0 0</p>
-</blockquote>
-<h3 id="输出-9">输出</h3>
-<blockquote>
-<p>1<br>
-0<br>
-1<br>
-2<br>
-3<br>
-5<br>
-144<br>
-51205</p>
-</blockquote>
-<h2 id="分析-8">分析</h2>
-<h3 id="约定-3">约定</h3>
-<p>棋盘的行数和列数分别为n，m</p>
-<h3 id="切入点-2">切入点</h3>
-<p>将棋盘按照1*2的矩阵划分，则矩阵仅有两种放法，横着放和竖着放。当确定了那些格子横着放矩阵，那剩下的格子必定由竖着放的矩阵填满，因此，横着放的矩阵的分割方案数即等于总的分割方案数。我们只需要考虑合法的横着放矩阵的方案数即可。<br>
-合法，是指剩余的空间能够被竖着的矩阵填满，即横着的方案确定后，纵向连续的空格数必须为偶数，否则不能填满整个棋盘。</p>
-<h3 id="状态表示-5">状态表示</h3>
-<p>f(i,j)表示满足如下条件分割方案的数量：</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>求把 N×M 的棋盘分割成若干个 1×2 的的长方形，有多少种方案。<br>例如当 N=2，M=4 时，共有 5 种方案。当 N=2，M=3 时，共有 3 种方案。</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>输入包含多组测试用例。<br>每组测试用例占一行，包含两个整数 N 和 M。<br>当输入用例 N=0，M=0 时，表示输入终止，且该用例无需处理。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>每个测试用例输出一个结果，每个结果占一行。<br>1≤N,M≤11</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>1 2<br>1 3<br>1 4<br>2 2<br>2 3<br>2 4<br>2 11<br>4 11<br>0 0</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>1<br>0<br>1<br>2<br>3<br>5<br>144<br>51205  </p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="约定"><a href="#约定" class="headerlink" title="约定"></a>约定</h3><p>棋盘的行数和列数分别为n，m</p>
+<h3 id="切入点"><a href="#切入点" class="headerlink" title="切入点"></a>切入点</h3><p>将棋盘按照1*2的矩阵划分，则矩阵仅有两种放法，横着放和竖着放。当确定了那些格子横着放矩阵，那剩下的格子必定由竖着放的矩阵填满，因此，横着放的矩阵的分割方案数即等于总的分割方案数。我们只需要考虑合法的横着放矩阵的方案数即可。<br>合法，是指剩余的空间能够被竖着的矩阵填满，即横着的方案确定后，纵向连续的空格数必须为偶数，否则不能填满整个棋盘。</p>
+<h3 id="状态表示"><a href="#状态表示" class="headerlink" title="状态表示"></a>状态表示</h3><p>f(i,j)表示满足如下条件分割方案的数量：</p>
 <ul>
 <li>前i-1列横着放矩阵的方案已确定</li>
 <li>第i-1列伸出来的格子在第i列的状态为j</li>
 </ul>
+</blockquote>
 <p>此处的j与其它的DP问题不同，它代表的是一种状态，应将其看作是一个二进制数，每一位代表一列中某一个格子的状态，0为空，1为被我们分割的矩阵包含。二进制数的大小范围为 0 ~ 1&lt;&lt;n，左闭右开。</p>
-<h3 id="状态划分与计算-4">状态划分与计算</h3>
-<p>对于f(i,j)，我们还是按照以往的思路，试着将达成f(i,j)的最后一步操作进行划分，也就是在f(i-1,k)的情况下操作第i-1列，使之变成f(i,j)。显然，f(i,j)=sum(f(i-1,k))，要求f(i-1,k)必须能转移到f(i,j)。<br>
-转移的条件如下：</p>
+<h3 id="状态划分与计算"><a href="#状态划分与计算" class="headerlink" title="状态划分与计算"></a>状态划分与计算</h3><p>对于f(i,j)，我们还是按照以往的思路，试着将达成f(i,j)的最后一步操作进行划分，也就是在f(i-1,k)的情况下操作第i-1列，使之变成f(i,j)。显然，f(i,j)=sum(f(i-1,k))，要求f(i-1,k)必须能转移到f(i,j)。<br>转移的条件如下：</p>
 <ul>
 <li>k&amp;j=0，表示横向矩阵放的不冲突</li>
 <li>k|j 连续0的个数为偶数 ，表示第i-1列这个已确定的列能被纵向的矩阵填充。</li>
 </ul>
-<p>需要注意，第i-1列的填充情况是在k，j都确定时才确定的，只有此时讨论合法才有意义。<br>
-为了减少时间复杂度，我们引入布尔数组st，对于一列已经确定的状态i，st[i]为true表示其合法，否则非法。还引入了vector<int> state[]，state[i]中存放着能转移到列状态为i的前一列的所有状态j。</int></p>
-<h3 id="边界处理">边界处理</h3>
-<p>f(1,0)=1，其余都是0。这是从实际意义上出发，也可以从满足f(2,j)的实际要求出发。</p>
-<h2 id="AC代码-7">AC代码</h2>
-<hr>
+<p>需要注意，第i-1列的填充情况是在k，j都确定时才确定的，只有此时讨论合法才有意义。<br>为了减少时间复杂度，我们引入布尔数组st，对于一列已经确定的状态i，st[i]为true表示其合法，否则非法。还引入了vector<int> state[]，state[i]中存放着能转移到列状态为i的前一列的所有状态j。</int></p>
+<h3 id="边界处理"><a href="#边界处理" class="headerlink" title="边界处理"></a>边界处理</h3><p>f(1,0)=1，其余都是0。这是从实际意义上出发，也可以从满足f(2,j)的实际要求出发。</p>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
@@ -1168,7 +1125,7 @@ vector<span class="token operator">&lt;</span><span class="token keyword">int</s
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45k</span>&nbsp;字
+                class="white-color">44.4k</span>&nbsp;字
             
             
             

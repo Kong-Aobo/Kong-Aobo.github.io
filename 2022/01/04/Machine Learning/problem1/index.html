@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
 </head>
 
 
@@ -473,7 +473,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    463
+                    478
                 </div>
                 
 
@@ -498,19 +498,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="符号约定">符号约定</h2>
-<p>数据集：$D$</p>
+                <h2 id="符号约定"><a href="#符号约定" class="headerlink" title="符号约定"></a>符号约定</h2><p>数据集：$D$</p>
 <p>$x$ 在数据集中的标记：$y_D$</p>
 <p>$x$ 的真实标记：$y$</p>
 <p>由训练集D学得的模型对 $x$ 的预测输出：$f(\boldsymbol{x} ; D)$</p>
-<h2 id="期望预测">期望预测</h2>
-<p>我们取得的数据集仅仅是全体数据集的一部分，且数据集的取得是随机的，因此经过训练所构建的 $f(\boldsymbol{x} ; D)$ 也可以说是“随机的”，对任意的 $x$ 的期望预测如下：</p>
+<h2 id="期望预测"><a href="#期望预测" class="headerlink" title="期望预测"></a>期望预测</h2><p>我们取得的数据集仅仅是全体数据集的一部分，且数据集的取得是随机的，因此经过训练所构建的 $f(\boldsymbol{x} ; D)$ 也可以说是“随机的”，对任意的 $x$ 的期望预测如下：</p>
 <p>$\bar{f}(\boldsymbol{x})=\mathbb{E}_{D}[f(\boldsymbol{x} ; D)]$</p>
-<h2 id="偏差-bias">偏差 bias</h2>
-<p>偏差的定义如下：</p>
+<h2 id="偏差-bias"><a href="#偏差-bias" class="headerlink" title="偏差 bias"></a>偏差 bias</h2><p>偏差的定义如下：</p>
 <p>$\operatorname{bias}^{2}(\boldsymbol{x})=(\bar{f}(\boldsymbol{x})-y)^{2}$</p>
-<h2 id="泛化误差">泛化误差</h2>
-<p>$\begin{aligned} E_{rr}(f(\boldsymbol{x} ; D))=&amp; \mathbb{E}<em>{D}\left[\left(f(\boldsymbol{x} ; D)-y</em>{D}\right)^{2}\right] \=&amp; \mathbb{E}<em>{D}\left[\left(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x})+\bar{f}(\boldsymbol{x})-y</em>{D}\right)^{2}\right] \=&amp; \mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}</em>{D}\left[\left(\bar{f}(\boldsymbol{x})-y_{D}\right)^{2}\right]+2\mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))\left(\bar{f}(\boldsymbol{x})-y</em>{D}\right)\right] \=&amp; \mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}</em>{D}\left[\left(\bar{f}(\boldsymbol{x})-y_{D}\right)^{2}\right] \=&amp; \mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}</em>{D}\left[\left(\bar{f}(\boldsymbol{x})-y+y-y_{D}\right)^{2}\right] \=&amp; \mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}</em>{D}\left[(\bar{f}(\boldsymbol{x})-y)^{2}\right]+\mathbb{E}<em>{D}\left[\left(y-y</em>{D}\right)^{2}\right] \ &amp;+2 \mathbb{E}<em>{D}\left[(\bar{f}(\boldsymbol{x})-y)\left(y-y</em>{D}\right)\right] \=&amp; \mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+(\bar{f}(\boldsymbol{x})-y)^{2}+\mathbb{E}</em>{D}[(y_D-y)^2]\end{aligned}$</p>
+<h2 id="泛化误差"><a href="#泛化误差" class="headerlink" title="泛化误差"></a>泛化误差</h2><p>$\begin{aligned} E_{rr}(f(\boldsymbol{x} ; D))=&amp; \mathbb{E}_{D}\left[\left(f(\boldsymbol{x} ; D)-y_{D}\right)^{2}\right] \\=&amp; \mathbb{E}_{D}\left[\left(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x})+\bar{f}(\boldsymbol{x})-y_{D}\right)^{2}\right] \\=&amp; \mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}_{D}\left[\left(\bar{f}(\boldsymbol{x})-y_{D}\right)^{2}\right]+2\mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))\left(\bar{f}(\boldsymbol{x})-y_{D}\right)\right] \\=&amp; \mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}_{D}\left[\left(\bar{f}(\boldsymbol{x})-y_{D}\right)^{2}\right] \\=&amp; \mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}_{D}\left[\left(\bar{f}(\boldsymbol{x})-y+y-y_{D}\right)^{2}\right] \\=&amp; \mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}_{D}\left[(\bar{f}(\boldsymbol{x})-y)^{2}\right]+\mathbb{E}_{D}\left[\left(y-y_{D}\right)^{2}\right] \\ &amp;+2 \mathbb{E}_{D}\left[(\bar{f}(\boldsymbol{x})-y)\left(y-y_{D}\right)\right] \\=&amp; \mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+(\bar{f}(\boldsymbol{x})-y)^{2}+\mathbb{E}_{D}[(y_D-y)^2]\end{aligned}$</p>
 <p>由此得到泛化误差与偏差、方差和噪声的关系如下：</p>
 <p>$E_{rr}(f(\boldsymbol{x} ; D))=\operatorname{bias}^{2}(\boldsymbol{x})+\operatorname{var}(\boldsymbol{x})+\varepsilon^{2}$</p>
 <p>$\left.\bar{f}(\boldsymbol{x})=\mathbb{E}_{D}[f(\boldsymbol{x}; D)\right]$</p>
@@ -803,48 +799,46 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/01/04/Machine%20Learning/problem1/">
+                <a href="/2022/02/10/Algrithm%20Problem/Sliding%20Window/new/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="泛化误差的定义和推导">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="Minimum Window Substring">
                         
-                        <span class="card-title">泛化误差的定义和推导</span>
+                        <span class="card-title">Minimum Window Substring</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            泛化误差等于偏差加方差加噪声
+                            利用滑动窗口的思想高效解决问题
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-01-04
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-10
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
-                                    机器学习
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
-                        <span class="chip bg-color">深度学习</span>
+                    <a href="/tags/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3/">
+                        <span class="chip bg-color">滑动窗口</span>
                     </a>
                     
                 </div>
@@ -1049,7 +1043,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45k</span>&nbsp;字
+                class="white-color">44.4k</span>&nbsp;字
             
             
             
