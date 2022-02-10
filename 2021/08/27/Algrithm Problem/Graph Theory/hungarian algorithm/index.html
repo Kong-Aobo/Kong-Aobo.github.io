@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
 </head>
 
 
@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    659
+                    666
                 </div>
                 
 
@@ -503,21 +503,47 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/863/">https://www.acwing.com/problem/content/863/</a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
-<p>给定一个二分图，其中左半部包含 n1 个点（编号 1∼n1），右半部包含 n2 个点（编号 1∼n2），二分图共包含 m 条边。<br>数据保证任意一条边的两个端点都不可能在同一部分中。<br>请你求出二分图的最大匹配数。<br>二分图的匹配：给定一个二分图 G，在 G 的一个子图 M 中，M 的边集 {E} 中的任意两条边都不依附于同一个顶点，则称 M 是一个匹配。<br>二分图的最大匹配：所有匹配中包含边数最多的一组匹配被称为二分图的最大匹配，其边数即为最大匹配数。</p>
+<h2 id="题目描述-35">题目描述</h2>
+<blockquote>
+<p>给定一个二分图，其中左半部包含 n1 个点（编号 1∼n1），右半部包含 n2 个点（编号 1∼n2），二分图共包含 m 条边。<br>
+数据保证任意一条边的两个端点都不可能在同一部分中。<br>
+请你求出二分图的最大匹配数。<br>
+二分图的匹配：给定一个二分图 G，在 G 的一个子图 M 中，M 的边集 {E} 中的任意两条边都不依附于同一个顶点，则称 M 是一个匹配。<br>
+二分图的最大匹配：所有匹配中包含边数最多的一组匹配被称为二分图的最大匹配，其边数即为最大匹配数。</p>
 </blockquote>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
-<p>第一行包含三个整数 n1、 n2 和 m。<br>接下来 m 行，每行包含两个整数 u 和 v，表示左半部点集中的点 u 和右半部点集中的点 v 之间存在一条边。</p>
+<h2 id="输入描述-35">输入描述</h2>
+<blockquote>
+<p>第一行包含三个整数 n1、 n2 和 m。<br>
+接下来 m 行，每行包含两个整数 u 和 v，表示左半部点集中的点 u 和右半部点集中的点 v 之间存在一条边。</p>
 </blockquote>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
-<p>输出一个整数，表示二分图的最大匹配数。<br>1≤n1,n2≤500<br>1≤u≤n1<br>1≤v≤n2<br>1≤m≤105</p>
+<h2 id="输出描述-35">输出描述</h2>
+<blockquote>
+<p>输出一个整数，表示二分图的最大匹配数。<br>
+1≤n1,n2≤500<br>
+1≤u≤n1<br>
+1≤v≤n2<br>
+1≤m≤105</p>
 </blockquote>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote>
-<p>2 2 4<br>1 1<br>1 2<br>2 1<br>2 2</p>
-<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>2</p>
+<h2 id="示例-34">示例</h2>
+<h3 id="输入-34">输入</h3>
+<blockquote>
+<p>2 2 4<br>
+1 1<br>
+1 2<br>
+2 1<br>
+2 2</p>
 </blockquote>
-<h2 id="匈牙利算法"><a href="#匈牙利算法" class="headerlink" title="匈牙利算法"></a>匈牙利算法</h2><p>匈牙利算法可以求解二分图的最大匹配问题。<br>设点的数量为n，边的数量为m，则时间复杂度为O(nm)，但实际执行时一般都很快。<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/208596378">算法流程及相关说明</a><br>算法实现直接见代码。</p>
-<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
+<h3 id="输出-34">输出</h3>
+<blockquote>
+<p>2</p>
+</blockquote>
+<h2 id="匈牙利算法">匈牙利算法</h2>
+<p>匈牙利算法可以求解二分图的最大匹配问题。<br>
+设点的数量为n，边的数量为m，则时间复杂度为O(nm)，但实际执行时一般都很快。<br>
+<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/208596378">算法流程及相关说明</a><br>
+算法实现直接见代码。</p>
+<h2 id="AC代码-28">AC代码</h2>
+<hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
@@ -1117,7 +1143,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44.4k</span>&nbsp;字
+                class="white-color">45.4k</span>&nbsp;字
             
             
             

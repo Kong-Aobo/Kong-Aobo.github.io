@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
 </head>
 
 
@@ -498,14 +498,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="电子邮件系统简述"><a href="#电子邮件系统简述" class="headerlink" title="电子邮件系统简述"></a>电子邮件系统简述</h2><p>电子邮件系统的组成如下图：</p>
+                <h2 id="电子邮件系统简述">电子邮件系统简述</h2>
+<p>电子邮件系统的组成如下图：</p>
 <p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211112083215.png" alt=""></p>
 <p>电子邮件的发送过程如下图：</p>
 <p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211112083411.png" alt=""></p>
 <p>一封电子邮件由一个基本的信封、数个首部字段、一个空行和邮件主体组成，常见的首部如下图：</p>
 <p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211112083604.png" alt=""></p>
-<h2 id="python实现"><a href="#python实现" class="headerlink" title="python实现"></a>python实现</h2><p>此处仅实现文本内容的电子邮件发送。</p>
-<p>emai实现邮件构造，其中MIMEText提供邮件构造功能，Header提供编码功能。<br>smtplib实现SMTP协议，完成邮件发送。</p>
+<h2 id="python实现">python实现</h2>
+<p>此处仅实现文本内容的电子邮件发送。</p>
+<p>emai实现邮件构造，其中MIMEText提供邮件构造功能，Header提供编码功能。<br>
+smtplib实现SMTP协议，完成邮件发送。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">from</span> email<span class="token punctuation">.</span>header <span class="token keyword">import</span> Header
 <span class="token keyword">from</span> email<span class="token punctuation">.</span>mime<span class="token punctuation">.</span>text <span class="token keyword">import</span> MIMEText
 
@@ -1070,7 +1073,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44.4k</span>&nbsp;字
+                class="white-color">45.4k</span>&nbsp;字
             
             
             

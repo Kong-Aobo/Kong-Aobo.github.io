@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Kong Aobo's Blog" type="application/atom+xml">
 </head>
 
 
@@ -498,27 +498,38 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="堆的定义"><a href="#堆的定义" class="headerlink" title="堆的定义"></a>堆的定义</h2><p>n个元素的序列{k1,k2,···,kn}当且仅当满足以下关系时，称之为堆：  </p>
-<script type="math/tex; mode=display">\begin{cases}
-k_i \le k_{2i}\\ 
-k_i \le k_{2i+1}\\ 
-\end{cases}
-\quad或\quad\ \ 
-\begin{cases}
-k_i \ge k_{2i}\\ 
-k_i \ge k_{2i+1}\\ 
-\end{cases}</script><p>前者称为小根堆，后者称为大根堆。<br><strong>接下来，我们以小根堆为例对堆进行总结。</strong><br>根据堆的定义，我们可以将堆表示成完全二叉树，给出一个小根堆的例子如下：</p>
+                <h2 id="堆的定义">堆的定义</h2>
+<p>n个元素的序列{k1,k2,···,kn}当且仅当满足以下关系时，称之为堆：<br>
+$$\begin{cases}<br>
+k_i \le k_{2i}\<br>
+k_i \le k_{2i+1}\<br>
+\end{cases}<br>
+\quad或\quad\ \<br>
+\begin{cases}<br>
+k_i \ge k_{2i}\<br>
+k_i \ge k_{2i+1}\<br>
+\end{cases}<br>
+$$<br>
+前者称为小根堆，后者称为大根堆。<br>
+<strong>接下来，我们以小根堆为例对堆进行总结。</strong><br>
+根据堆的定义，我们可以将堆表示成完全二叉树，给出一个小根堆的例子如下：</p>
 <p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210822093427.png" alt=""></p>
-<p>父节点一定小于等于两个孩子节点。  </p>
-<h2 id="堆的存储"><a href="#堆的存储" class="headerlink" title="堆的存储"></a>堆的存储</h2><p>虽然用完全二叉树表示堆非常直观，但实际编程时通常采用数组模拟堆，依据下标处理相关联的元素。<br></p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+<p>父节点一定小于等于两个孩子节点。</p>
+<h2 id="堆的存储">堆的存储</h2>
+<p>虽然用完全二叉树表示堆非常直观，但实际编程时通常采用数组模拟堆，依据下标处理相关联的元素。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
 <span class="token keyword">int</span> h<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>       <span class="token comment">//堆</span>
-<span class="token keyword">int</span> mySize<span class="token punctuation">;</span>     <span class="token comment">//最末端的元素的下标</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><br>也经常使用C++的priority_queue来模拟堆。<p></p>
-<h2 id="堆的基础操作"><a href="#堆的基础操作" class="headerlink" title="堆的基础操作"></a>堆的基础操作</h2><p>实现一个堆的核心：</p>
+<span class="token keyword">int</span> mySize<span class="token punctuation">;</span>     <span class="token comment">//最末端的元素的下标</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>也经常使用C++的priority_queue来模拟堆。</p>
+<h2 id="堆的基础操作">堆的基础操作</h2>
+<p>实现一个堆的核心：</p>
 <ul>
 <li>down，节点的下沉操作</li>
 <li>up，节点上升操作</li>
 </ul>
-<h3 id="down"><a href="#down" class="headerlink" title="down"></a>down</h3><p>对一个节点，如果它大于某个孩子节点，就应该将该节点下沉，即与它最小的孩子节点交换位置，以满足堆的定义。<br></p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">down</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">)</span>    <span class="token comment">//u为节点的下标</span>
+<h3 id="down">down</h3>
+<p>对一个节点，如果它大于某个孩子节点，就应该将该节点下沉，即与它最小的孩子节点交换位置，以满足堆的定义。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">down</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">)</span>    <span class="token comment">//u为节点的下标</span>
 <span class="token punctuation">{</span>                   <span class="token comment">//递归的使一个节点到达应到的位置</span>
 	<span class="token keyword">int</span> t <span class="token operator">=</span> u<span class="token punctuation">;</span>
 	<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> u <span class="token operator">&lt;=</span> mySize <span class="token operator">&amp;&amp;</span> h<span class="token punctuation">[</span>t<span class="token punctuation">]</span> <span class="token operator">&gt;</span> h<span class="token punctuation">[</span><span class="token number">2</span> <span class="token operator">*</span> u<span class="token punctuation">]</span><span class="token punctuation">)</span>
@@ -530,8 +541,10 @@ k_i \ge k_{2i+1}\\
 		<span class="token function">swap</span><span class="token punctuation">(</span>h<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">,</span> h<span class="token punctuation">[</span>t<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">//下一层递归的入口</span>
 		<span class="token function">down</span><span class="token punctuation">(</span>t<span class="token punctuation">)</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
-<h3 id="up"><a href="#up" class="headerlink" title="up"></a>up</h3><p>对一个节点，如果它小于它的父节点，则应将其上升，即与父节点的位置互换，以满足堆的定义。<br></p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">up</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">)</span>      <span class="token comment">//此处未用递归，但可以用递归实现</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="up">up</h3>
+<p>对一个节点，如果它小于它的父节点，则应将其上升，即与父节点的位置互换，以满足堆的定义。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">up</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">)</span>      <span class="token comment">//此处未用递归，但可以用递归实现</span>
 <span class="token punctuation">{</span>
 	<span class="token keyword">while</span> <span class="token punctuation">(</span>u <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
 	<span class="token punctuation">{</span>
@@ -541,34 +554,52 @@ k_i \ge k_{2i+1}\\
 		<span class="token function">swap</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> u <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 		u <span class="token operator">/=</span> <span class="token number">2</span><span class="token punctuation">;</span>
 	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
-<h3 id="堆的初始化"><a href="#堆的初始化" class="headerlink" title="堆的初始化"></a>堆的初始化</h3><p>给定一个元素集合，如何才将它变成一个堆：<br>从下标为mySize/2的元素开始，到下标为1的元素结束，分别执行一次down操作。<br></p><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="堆的初始化">堆的初始化</h3>
+<p>给定一个元素集合，如何才将它变成一个堆：<br>
+从下标为mySize/2的元素开始，到下标为1的元素结束，分别执行一次down操作。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp">cin <span class="token operator">&gt;&gt;</span> n<span class="token punctuation">;</span>
 mySize<span class="token operator">=</span>n<span class="token punctuation">;</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
 	cin <span class="token operator">&gt;&gt;</span> h<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
 <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> n <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&gt;=</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">--</span><span class="token punctuation">)</span>
-	<span class="token function">down</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>对初始化的解释：<br>我们初始化就使要将原始的数据集合变成符合堆定义的数据集合。<br>二叉树的叶子节点没有孩子节点，因此必然满足定义中的方程，我们从最后一个不是叶子节点的节点开始逐个向前进行down操作，就可以使整棵二叉树满足定义变成堆。<p></p>
-<h2 id="堆的功能操作"><a href="#堆的功能操作" class="headerlink" title="堆的功能操作"></a>堆的功能操作</h2><p>对堆的功能操作有以下几种：</p>
+	<span class="token function">down</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>对初始化的解释：<br>
+我们初始化就使要将原始的数据集合变成符合堆定义的数据集合。<br>
+二叉树的叶子节点没有孩子节点，因此必然满足定义中的方程，我们从最后一个不是叶子节点的节点开始逐个向前进行down操作，就可以使整棵二叉树满足定义变成堆。</p>
+<h2 id="堆的功能操作">堆的功能操作</h2>
+<p>对堆的功能操作有以下几种：</p>
 <ul>
 <li>插入一个数</li>
 <li>求堆中的最小值</li>
 <li>删除任意一个数</li>
-<li>修改任意一个数<h3 id="插入"><a href="#插入" class="headerlink" title="插入"></a>插入</h3>将其插在堆的末端，之后执行up操作。<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> x<span class="token punctuation">;</span>
+<li>修改任意一个数</li>
+</ul>
+<h3 id="插入">插入</h3>
+<p>将其插在堆的末端，之后执行up操作。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> x<span class="token punctuation">;</span>
 cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span>
 h<span class="token punctuation">[</span><span class="token operator">++</span>mySize<span class="token punctuation">]</span> <span class="token operator">=</span> x<span class="token punctuation">;</span>
 <span class="token function">up</span><span class="token punctuation">(</span>mySize<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="求最小值"><a href="#求最小值" class="headerlink" title="求最小值"></a>求最小值</h3>最小值就是堆顶元素，即h[1]。<br>注意堆中元素下标从1开始，方便处理。<h3 id="删除"><a href="#删除" class="headerlink" title="删除"></a>删除</h3>将待删除元素与堆末端元素互换，mySize减一，再对交换过去的末端元素进行一次down操作，一次up操作(也可以判断该元素与父节点和子节点的关系具体选择一个操作，而直接一次up一次down就不用额外判断了)。<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> x<span class="token punctuation">;</span>
+<h3 id="求最小值">求最小值</h3>
+<p>最小值就是堆顶元素，即h[1]。<br>
+注意堆中元素下标从1开始，方便处理。</p>
+<h3 id="删除">删除</h3>
+<p>将待删除元素与堆末端元素互换，mySize减一，再对交换过去的末端元素进行一次down操作，一次up操作(也可以判断该元素与父节点和子节点的关系具体选择一个操作，而直接一次up一次down就不用额外判断了)。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> x<span class="token punctuation">;</span>
 cin <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span>
 <span class="token function">swap</span><span class="token punctuation">(</span>h<span class="token punctuation">[</span>x<span class="token punctuation">]</span><span class="token punctuation">,</span> h<span class="token punctuation">[</span>mySize<span class="token operator">--</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token function">up</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token function">down</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="修改"><a href="#修改" class="headerlink" title="修改"></a>修改</h3>对某一元素修改后，执行一次down操作和一次up操作。<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> k<span class="token punctuation">,</span>x<span class="token punctuation">;</span>
+<h3 id="修改">修改</h3>
+<p>对某一元素修改后，执行一次down操作和一次up操作。</p>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> k<span class="token punctuation">,</span>x<span class="token punctuation">;</span>
 cin <span class="token operator">&gt;&gt;</span> k <span class="token operator">&gt;&gt;</span> x<span class="token punctuation">;</span>
 h<span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">=</span> x<span class="token punctuation">;</span>
 <span class="token function">up</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token function">down</span><span class="token punctuation">(</span>k<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3>对堆操作时，要时刻注意使堆中的元素满足堆定义中的方程，适时使用down和up操作。</li>
-</ul>
+<h3 id="总结">总结</h3>
+<p>对堆操作时，要时刻注意使堆中的元素满足堆定义中的方程，适时使用down和up操作。</p>
 
                 
             </div>
@@ -861,19 +892,19 @@ h<span class="token punctuation">[</span>k<span class="token punctuation">]</spa
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/22/Algrithm%20Problem/Graph%20Theory/dijkstra/">
+                <a href="/2021/08/22/Algrithm%20Problem/Graph%20Theory/bellman%20ford/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="Dijkstra算法">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Bellman Ford算法">
                         
-                        <span class="card-title">Dijkstra算法</span>
+                        <span class="card-title">Bellman Ford算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Dijkstra算法及其优化
+                            Bellman Ford算法及其优化
                         
                     </div>
                     <div class="publish-info">
@@ -1109,7 +1140,7 @@ h<span class="token punctuation">[</span>k<span class="token punctuation">]</spa
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">44.4k</span>&nbsp;字
+                class="white-color">45.4k</span>&nbsp;字
             
             
             
