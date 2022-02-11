@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    1.5k
                 </div>
                 
 
@@ -502,39 +502,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="算法介绍-6">算法介绍</h2>
-<p>SPFA算法是在Bellman Ford算法的基础上进行优化的，存在<strong>负权边的最短路问题和判断负环</strong>通常采用SPFA算法。Bellman Ford算法会遍历所有的边，但是有很多的边遍历了其实没有什么意义，我们只用遍历那些到源点距离变小的点所连接的边即可，只有当一个点的前驱结点更新了，该节点才会得到更新；因此考虑到这一点，我们将创建一个队列每一次加入距离被更新的结点。因此，可以发现<strong>SPFA算法其实是一个BFS的过程</strong>。</p>
+                <h2 id="算法介绍"><a href="#算法介绍" class="headerlink" title="算法介绍"></a>算法介绍</h2><p>SPFA算法是在Bellman Ford算法的基础上进行优化的，存在<strong>负权边的最短路问题和判断负环</strong>通常采用SPFA算法。Bellman Ford算法会遍历所有的边，但是有很多的边遍历了其实没有什么意义，我们只用遍历那些到源点距离变小的点所连接的边即可，只有当一个点的前驱结点更新了，该节点才会得到更新；因此考虑到这一点，我们将创建一个队列每一次加入距离被更新的结点。因此，可以发现<strong>SPFA算法其实是一个BFS的过程</strong>。</p>
 <p>由于SPFA算法是由Bellman Ford算法优化而来，在最坏的情况下时间复杂度和它一样即时间复杂度为 O(nm)，假如题目时间允许可以直接用SPFA算法去解Dijkstra算法的题目。</p>
-<h2 id="最短路-2">最短路</h2>
-<p>注意：Bellman Ford算法可以存在负权回路，是因为其循环的次数是有限制的因此最终不会发生死循环；但是SPFA算法不可以，由于用了队列来存储，只要发生了更新就会不断的入队，因此<strong>假如有负权回路请你不要用SPFA否则会死循环</strong>。</p>
+<h2 id="最短路"><a href="#最短路" class="headerlink" title="最短路"></a>最短路</h2><p>注意：Bellman Ford算法可以存在负权回路，是因为其循环的次数是有限制的因此最终不会发生死循环；但是SPFA算法不可以，由于用了队列来存储，只要发生了更新就会不断的入队，因此<strong>假如有负权回路请你不要用SPFA否则会死循环</strong>。</p>
 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/853/">https://www.acwing.com/problem/content/853/</a></p>
-<h3 id="题目描述-39">题目描述</h3>
-<blockquote>
-<p>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环， 边权可能为负数。<br>
-请你求出 1 号点到 n 号点的最短距离，如果无法从 1 号点走到 n 号点，则输出 impossible。<br>
-数据保证不存在负权回路。</p>
-</blockquote>
-<h3 id="输入描述-39">输入描述</h3>
-<blockquote>
-<p>第一行包含整数 n 和 m。<br>
-接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
-</blockquote>
-<h3 id="输出描述-39">输出描述</h3>
-<blockquote>
-<p>输出一个整数，表示 1 号点到 n 号点的最短距离。<br>
-如果路径不存在，则输出 impossible。<br>
-1≤n,m≤105<br>
-图中涉及边长绝对值均不超过 10000</p>
-</blockquote>
-<h3 id="示例输入">示例输入</h3>
-<p>3 3<br>
-1 2 5<br>
-2 3 -3<br>
-1 3 4</p>
-<h3 id="示例输出">示例输出</h3>
-<p>2</p>
-<h3 id="AC代码-34">AC代码</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环， 边权可能为负数。<br>请你求出 1 号点到 n 号点的最短距离，如果无法从 1 号点走到 n 号点，则输出 impossible。<br>数据保证不存在负权回路。</p>
+<h3 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h3><p>第一行包含整数 n 和 m。<br>接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
+<h3 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h3><p>输出一个整数，表示 1 号点到 n 号点的最短距离。<br>如果路径不存在，则输出 impossible。<br>1≤n,m≤105<br>图中涉及边长绝对值均不超过 10000</p>
+<h3 id="示例输入"><a href="#示例输入" class="headerlink" title="示例输入"></a>示例输入</h3><p>3 3<br>1 2 5<br>2 3 -3<br>1 3 4</p>
+<h3 id="示例输出"><a href="#示例输出" class="headerlink" title="示例输出"></a>示例输出</h3><p>2</p>
+<h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;queue&gt;</span></span>
@@ -604,37 +582,18 @@
 		cout <span class="token operator">&lt;&lt;</span> res <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="判断负环">判断负环</h2>
-<p>方法：统计当前每个点的最短路中所包含的边数，如果某点的最短路所包含的边数大于等于n，则也说明存在环。</p>
+</blockquote>
+<h2 id="判断负环"><a href="#判断负环" class="headerlink" title="判断负环"></a>判断负环</h2><p>方法：统计当前每个点的最短路中所包含的边数，如果某点的最短路所包含的边数大于等于n，则也说明存在环。</p>
 <p>注意：该题是判断是否存在负环，并非判断是否存在从1开始的负环，因此需要将所有的点都加入队列中，更新周围的点。初始时将所有点插入队列中可以按如下方式理解：</p>
 <p>在原图的基础上新建一个虚拟源点，从该点向其他所有点连一条权值为0的有向边。那么原图有负环等价于新图有负环。此时在新图上做spfa，将虚拟源点加入队列中。然后进行spfa的第一次迭代，这时会将所有点的距离更新并将所有点插入队列中。执行到这一步，就等价于视频中的做法了。那么视频中的做法可以找到负环，等价于这次spfa可以找到负环，等价于新图有负环，等价于原图有负环。</p>
 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/854/">https://www.acwing.com/problem/content/854/</a></p>
-<h3 id="题目描述-40">题目描述</h3>
-<blockquote>
-<p>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环， 边权可能为负数。<br>
-请你判断图中是否存在负权回路。</p>
-</blockquote>
-<h3 id="输入描述-40">输入描述</h3>
-<blockquote>
-<p>第一行包含整数 n 和 m。<br>
-接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
-</blockquote>
-<h3 id="输出描述-40">输出描述</h3>
-<blockquote>
-<p>如果图中存在负权回路，则输出 Yes，否则输出 No。<br>
-1≤n≤2000<br>
-1≤m≤10000<br>
-图中涉及边长绝对值均不超过 10000</p>
-</blockquote>
-<h3 id="示例输入-2">示例输入</h3>
-<p>3 3<br>
-1 2 -1<br>
-2 3 4<br>
-3 1 -4</p>
-<h3 id="示例输出-2">示例输出</h3>
-<p>Yes</p>
-<h3 id="AC代码-35">AC代码</h3>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环， 边权可能为负数。<br>请你判断图中是否存在负权回路。</p>
+<h3 id="输入描述-1"><a href="#输入描述-1" class="headerlink" title="输入描述"></a>输入描述</h3><p>第一行包含整数 n 和 m。<br>接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
+<h3 id="输出描述-1"><a href="#输出描述-1" class="headerlink" title="输出描述"></a>输出描述</h3><p>如果图中存在负权回路，则输出 Yes，否则输出 No。<br>1≤n≤2000<br>1≤m≤10000<br>图中涉及边长绝对值均不超过 10000</p>
+<h3 id="示例输入-1"><a href="#示例输入-1" class="headerlink" title="示例输入"></a>示例输入</h3><p>3 3<br>1 2 -1<br>2 3 4<br>3 1 -4</p>
+<h3 id="示例输出-1"><a href="#示例输出-1" class="headerlink" title="示例输出"></a>示例输出</h3><p>Yes</p>
+<h3 id="AC代码-1"><a href="#AC代码-1" class="headerlink" title="AC代码"></a>AC代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;queue&gt;</span></span>
@@ -706,6 +665,7 @@
 		cout <span class="token operator">&lt;&lt;</span> <span class="token string">"No"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</blockquote>
 
                 
             </div>
@@ -1055,24 +1015,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/27/Algrithm%20Problem/Graph%20Theory/hungarian%20algorithm/">
+                <a href="/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="匈牙利算法">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="Prim算法">
                         
-                        <span class="card-title">匈牙利算法</span>
+                        <span class="card-title">Prim算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            匈牙利算法求解二分图的最大匹配
+                            Prim算法求最小生成树
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-28
                             </span>
                         <span class="publish-author">
                             
@@ -1093,8 +1053,8 @@
                         <span class="chip bg-color">图论</span>
                     </a>
                     
-                    <a href="/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/">
-                        <span class="chip bg-color">二分图</span>
+                    <a href="/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/">
+                        <span class="chip bg-color">最小生成树</span>
                     </a>
                     
                 </div>
@@ -1243,7 +1203,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.4k</span>&nbsp;字
+                class="white-color">45.6k</span>&nbsp;字
             
             
             

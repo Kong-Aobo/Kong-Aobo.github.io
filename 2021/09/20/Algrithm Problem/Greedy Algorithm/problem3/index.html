@@ -473,7 +473,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    473
+                    471
                 </div>
                 
 
@@ -499,49 +499,24 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目连接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/908/">https://www.acwing.com/problem/content/908/</a></p>
-<h2 id="题目描述-43">题目描述</h2>
-<blockquote>
-<p>给定 N 个闭区间 [ai,bi]，请你将这些区间分成若干组，使得每组内部的区间两两之间（包括端点）没有交集，并使得组数尽可能小。<br>
-输出最小组数。</p>
-</blockquote>
-<h2 id="输入描述-43">输入描述</h2>
-<blockquote>
-<p>第一行包含整数 N，表示区间数。<br>
-接下来 N 行，每行包含两个整数 ai,bi，表示一个区间的两个端点。</p>
-</blockquote>
-<h2 id="输出描述-42">输出描述</h2>
-<blockquote>
-<p>输出一个整数，表示最小组数。<br>
-1≤N≤105<br>
-−109≤ai≤bi≤109</p>
-</blockquote>
-<h2 id="示例-40">示例</h2>
-<h3 id="输入-40">输入</h3>
-<blockquote>
-<p>3<br>
--1 1<br>
-2 4<br>
-3 5</p>
-</blockquote>
-<h3 id="输出-40">输出</h3>
-<blockquote>
-<p>2</p>
-</blockquote>
-<h2 id="分析-33">分析</h2>
-<h3 id="算法过程-5">算法过程</h3>
-<p>本题算法过程如下：</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>给定 N 个闭区间 [ai,bi]，请你将这些区间分成若干组，使得每组内部的区间两两之间（包括端点）没有交集，并使得组数尽可能小。<br>输出最小组数。</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行包含整数 N，表示区间数。<br>接下来 N 行，每行包含两个整数 ai,bi，表示一个区间的两个端点。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出一个整数，表示最小组数。<br>1≤N≤105<br>−109≤ai≤bi≤109</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>3<br>-1 1<br>2 4<br>3 5</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>2</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="算法过程"><a href="#算法过程" class="headerlink" title="算法过程"></a>算法过程</h3><p>本题算法过程如下：</p>
 <ol>
 <li>将每个区间按照左端点从小到大进行排序。</li>
 <li>从前往后枚举区间，将该区间的左端点与各组右界的最小值作比较，大于等于则加入该组并更新该组右界，小于则新开一组。</li>
 </ol>
+</blockquote>
 <p>各组右界的最小值是通过维护一个小根堆实现的，详见代码。</p>
-<h3 id="证明-2">证明</h3>
-<p>记最优解的组数为ans，该算法的解的组数为cnt。</p>
+<h3 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h3><p>记最优解的组数为ans，该算法的解的组数为cnt。</p>
 <p>显然，该算法得到的方案是合法的，因此有ans&lt;=cnt。</p>
 <p>cnt的实际意义是有cnt个区间有重合部分，即这cnt个区间必在不同的组，因此有ans&gt;=cnt。</p>
 <p>综上，ans==cnt，证毕。</p>
-<h2 id="AC代码-38">AC代码</h2>
-<hr>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
@@ -1103,7 +1078,7 @@ P a<span class="token punctuation">[</span>N<span class="token punctuation">]</s
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.4k</span>&nbsp;字
+                class="white-color">45.6k</span>&nbsp;字
             
             
             
