@@ -502,12 +502,15 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="KM算法"><a href="#KM算法" class="headerlink" title="KM算法"></a>KM算法</h2><p>KM算法是一种计算机算法，功能是求完备匹配下的最大权匹配。在一个二分图内，左顶点为X，右顶点为Y，现对于每组左右连接XiYj有权wij，求一种匹配使得所有wij的和最大。</p>
+                <h2 id="KM算法">KM算法</h2>
+<p>KM算法是一种计算机算法，功能是求完备匹配下的最大权匹配。在一个二分图内，左顶点为X，右顶点为Y，现对于每组左右连接XiYj有权wij，求一种匹配使得所有wij的和最大。</p>
 <p>KM算法将二分图的最大权匹配问题转化为最大匹配问题，从而通过匈牙利算法解决。</p>
 <p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/KM%E7%AE%97%E6%B3%95/711839">原理证明</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/wenruo/p/5264235.html">流程说明</a></p>
-<h2 id="最大权匹配"><a href="#最大权匹配" class="headerlink" title="最大权匹配"></a>最大权匹配</h2><p>题目链接：<a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/showproblem.php?pid=2255">https://acm.hdu.edu.cn/showproblem.php?pid=2255</a></p>
-<h3 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h3><hr>
+<h2 id="最大权匹配">最大权匹配</h2>
+<p>题目链接：<a target="_blank" rel="noopener" href="https://acm.hdu.edu.cn/showproblem.php?pid=2255">https://acm.hdu.edu.cn/showproblem.php?pid=2255</a></p>
+<h3 id="AC代码-30">AC代码</h3>
+<hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdio&gt;</span></span>
@@ -616,9 +619,11 @@
     <span class="token punctuation">}</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="最小权匹配"><a href="#最小权匹配" class="headerlink" title="最小权匹配"></a>最小权匹配</h2><p>求最小权匹配只需要将所有权重取反，然后将最后求出的结果再取反即可。</p>
+<h2 id="最小权匹配">最小权匹配</h2>
+<p>求最小权匹配只需要将所有权重取反，然后将最后求出的结果再取反即可。</p>
 <p>题目链接：<a target="_blank" rel="noopener" href="http://poj.org/problem?id=2195">http://poj.org/problem?id=2195</a></p>
-<h3 id="AC代码-1"><a href="#AC代码-1" class="headerlink" title="AC代码"></a>AC代码</h3><pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+<h3 id="AC代码-31">AC代码</h3>
+<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdio&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
@@ -1069,19 +1074,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/28/Algrithm%20Problem/Graph%20Theory/summary/">
+                <a href="/2021/08/28/Algrithm%20Problem/Graph%20Theory/prim/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="图论总结">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="Prim算法">
                         
-                        <span class="card-title">图论总结</span>
+                        <span class="card-title">Prim算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            图论相关知识总结
+                            Prim算法求最小生成树
                         
                     </div>
                     <div class="publish-info">
@@ -1107,6 +1112,10 @@
                         <span class="chip bg-color">图论</span>
                     </a>
                     
+                    <a href="/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/">
+                        <span class="chip bg-color">最小生成树</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1118,19 +1127,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/">
+                <a href="/2021/08/28/Algrithm%20Problem/Graph%20Theory/spfa/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Kruskal算法">
+                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="SPFA算法">
                         
-                        <span class="card-title">Kruskal算法</span>
+                        <span class="card-title">SPFA算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Kruskal算法求最小生成树
+                            SPFA求最短路、判断负环
                         
                     </div>
                     <div class="publish-info">
@@ -1156,8 +1165,8 @@
                         <span class="chip bg-color">图论</span>
                     </a>
                     
-                    <a href="/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/">
-                        <span class="chip bg-color">最小生成树</span>
+                    <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%9B%BE/">
+                        <span class="chip bg-color">最短路图</span>
                     </a>
                     
                 </div>
@@ -1306,7 +1315,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.6k</span>&nbsp;字
+                class="white-color">46.8k</span>&nbsp;字
             
             
             

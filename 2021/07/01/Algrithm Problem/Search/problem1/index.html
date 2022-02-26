@@ -481,7 +481,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    964
+                    965
                 </div>
                 
 
@@ -507,22 +507,34 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/50243">https://ac.nowcoder.com/acm/problem/50243</a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<h2 id="题目描述-34">题目描述</h2>
+<blockquote>
 <p>乔治有一些同样长的小木棍，他把这些木棍随意砍成几段，直到每段的长都不超过50。现在，他想把小木棍拼接成原来的样子，但是却忘记了自己开始时有多少根木棍和它们的长度。给出每段小木棍的长度，编程帮他找出原始木棍的最小可能长度。</p>
 </blockquote>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
+<h2 id="输入描述-34">输入描述</h2>
+<blockquote>
 <p>第一行为一个单独的整数N表示砍过以后的小木棍的总数。第二行为N个用空格隔开的正整数，表示N根小木棍的长度。 1≤N≤60</p>
 </blockquote>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
+<h2 id="输出描述-33">输出描述</h2>
+<blockquote>
 <p>输出仅一行，表示要求的原始木棍的最小可能长度。</p>
 </blockquote>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote>
-<p>9<br>5 2 1 5 2 1 5 2 1</p>
+<h2 id="示例-33">示例</h2>
+<h3 id="输入-33">输入</h3>
+<blockquote>
+<p>9<br>
+5 2 1 5 2 1 5 2 1</p>
 </blockquote>
-<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><blockquote>
+<h3 id="输出-33">输出</h3>
+<blockquote>
 <p>6</p>
 </blockquote>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题采用深搜加剪枝的算法。<br>首先，N个小木棍的长度均为整数，因此原长度必为整数(若原长为小数，则进行分割必产生小数长度的木棍)。<br>题目要求找出可能的最小木棒长度，所以我们可以想到通过深搜一个数一个数的去验证，但显然单纯深搜会相当耗时，最多有<br>60个木棍，不优化的话每确定一个木棍都要遍历60次，总共确定60次，且仅仅完成一个长度的试探。<br>因此，我们就要通过一些优化技巧和剪枝来提高效率。</p>
+<h2 id="分析-27">分析</h2>
+<p>本题采用深搜加剪枝的算法。<br>
+首先，N个小木棍的长度均为整数，因此原长度必为整数(若原长为小数，则进行分割必产生小数长度的木棍)。<br>
+题目要求找出可能的最小木棒长度，所以我们可以想到通过深搜一个数一个数的去验证，但显然单纯深搜会相当耗时，最多有<br>
+60个木棍，不优化的话每确定一个木棍都要遍历60次，总共确定60次，且仅仅完成一个长度的试探。<br>
+因此，我们就要通过一些优化技巧和剪枝来提高效率。</p>
 <p><strong>优化技巧：</strong></p>
 <ul>
 <li>深搜时从长度大的木棍开始试探，可以减小搜索树的规模。</li>
@@ -535,7 +547,8 @@
 <li>某一层某木棍试探失败后，若该木棍试探位置位于木棒首部或尾部，则直接结束该层，回退到上一层换值试探。因为此时试探的情况为：已经完整的拼好了几个木棒，没有拼一半的木棒，继续在该层换小长度的木棍再试探没有意义(必失败)，问题必然出自前面。</li>
 </ul>
 <p>以上各方面实现到位，即可AC。</p>
-<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
+<h2 id="AC代码-28">AC代码</h2>
+<hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
@@ -890,19 +903,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/01/Software%20Using/problem1/">
+                <a href="/2021/07/01/Algrithm%20Problem/DP/problem2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="git指令速查">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="合并回文字符串">
                         
-                        <span class="card-title">git指令速查</span>
+                        <span class="card-title">合并回文字符串</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            各种常见git指令速查
+                            二维区间dp
                         
                     </div>
                     <div class="publish-info">
@@ -913,8 +926,8 @@
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" class="post-category">
-                                    软件使用
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
                                 </a>
                             
                             
@@ -924,8 +937,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/git/">
-                        <span class="chip bg-color">git</span>
+                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                        <span class="chip bg-color">动态规划</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8C%BA%E9%97%B4DP/">
+                        <span class="chip bg-color">区间DP</span>
                     </a>
                     
                 </div>
@@ -1127,7 +1144,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.6k</span>&nbsp;字
+                class="white-color">46.8k</span>&nbsp;字
             
             
             

@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="树状数组, Kong Aobo&#39;s Blog">
+    <meta name="keywords" content="数据集的打乱方法, Kong Aobo&#39;s Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>树状数组 | Kong Aobo&#39;s Blog</title>
+    <title>数据集的打乱方法 | Kong Aobo&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/30.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">树状数组</h1>
+                    <h1 class="description center-align post-title">数据集的打乱方法</h1>
                 </div>
             </div>
         </div>
@@ -434,8 +434,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
-                                <span class="chip bg-color">树状数组</span>
+                            <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">深度学习</span>
+                            </a>
+                        
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
                     </div>
@@ -446,8 +450,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
-                                数据结构
+                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                机器学习
                             </a>
                         
                     </div>
@@ -459,21 +463,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-10-04
+                    2022-02-26
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-10-04
+                    2022-02-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    447
+                    102
                 </div>
                 
 
@@ -498,62 +502,17 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="引入问题">引入问题</h2>
-<p>给出一个长度为nn的数组，完成以下两种操作：</p>
-<ol>
-<li>将第i个数加上k</li>
-<li>输出区间[i,j]内每个数的和</li>
-</ol>
-<h3 id="朴素算法">朴素算法</h3>
-<ol>
-<li>单点修改：O(1)</li>
-<li>区间查询：O(n)</li>
-</ol>
-<h3 id="树状数组">树状数组</h3>
-<ol>
-<li>单点修改：O(logn)</li>
-<li>区间查询：O(logn)</li>
-</ol>
-<h2 id="前置知识">前置知识</h2>
-<p>lowbit()运算：非负整数x在二进制表示下最低位1及其后面的0构成的数值。</p>
-<p>举例说明：<br>
-lowbit(12)=lowbit([1100]2)=[100]2=4</p>
-<p>函数实现：</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">lowbit</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">return</span> x <span class="token operator">&amp;</span> <span class="token operator">-</span>x<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="树状数组的思想">树状数组的思想</h2>
-<p>树状数组的本质思想是使用树结构维护“前缀和”，从而把时间复杂度降为O(logn)。</p>
-<p>对于一个序列，对其建立如下树形结构：</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211004171130.png" alt=""></p>
-<ol>
-<li>每个结点t[x]保存以x为根的子树中叶结点值的和</li>
-<li>每个结点覆盖的长度为lowbit(x)</li>
-<li>t[x]结点的父结点为t[x + lowbit(x)]</li>
-<li>树的深度为log2n + 1</li>
-</ol>
-<h2 id="树状数组的操作">树状数组的操作</h2>
-<h3 id="add">add</h3>
-<p>add(x, k)表示将序列中第x个数加上k。</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211004171447.png" alt=""></p>
-<p>以add(3, 5)为例：  在整棵树上维护这个值，需要一层一层向上找到父结点，并将这些结点上的t[x]值都加上k，这样保证计算区间和时的结果正确。时间复杂度为O(logn)。</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">,</span> <span class="token keyword">int</span> k<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> x<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i <span class="token operator">+=</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
-        t<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> k<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="ask">ask</h3>
-<p>ask(x)表示将查询序列前x个数的和。</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20211004171626.png" alt=""></p>
-<p>以ask(7)为例：查询这个点的前缀和，需要从这个点向左上找到上一个结点，将加上其结点的值。向左上找到上一个结点，只需要将下标 x -= lowbit(x)，例如 7 - lowbit(7) = 6。</p>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">int</span> <span class="token function">ask</span><span class="token punctuation">(</span><span class="token keyword">int</span> x<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    <span class="token keyword">int</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
-    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> x<span class="token punctuation">;</span> i<span class="token punctuation">;</span> i <span class="token operator">-=</span> <span class="token function">lowbit</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">)</span>
-        sum <span class="token operator">+=</span> t<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-    <span class="token keyword">return</span> sum<span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <p>机器学习中，经常需要打乱数据集，但数据与标签通常是分开存放的，如何同步的打乱它们称为一个问题。</p>
+<p>下面给出一种方案。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> numpy
+x <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+y <span class="token operator">=</span> np<span class="token punctuation">.</span>array<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+index <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span>x<span class="token punctuation">.</span>shape<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>shuffle<span class="token punctuation">(</span>index<span class="token punctuation">)</span>
+x <span class="token operator">=</span> x<span class="token punctuation">[</span>index<span class="token punctuation">,</span> <span class="token punctuation">:</span><span class="token punctuation">]</span>
+y <span class="token operator">=</span> y<span class="token punctuation">[</span>index<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>至此，高效的实现了数据与标签的同步打乱。</p>
+
                 
             </div>
             <hr/>
@@ -579,7 +538,7 @@ lowbit(12)=lowbit([1100]2)=[100]2=4</p>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kong-aobo.github.io/2021/10/04/Data%20Structure/binary%20index%20tree/">https://kong-aobo.github.io/2021/10/04/Data%20Structure/binary%20index%20tree/</a>
+                    <a href="https://kong-aobo.github.io/2022/02/26/Machine%20Learning/problem2/">https://kong-aobo.github.io/2022/02/26/Machine%20Learning/problem2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -617,8 +576,12 @@ lowbit(12)=lowbit([1100]2)=[100]2=4</p>
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
-                                    <span class="chip bg-color">树状数组</span>
+                                <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">深度学习</span>
+                                </a>
+                            
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
                         </div>
@@ -841,46 +804,52 @@ lowbit(12)=lowbit([1100]2)=[100]2=4</p>
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/10/20/Data%20Structure/problem4/">
+                <a href="/2022/02/26/Machine%20Learning/problem2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="二叉树后序+中序序列求前序序列">
+                        <img src="/medias/featureimages/30.jpg" class="responsive-img" alt="数据集的打乱方法">
                         
-                        <span class="card-title">二叉树后序+中序序列求前序序列</span>
+                        <span class="card-title">数据集的打乱方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            充分利用二叉树后序和先序的性质
+                            数据和标签的同步打乱
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-20
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
-                                    数据结构
+                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    机器学习
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/">
-                        <span class="chip bg-color">二叉树</span>
+                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">深度学习</span>
+                    </a>
+                    
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -894,24 +863,24 @@ lowbit(12)=lowbit([1100]2)=[100]2=4</p>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/10/03/Data%20Structure/problem3/">
+                <a href="/2022/02/11/Data%20Structure/Monotone%20Queue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="楼兰图腾">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="滑动窗口">
                         
-                        <span class="card-title">楼兰图腾</span>
+                        <span class="card-title">滑动窗口</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            树状数组的经典题目
+                            单调队列的经典应用
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-10-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-11
                             </span>
                         <span class="publish-author">
                             
@@ -928,8 +897,8 @@ lowbit(12)=lowbit([1100]2)=[100]2=4</p>
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/">
-                        <span class="chip bg-color">树状数组</span>
+                    <a href="/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/">
+                        <span class="chip bg-color">单调队列</span>
                     </a>
                     
                 </div>
@@ -1060,6 +1029,13 @@ lowbit(12)=lowbit([1100]2)=[100]2=4</p>
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 
