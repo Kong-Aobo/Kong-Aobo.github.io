@@ -498,13 +498,13 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="题目描述-33">题目描述</h2>
+                <h2 id="题目描述-35">题目描述</h2>
 <blockquote>
 <p>Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string “”.<br>
 The testcases will be generated such that the answer is unique.<br>
 A substring is a contiguous sequence of characters within the string.</p>
 </blockquote>
-<h2 id="输入描述-33">输入描述</h2>
+<h2 id="输入描述-35">输入描述</h2>
 <p>输入满足以下条件：</p>
 <ul>
 <li>m == s.length</li>
@@ -519,7 +519,7 @@ A substring is a contiguous sequence of characters within the string.</p>
 <p>“BANC”</p>
 <h3 id="解释">解释</h3>
 <p>The minimum window substring “BANC” includes ‘A’, ‘B’, and ‘C’ from string t.</p>
-<h2 id="分析-26">分析</h2>
+<h2 id="分析-25">分析</h2>
 <p>显然，可以通过枚举区间的起点和终点暴力解决这个问题，但时间复杂度过高，是否存在一种只需遍历一遍字符串就能得到结果的方法呢？</p>
 <p>利用滑动窗口的思想，就可以扫描一遍字符串求解该问题。</p>
 <p>本题的滑动窗口解法的伪码如下：</p>
@@ -541,7 +541,7 @@ A substring is a contiguous sequence of characters within the string.</p>
     <span class="token punctuation">}</span>
     <span class="token keyword">return</span> res<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p>目前已经明确了可以通过一遍扫描字符串解决问题，那该如何高效的判断当前窗口是否满足要求就成为了问题的关键。我们可以维护一个字典来实现满足要求的判定。</p>
-<h2 id="AC代码-27">AC代码</h2>
+<h2 id="AC代码-32">AC代码</h2>
 <hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token keyword">class</span> <span class="token class-name">Solution</span>
 <span class="token punctuation">{</span>
@@ -1105,7 +1105,7 @@ A substring is a contiguous sequence of characters within the string.</p>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">46.8k</span>&nbsp;字
+                class="white-color">46.9k</span>&nbsp;字
             
             
             

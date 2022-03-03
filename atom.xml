@@ -6,7 +6,7 @@
   <link href="https://kong-aobo.github.io/atom.xml" rel="self"/>
   
   <link href="https://kong-aobo.github.io/"/>
-  <updated>2022-02-26T00:31:15.545Z</updated>
+  <updated>2022-03-03T12:55:45.863Z</updated>
   <id>https://kong-aobo.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C++中的负数取余问题</title>
+    <link href="https://kong-aobo.github.io/2022/03/03/C++/problem1/"/>
+    <id>https://kong-aobo.github.io/2022/03/03/C++/problem1/</id>
+    <published>2022-03-03T12:45:18.000Z</published>
+    <updated>2022-03-03T12:55:45.863Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;针对负数取余的问题，给出以下示例。&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-cpp&quot; data-language=&quot;cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span class=&quot;token</summary>
+        
+      
+    
+    
+    
+    
+    <category term="树状数组" scheme="https://kong-aobo.github.io/tags/%E6%A0%91%E7%8A%B6%E6%95%B0%E7%BB%84/"/>
+    
+  </entry>
   
   <entry>
     <title>数据集的打乱方法</title>
@@ -109,7 +133,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述-33&quot;&gt;题目描述&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;题目描述-35&quot;&gt;题目描述&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Given two strings s and t of lengths m and n respectively, return the minimum window substring</summary>
         
@@ -304,7 +328,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述-4&quot;&gt;题目描述&lt;/h2&gt;
+    <summary type="html">&lt;h2 id=&quot;题目描述-3&quot;&gt;题目描述&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。&lt;br&gt;
 A 吃 B，B 吃 C，C 吃 A。&lt;br&gt;
@@ -327,18 +351,15 @@ A 吃 B，B 吃 C，C 吃 A。&lt;br&gt;
     <link href="https://kong-aobo.github.io/2021/09/25/Data%20Structure/problem1/"/>
     <id>https://kong-aobo.github.io/2021/09/25/Data%20Structure/problem1/</id>
     <published>2021-09-25T03:30:18.000Z</published>
-    <updated>2021-09-25T06:22:00.548Z</updated>
+    <updated>2022-03-03T05:24:01.875Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述-3&quot;&gt;题目描述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;给定一个包含 n 个点（编号为 1∼n）的无向图，初始时图中没有边。&lt;br&gt;
-现在要进行 m 个操作，操作共有三种：&lt;br&gt;
-C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
+    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/839/&quot;&gt;https://www.acwing.com/problem/content/839/&lt;/a&gt;&lt;/p&gt;
+&lt;h2</summary>
         
       
     
@@ -356,7 +377,7 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
     <link href="https://kong-aobo.github.io/2021/09/25/Data%20Structure/union-find%20set/"/>
     <id>https://kong-aobo.github.io/2021/09/25/Data%20Structure/union-find%20set/</id>
     <published>2021-09-25T03:29:18.000Z</published>
-    <updated>2021-09-25T03:55:56.234Z</updated>
+    <updated>2022-03-03T05:19:27.946Z</updated>
     
     
       
@@ -398,9 +419,9 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
     <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
-    
     <category term="二分" scheme="https://kong-aobo.github.io/tags/%E4%BA%8C%E5%88%86/"/>
+    
+    <category term="动态规划" scheme="https://kong-aobo.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
@@ -534,34 +555,6 @@ C a b，在点 a 和点 b 之间连一条边，a 和 b</summary>
     
     
     <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Kruskal算法</title>
-    <link href="https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/"/>
-    <id>https://kong-aobo.github.io/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/</id>
-    <published>2021-08-28T06:55:18.000Z</published>
-    <updated>2022-01-24T08:36:00.955Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/861/&quot;&gt;https://www.acwing.com/problem/content/861/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="图论" scheme="https://kong-aobo.github.io/tags/%E5%9B%BE%E8%AE%BA/"/>
-    
-    <category term="最小生成树" scheme="https://kong-aobo.github.io/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/"/>
     
   </entry>
   
