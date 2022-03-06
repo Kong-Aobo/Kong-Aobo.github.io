@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    641
+                    633
                 </div>
                 
 
@@ -503,50 +503,29 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/847/">https://www.acwing.com/problem/content/847/</a></p>
-<h2 id="题目描述-38">题目描述</h2>
-<blockquote>
-<p>给定一颗树，树中包含 n 个结点（编号 1∼n）和 n−1 条无向边。<br>
-请你找到树的重心，并输出将重心删除后，剩余各个连通块中点数的最大值。<br>
-重心定义：重心是指树中的一个结点，如果将这个点删除后，剩余各个连通块中点数的最大值最小，那么这个节点被称为树的重心。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>给定一颗树，树中包含 n 个结点（编号 1∼n）和 n−1 条无向边。<br>请你找到树的重心，并输出将重心删除后，剩余各个连通块中点数的最大值。<br>重心定义：重心是指树中的一个结点，如果将这个点删除后，剩余各个连通块中点数的最大值最小，那么这个节点被称为树的重心。</p>
 </blockquote>
-<h2 id="输入描述-38">输入描述</h2>
-<blockquote>
-<p>第一行包含整数 n，表示树的结点数。<br>
-接下来 n−1 行，每行包含两个整数 a 和 b，表示点 a 和点 b 之间存在一条边。</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
+<p>第一行包含整数 n，表示树的结点数。<br>接下来 n−1 行，每行包含两个整数 a 和 b，表示点 a 和点 b 之间存在一条边。</p>
 </blockquote>
-<h2 id="输出描述-37">输出描述</h2>
-<blockquote>
-<p>输出一个整数 m，表示将重心删除后，剩余各个连通块中点数的最大值。<br>
-1≤n≤105</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
+<p>输出一个整数 m，表示将重心删除后，剩余各个连通块中点数的最大值。<br>1≤n≤105</p>
 </blockquote>
-<h2 id="示例-35">示例</h2>
-<h3 id="输入-35">输入</h3>
-<blockquote>
-<p>9<br>
-1 2<br>
-1 7<br>
-1 4<br>
-2 8<br>
-2 5<br>
-4 3<br>
-3 9<br>
-4 6</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote>
+<p>9<br>1 2<br>1 7<br>1 4<br>2 8<br>2 5<br>4 3<br>3 9<br>4 6  </p>
 </blockquote>
-<h3 id="输出-35">输出</h3>
-<blockquote>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><blockquote>
 <p>4</p>
 </blockquote>
-<h2 id="分析-28">分析</h2>
-<p>本题要寻找一个满足某些条件的重心，显然我们要枚举每一个节点去判断。<br>
-我最初的想法是对每个点都进行一次如下操作：</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题要寻找一个满足某些条件的重心，显然我们要枚举每一个节点去判断。<br>我最初的想法是对每个点都进行一次如下操作：</p>
 <ol>
 <li>将该点从树中删除</li>
 <li>求所有连通块点数和的最大值</li>
 <li>将求出的最大值与当前记录的最大值作比较，视情况更新</li>
 </ol>
 <p>该思路实现稍微有点麻烦，且需要遍历整个树n次(共n个节点)，时间复杂度较高，AC代码中给出了另一种思路，只需要遍历树一次，比较难以描述，直接参看代码及注释。</p>
-<h2 id="AC代码-34">AC代码</h2>
-<hr>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
@@ -1139,7 +1118,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">46.9k</span>&nbsp;字
+                class="white-color">45.8k</span>&nbsp;字
             
             
             

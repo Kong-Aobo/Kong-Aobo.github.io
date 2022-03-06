@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    919
+                    915
                 </div>
                 
 
@@ -503,58 +503,22 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/description/904/">https://www.acwing.com/problem/content/description/904/</a></p>
-<h2 id="题目描述-23">题目描述</h2>
-<blockquote>
-<p>给定两个字符串 A 和 B，现在要将 A 经过若干操作变为 B，可进行的操作有：<br>
-删除–将字符串 A 中的某个字符删除。<br>
-插入–在字符串 A 的某个位置插入某个字符。<br>
-替换–将字符串 A 中的某个字符替换为另一个字符。<br>
-现在请你求出，将 A 变为 B 至少需要进行多少次操作。</p>
-</blockquote>
-<h2 id="输入描述-23">输入描述</h2>
-<blockquote>
-<p>第一行包含整数 n，表示字符串 A 的长度。<br>
-第二行包含一个长度为 n 的字符串 A。<br>
-第三行包含整数 m，表示字符串 B 的长度。<br>
-第四行包含一个长度为 m 的字符串 B。<br>
-字符串中均只包含大写字母。</p>
-</blockquote>
-<h2 id="输出描述-23">输出描述</h2>
-<blockquote>
-<p>输出一个整数，表示最少操作次数。<br>
-1≤n,m≤1000</p>
-</blockquote>
-<h2 id="示例-20">示例</h2>
-<h3 id="输入-20">输入</h3>
-<blockquote>
-<p>10<br>
-AGTCTGACGC<br>
-11<br>
-AGTAAGTAGGC</p>
-</blockquote>
-<h3 id="输出-20">输出</h3>
-<blockquote>
-<p>4</p>
-</blockquote>
-<h2 id="分析-13">分析</h2>
-<h3 id="约定-3">约定</h3>
-<p>第一个字符串表示为a，长度为n<br>
-第二个字符串表示为b，长度为m</p>
-<h3 id="状态表示-6">状态表示</h3>
-<p>f(i,j)表示a的前i个字符变为b的前j个字符所需要的最少操作次数</p>
-<h3 id="状态划分与计算-4">状态划分与计算</h3>
-<p>关于本题的状态划分和计算，我没有找到非常严谨的分析过程，只能综合各种回答，给出我认为最好的分析。<br>
-可证明：一定存在一种操作顺序，使得我们可以从左到右进行操作就可以得到最优解，所以这里可以假定最后一步只会操作a[i]和b[j]。<br>
-该证明我没有找到怎么证的，但结论应该是正确的。不摆出这个证明的话分析就更不严谨了。<br>
-由上面的证明我们可以通过最后一步对a的操作进行状态划分。(a和b等价分析谁都一样)<br>
-划分与计算如下：</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>给定两个字符串 A 和 B，现在要将 A 经过若干操作变为 B，可进行的操作有：<br>删除–将字符串 A 中的某个字符删除。<br>插入–在字符串 A 的某个位置插入某个字符。<br>替换–将字符串 A 中的某个字符替换为另一个字符。<br>现在请你求出，将 A 变为 B 至少需要进行多少次操作。</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行包含整数 n，表示字符串 A 的长度。<br>第二行包含一个长度为 n 的字符串 A。<br>第三行包含整数 m，表示字符串 B 的长度。<br>第四行包含一个长度为 m 的字符串 B。<br>字符串中均只包含大写字母。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出一个整数，表示最少操作次数。<br>1≤n,m≤1000</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>10<br>AGTCTGACGC<br>11<br>AGTAAGTAGGC</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>4</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="约定"><a href="#约定" class="headerlink" title="约定"></a>约定</h3><p>第一个字符串表示为a，长度为n<br>第二个字符串表示为b，长度为m</p>
+<h3 id="状态表示"><a href="#状态表示" class="headerlink" title="状态表示"></a>状态表示</h3><p>f(i,j)表示a的前i个字符变为b的前j个字符所需要的最少操作次数</p>
+<h3 id="状态划分与计算"><a href="#状态划分与计算" class="headerlink" title="状态划分与计算"></a>状态划分与计算</h3><p>关于本题的状态划分和计算，我没有找到非常严谨的分析过程，只能综合各种回答，给出我认为最好的分析。<br>可证明：一定存在一种操作顺序，使得我们可以从左到右进行操作就可以得到最优解，所以这里可以假定最后一步只会操作a[i]和b[j]。<br>该证明我没有找到怎么证的，但结论应该是正确的。不摆出这个证明的话分析就更不严谨了。<br>由上面的证明我们可以通过最后一步对a的操作进行状态划分。(a和b等价分析谁都一样)<br>划分与计算如下：</p>
 <ul>
 <li>插入操作：此时要添加，只能添加b[j]了，说明a的前i个字符已经变成b的前j-1个字符了，此时f(i,j)=f(i,j-1)+1</li>
 <li>删除操作：此时要删除a[i]，说明a的前i-1个字符已经变成了b的前j个字符，此时f(i,j)=f(i-1,j)+1</li>
 <li>替换操作: 此时先判断a[i]是否等于b[j]，如果不等，则应将a[i]替换为b[j]，说明a的前i-1个字已经变成了b的前j-1个字符，此时f(i,j)=f(i-1,j-1)+1。如果a[i]=b[j]，则无需操作，此时f(i,j)=f(i-1,j-1)</li>
 </ul>
-<h3 id="状态转移方程-3">状态转移方程</h3>
-<p>再来考虑一下边界条件：</p>
+</blockquote>
+<h3 id="状态转移方程"><a href="#状态转移方程" class="headerlink" title="状态转移方程"></a>状态转移方程</h3><p>再来考虑一下边界条件：</p>
 <ul>
 <li>f(0,0)，代表两个字符串均空，等于0</li>
 <li>f(i,0)，代表a由i个字符要变成空串，显然要做i次删除，等于i</li>
@@ -562,8 +526,7 @@ AGTAAGTAGGC</p>
 </ul>
 <p>由上一步的分析和对边界的考虑，我们得到状态转移方程如下：</p>
 <p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210802170755.png" alt=""></p>
-<h2 id="AC代码-22">AC代码</h2>
-<hr>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 
@@ -1130,7 +1093,7 @@ AGTAAGTAGGC</p>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">46.9k</span>&nbsp;字
+                class="white-color">45.8k</span>&nbsp;字
             
             
             

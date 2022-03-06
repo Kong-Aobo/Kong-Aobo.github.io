@@ -499,50 +499,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/14698">https://ac.nowcoder.com/acm/problem/14698</a></p>
-<h2 id="题目描述-44">题目描述</h2>
-<blockquote>
-<p>齐齐和司机在玩单机游戏《红色警戒IV》，现在他们的游戏地图被划分成一个n*m的方格地图。齐齐的基地在最上方的4行格内，司机的基地在最下方的4行格内。他们只有一种攻击方式：远程大炮，相关属性如下：<br>
-1、    大炮可以打到地图的任意一个位置。<br>
-2、    双方每次必须动用本方的一门大炮攻击，齐齐先手，双方交替进行攻击。<br>
-3、    一方大炮只能攻击另一方大炮，不能攻击本方或强制攻击未获得视野的地区。<br>
-4、    被一方大炮击中的另一方大炮会产生以攻击点为中心的3<em>3的波及区域，波及区域内如果有其他大炮则也会产生3</em>3的波及区域。<br>
-5、    两方的基地相距很远，所以不存在攻打敌方大炮时波及到本方大炮的情况。<br>
-齐齐偷偷开了“间谍卫星”，所以他能看到司机的大炮部署，司机则无视野。但如果齐齐做出攻击，司机会立即获取到发动攻击的大炮的视野，并在回合开始时动用大炮（如果存在的话）将其摧毁（摧毁后可能产生的连锁不计入视野）。<br>
-现在给出齐齐和司机的大炮部署，问齐齐在选择最优的策略下，在摧毁所有司机的大炮后可以保留最多几门本方大炮。</p>
-</blockquote>
-<h2 id="输入描述-44">输入描述</h2>
-<blockquote>
-<p>第1行输入一个整数m，表示地图的宽度。<br>
-第2-5行，每行输入一串长度为m的字符串，代表司机的大炮部署。（大炮为"*“号，空地为“.”号）<br>
-第6-9行，每行输入一串长度为m的字符串，代表齐齐的大炮部署。（大炮为”*"号，空地为“.”号）<br>
-数据保证：0&lt;m≤100</p>
-</blockquote>
-<h2 id="输出描述-43">输出描述</h2>
-<blockquote>
-<p>输出一行，一个整数。代表摧毁所有司机的大炮后最多保留几门大炮。如果不能摧毁所有司机的大炮，则输出-1。</p>
-</blockquote>
-<h2 id="示例-41">示例</h2>
-<h2 id="输入-41">输入</h2>
-<blockquote>
-<p>3<br>
-…<br>
-.*.<br>
-…*<br>
-*…<br>
-*…<br>
-.**<br>
-…<br>
-*.*</p>
-</blockquote>
-<h2 id="输出-41">输出</h2>
-<blockquote>
-<p>4</p>
-</blockquote>
-<h2 id="分析-34">分析</h2>
-<p>本题为连通块问题，此处采用深搜解决连通块。 由题意得每门大炮之间有3*3的空间约束，满足该约束条件的所有大炮形成一个块。我们可以从一个块出发向周围8个块进行深度搜索，从而得知一个块的大炮数目。按照题意，齐齐某个块内的大炮向司机某个块中的大炮发起进攻，结果是两个块都将消失。由此我们便可想到，若齐齐的块数目小于司机，则齐齐输，否则，我们便选择使用齐齐的大炮数目小的块去进攻从而留下数目大的块。<br>
-因此，在得到两人连通块数据后进行排序，按照上述思路处理即可。</p>
-<h2 id="AC代码-39">AC代码</h2>
-<hr>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>齐齐和司机在玩单机游戏《红色警戒IV》，现在他们的游戏地图被划分成一个n*m的方格地图。齐齐的基地在最上方的4行格内，司机的基地在最下方的4行格内。他们只有一种攻击方式：远程大炮，相关属性如下：<br>1、    大炮可以打到地图的任意一个位置。<br>2、    双方每次必须动用本方的一门大炮攻击，齐齐先手，双方交替进行攻击。<br>3、    一方大炮只能攻击另一方大炮，不能攻击本方或强制攻击未获得视野的地区。<br>4、    被一方大炮击中的另一方大炮会产生以攻击点为中心的3<em>3的波及区域，波及区域内如果有其他大炮则也会产生3</em>3的波及区域。<br>5、    两方的基地相距很远，所以不存在攻打敌方大炮时波及到本方大炮的情况。<br>齐齐偷偷开了“间谍卫星”，所以他能看到司机的大炮部署，司机则无视野。但如果齐齐做出攻击，司机会立即获取到发动攻击的大炮的视野，并在回合开始时动用大炮（如果存在的话）将其摧毁（摧毁后可能产生的连锁不计入视野）。<br>现在给出齐齐和司机的大炮部署，问齐齐在选择最优的策略下，在摧毁所有司机的大炮后可以保留最多几门本方大炮。</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第1行输入一个整数m，表示地图的宽度。<br>第2-5行，每行输入一串长度为m的字符串，代表司机的大炮部署。（大炮为”*“号，空地为“.”号）<br>第6-9行，每行输入一串长度为m的字符串，代表齐齐的大炮部署。（大炮为”*“号，空地为“.”号）<br>数据保证：0&lt;m≤100</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出一行，一个整数。代表摧毁所有司机的大炮后最多保留几门大炮。如果不能摧毁所有司机的大炮，则输出-1。</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>3<br>…<br>.*.<br>..*<br>*..<br>*..<br>.**<br>…<br>*.*  </p>
+<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>4</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题为连通块问题，此处采用深搜解决连通块。 由题意得每门大炮之间有3*3的空间约束，满足该约束条件的所有大炮形成一个块。我们可以从一个块出发向周围8个块进行深度搜索，从而得知一个块的大炮数目。按照题意，齐齐某个块内的大炮向司机某个块中的大炮发起进攻，结果是两个块都将消失。由此我们便可想到，若齐齐的块数目小于司机，则齐齐输，否则，我们便选择使用齐齐的大炮数目小的块去进攻从而留下数目大的块。<br>因此，在得到两人连通块数据后进行排序，按照上述思路处理即可。</p>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;queue&gt;</span></span>
@@ -659,7 +623,8 @@
         cout <span class="token operator">&lt;&lt;</span> sum <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
+
                 
             </div>
             <hr/>
@@ -951,55 +916,6 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/08/Software%20Using/problem2/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/38.jpg" class="responsive-img" alt="JAVA(Eclipse) 连接 Sql Sever">
-                        
-                        <span class="card-title">JAVA(Eclipse) 连接 Sql Sever</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            JAVA与Sql Sever连接的配置步骤
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-08
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" class="post-category">
-                                    软件使用
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Sql-Sever/">
-                        <span class="chip bg-color">Sql Sever</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
                 <a href="/2021/07/02/Algrithm%20Problem/Search/problem8/">
                     <div class="card-image">
                         
@@ -1016,9 +932,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-07-02
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1040,6 +956,55 @@
                     
                     <a href="/tags/BFS/">
                         <span class="chip bg-color">BFS</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/07/01/JAVA/problem1/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="生产者消费者模型 JAVA">
+                        
+                        <span class="card-title">生产者消费者模型 JAVA</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            多线程的经典案例 JAVA实现
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-07-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" class="post-category">
+                                    多线程
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/JAVA/">
+                        <span class="chip bg-color">JAVA</span>
                     </a>
                     
                 </div>
@@ -1188,7 +1153,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">46.9k</span>&nbsp;字
+                class="white-color">45.8k</span>&nbsp;字
             
             
             

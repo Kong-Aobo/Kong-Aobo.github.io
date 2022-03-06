@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    597
+                    595
                 </div>
                 
 
@@ -502,27 +502,13 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="题目描述-7">题目描述</h2>
-<p>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环， 边权可能为负数。<br>
-请你求出从 1 号点到 n 号点的最多经过 k 条边的最短距离，如果无法从 1 号点走到 n 号点，输出 impossible。<br>
-注意：图中可能 存在负权回路。</p>
-<h2 id="输入描述-7">输入描述</h2>
-<p>第一行包含三个整数 n,m,k。<br>
-接下来 m 行，每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
-<h2 id="输出描述-7">输出描述</h2>
-<p>输出一个整数，表示从 1 号点到 n 号点的最多经过 k 条边的最短距离。<br>
-如果不存在满足条件的路径，则输出 impossible。<br>
-1≤n,k≤500<br>
-1≤m≤10000<br>
-任意边长的绝对值不超过 10000</p>
-<h2 id="Bellman-Ford算法">Bellman Ford算法</h2>
-<h3 id="算法介绍-2">算法介绍</h3>
-<p>Dijkstr算法无法解决含有负权边的最短路问题，而Bellman Ford算法可以，并且还<strong>可以解决限定边的数目的最短路径的求解</strong>。</p>
-<h3 id="算法步骤">算法步骤</h3>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210826220127.png" alt=""></p>
+                <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环， 边权可能为负数。<br>请你求出从 1 号点到 n 号点的最多经过 k 条边的最短距离，如果无法从 1 号点走到 n 号点，输出 impossible。<br>注意：图中可能 存在负权回路。</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行包含三个整数 n,m,k。<br>接下来 m 行，每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出一个整数，表示从 1 号点到 n 号点的最多经过 k 条边的最短距离。<br>如果不存在满足条件的路径，则输出 impossible。<br>1≤n,k≤500<br>1≤m≤10000<br>任意边长的绝对值不超过 10000</p>
+<h2 id="Bellman-Ford算法"><a href="#Bellman-Ford算法" class="headerlink" title="Bellman Ford算法"></a>Bellman Ford算法</h2><h3 id="算法介绍"><a href="#算法介绍" class="headerlink" title="算法介绍"></a>算法介绍</h3><p>Dijkstr算法无法解决含有负权边的最短路问题，而Bellman Ford算法可以，并且还<strong>可以解决限定边的数目的最短路径的求解</strong>。</p>
+<h3 id="算法步骤"><a href="#算法步骤" class="headerlink" title="算法步骤"></a>算法步骤</h3><p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210826220127.png" alt=""></p>
 <p>需要额外注意一点，算法使按照最短路中边的数目递增的顺序计算的，如果在同一轮中，某个dist[i]被更新且后续被使用则会发生错误，因此进行新一轮的计算时应该先备份上一轮的数据，详见代码。</p>
-<h2 id="AC代码-7">AC代码</h2>
-<hr>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
@@ -1119,7 +1105,7 @@ edge edges<span class="token punctuation">[</span>M<span class="token punctuatio
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">46.9k</span>&nbsp;字
+                class="white-color">45.8k</span>&nbsp;字
             
             
             

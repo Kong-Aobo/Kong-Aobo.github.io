@@ -498,57 +498,21 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="题目描述-3">题目描述</h2>
-<blockquote>
-<p>动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。<br>
-A 吃 B，B 吃 C，C 吃 A。<br>
-现有 N 个动物，以 1∼N 编号。<br>
-每个动物都是 A,B,C 中的一种，但是我们并不知道它到底是哪一种。<br>
-有人用两种说法对这 N 个动物所构成的食物链关系进行描述：<br>
-第一种说法是 1 X Y，表示 X 和 Y 是同类。<br>
-第二种说法是 2 X Y，表示 X 吃 Y。<br>
-此人对 N 个动物，用上述两种说法，一句接一句地说出 K 句话，这 K 句话有的是真的，有的是假的。<br>
-当一句话满足下列三条之一时，这句话就是假话，否则就是真话。<br>
-当前的话与前面的某些真的话冲突，就是假话；<br>
-当前的话中 X 或 Y 比 N 大，就是假话；<br>
-当前的话表示 X 吃 X，就是假话。<br>
-你的任务是根据给定的 N 和 K 句话，输出假话的总数。</p>
+                <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。<br>A 吃 B，B 吃 C，C 吃 A。<br>现有 N 个动物，以 1∼N 编号。<br>每个动物都是 A,B,C 中的一种，但是我们并不知道它到底是哪一种。<br>有人用两种说法对这 N 个动物所构成的食物链关系进行描述：<br>第一种说法是 1 X Y，表示 X 和 Y 是同类。<br>第二种说法是 2 X Y，表示 X 吃 Y。<br>此人对 N 个动物，用上述两种说法，一句接一句地说出 K 句话，这 K 句话有的是真的，有的是假的。<br>当一句话满足下列三条之一时，这句话就是假话，否则就是真话。<br>当前的话与前面的某些真的话冲突，就是假话；<br>当前的话中 X 或 Y 比 N 大，就是假话；<br>当前的话表示 X 吃 X，就是假话。<br>你的任务是根据给定的 N 和 K 句话，输出假话的总数。  </p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行是两个整数 N 和 K，以一个空格分隔。<br>以下 K 行每行是三个正整数 D，X，Y，两数之间用一个空格隔开，其中 D 表示说法的种类。<br>若 D=1，则表示 X 和 Y 是同类。<br>若 D=2，则表示 X 吃 Y。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>只有一个整数，表示假话的数目。<br>1≤N≤50000<br>0≤K≤100000</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>100 7<br>1 101 1<br>2 1 2<br>2 2 3<br>2 3 3<br>1 1 3<br>2 3 1<br>1 5 5</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>3</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>如何去合适的表达动物之间的关系是本题的难点。借鉴并查集，通过其它元素来间接的得到两个元素的关系。</p>
 </blockquote>
-<h2 id="输入描述-3">输入描述</h2>
-<blockquote>
-<p>第一行是两个整数 N 和 K，以一个空格分隔。<br>
-以下 K 行每行是三个正整数 D，X，Y，两数之间用一个空格隔开，其中 D 表示说法的种类。<br>
-若 D=1，则表示 X 和 Y 是同类。<br>
-若 D=2，则表示 X 吃 Y。</p>
-</blockquote>
-<h2 id="输出描述-3">输出描述</h2>
-<blockquote>
-<p>只有一个整数，表示假话的数目。<br>
-1≤N≤50000<br>
-0≤K≤100000</p>
-</blockquote>
-<h2 id="示例-3">示例</h2>
-<h3 id="输入-3">输入</h3>
-<p>100 7<br>
-1 101 1<br>
-2 1 2<br>
-2 2 3<br>
-2 3 3<br>
-1 1 3<br>
-2 3 1<br>
-1 5 5</p>
-<h3 id="输出-3">输出</h3>
-<p>3</p>
-<h2 id="分析-3">分析</h2>
-<p>如何去合适的表达动物之间的关系是本题的难点。借鉴并查集，通过其它元素来间接的得到两个元素的关系。</p>
 <p>我们建立一个并查集，用这棵树来表示该集合间的关系，并维护元素到根节点的距离的数组。给出并查集中部分结构如下：</p>
 <p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210925144714.svg" alt=""></p>
 <p>显然，该结构中任一动物与A的关系可由距离模三得出，而任意两个动物之间的关系则可由二者跟A的关系推出。</p>
 <p>因此，此时所建立的并查集表示的是一组动物之间的关系，与传统并查集所表示的元素的分类完全不同，只是借用了并查集的操作与思想。</p>
 <p>当出现两个不在同一并查集里的动物时，我们就可以合并这两个并查集，合并时要对距离数组进行修改以保持动物之间的关系不变。</p>
 <p>诸多细节详见代码及注释。</p>
-<h2 id="AC代码-3">AC代码</h2>
-<hr>
+<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 
@@ -1151,7 +1115,7 @@ A 吃 B，B 吃 C，C 吃 A。<br>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">46.9k</span>&nbsp;字
+                class="white-color">45.8k</span>&nbsp;字
             
             
             

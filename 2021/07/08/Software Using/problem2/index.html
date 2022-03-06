@@ -473,7 +473,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    403
+                    399
                 </div>
                 
 
@@ -498,54 +498,28 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="环境">环境</h2>
-<ul>
+                <h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><ul>
 <li>Sql Sever 2019</li>
 <li>Eclipse</li>
 <li>JavaSE-15</li>
 </ul>
 <p>版本不同操作可能略有差异，但整体差别不大。</p>
-<h2 id="下载JDBC驱动程序">下载JDBC驱动程序</h2>
-<p>官网下载地址<br>
-<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/download/details.aspx?id=11774">https://www.microsoft.com/zh-cn/download/details.aspx?id=11774</a></p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708111920.png" alt=""><br>
-点击下载</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112117.png" alt=""><br>
-选择第二个下载<br>
-下载完成后解压并进入</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112357.png" alt=""><br>
-jre8中存放着我们需要的JDBC驱动程序</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112549.png" alt=""><br>
-将该包导入相应的java project即可<br>
-Build Path-&gt;Confugire Build Path-&gt;Libraries-&gt;Add External JARs</p>
-<h2 id="Sql-Sever相关配置">Sql Sever相关配置</h2>
-<p>找到sa用户</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113143.png" alt=""><br>
-右键点击，选择属性，常规设置强制密码</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113441.png" alt=""><br>
-状态设置，允许连接到数据库</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113627.png" alt=""><br>
-找到该位置，右键属性</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113759.png" alt=""><br>
-安全性设置如图</p>
+<h2 id="下载JDBC驱动程序"><a href="#下载JDBC驱动程序" class="headerlink" title="下载JDBC驱动程序"></a>下载JDBC驱动程序</h2><p>官网下载地址<br><a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/download/details.aspx?id=11774">https://www.microsoft.com/zh-cn/download/details.aspx?id=11774</a></p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708111920.png" alt=""><br>点击下载</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112117.png" alt=""><br>选择第二个下载<br>下载完成后解压并进入</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112357.png" alt=""><br>jre8中存放着我们需要的JDBC驱动程序</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708112549.png" alt=""><br>将该包导入相应的java project即可<br>Build Path-&gt;Confugire Build Path-&gt;Libraries-&gt;Add External JARs</p>
+<h2 id="Sql-Sever相关配置"><a href="#Sql-Sever相关配置" class="headerlink" title="Sql Sever相关配置"></a>Sql Sever相关配置</h2><p>找到sa用户  </p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113143.png" alt=""><br>右键点击，选择属性，常规设置强制密码</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113441.png" alt=""><br>状态设置，允许连接到数据库</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113627.png" alt=""><br>找到该位置，右键属性</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113759.png" alt=""><br>安全性设置如图</p>
 <p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708113914.png" alt=""></p>
-<h2 id="Sql-Sever-MSSQLSERVER协议配置">Sql Sever MSSQLSERVER协议配置</h2>
-<p>此电脑图标，右键点击，选择管理</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708114304.png" alt=""><br>
-然后，依次进入相关目录<br>
-服务和应用程序-&gt;Sql Server配置管理器-&gt;Sql Server网络配置-&gt;Sql Sever MSSQLSERVER协议-&gt;TCP/IP<br>
-右键点击，选择启动，再次右键点击选择属性，将IPAII中的端口改为1433</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708114910.png" alt=""><br>
-再将IP14启用(不一定是这个，你用什么IP地址，就启用相关的IP)</p>
-<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708115111.png" alt=""><br>
-之后同样，此电脑，管理<br>
-服务和应用程序-&gt;服务 找到Sql Sever MSSQLSERVER协议，右键点击重新启动即可</p>
-<h2 id="可能出现的问题">可能出现的问题</h2>
-<p>在使数据库连接时显示如下错误<br>
-java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter<br>
-说明我们还缺少相应的库，需要下载，这个库的缺失可能与JDK版本有关<br>
-<a target="_blank" rel="noopener" href="http://www.java2s.com/Code/Jar/j/Downloadjavaxxmlbindjar.htm">http://www.java2s.com/Code/Jar/j/Downloadjavaxxmlbindjar.htm</a><br>
-在该网址下载后，按照JDBC驱动的流程操作，将jar包导入即可。</p>
+<h2 id="Sql-Sever-MSSQLSERVER协议配置"><a href="#Sql-Sever-MSSQLSERVER协议配置" class="headerlink" title="Sql Sever MSSQLSERVER协议配置"></a>Sql Sever MSSQLSERVER协议配置</h2><p>此电脑图标，右键点击，选择管理</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708114304.png" alt=""><br>然后，依次进入相关目录<br>服务和应用程序-&gt;Sql Server配置管理器-&gt;Sql Server网络配置-&gt;Sql Sever MSSQLSERVER协议-&gt;TCP/IP<br>右键点击，选择启动，再次右键点击选择属性，将IPAII中的端口改为1433</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708114910.png" alt=""><br>再将IP14启用(不一定是这个，你用什么IP地址，就启用相关的IP)</p>
+<p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210708115111.png" alt=""><br>之后同样，此电脑，管理<br>服务和应用程序-&gt;服务 找到Sql Sever MSSQLSERVER协议，右键点击重新启动即可</p>
+<h2 id="可能出现的问题"><a href="#可能出现的问题" class="headerlink" title="可能出现的问题"></a>可能出现的问题</h2><p>在使数据库连接时显示如下错误<br>java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter<br>说明我们还缺少相应的库，需要下载，这个库的缺失可能与JDK版本有关<br><a target="_blank" rel="noopener" href="http://www.java2s.com/Code/Jar/j/Downloadjavaxxmlbindjar.htm">http://www.java2s.com/Code/Jar/j/Downloadjavaxxmlbindjar.htm</a><br>在该网址下载后，按照JDBC驱动的流程操作，将jar包导入即可。</p>
 
                 
             </div>
@@ -891,19 +865,19 @@ java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter<br>
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/02/Algrithm%20Problem/Search/problem7/">
+                <a href="/2021/07/02/Algrithm%20Problem/Search/problem8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="模拟战役">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="走出迷宫">
                         
-                        <span class="card-title">模拟战役</span>
+                        <span class="card-title">走出迷宫</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            连通块，贪心与搜索的结合
+                            BFS的经典入门题
                         
                     </div>
                     <div class="publish-info">
@@ -927,6 +901,10 @@ java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter<br>
                     
                     <a href="/tags/%E6%90%9C%E7%B4%A2/">
                         <span class="chip bg-color">搜索</span>
+                    </a>
+                    
+                    <a href="/tags/BFS/">
+                        <span class="chip bg-color">BFS</span>
                     </a>
                     
                 </div>
@@ -1075,7 +1053,7 @@ java.lang.NoClassDefFoundError: javax/xml/bind/DatatypeConverter<br>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">46.9k</span>&nbsp;字
+                class="white-color">45.8k</span>&nbsp;字
             
             
             
