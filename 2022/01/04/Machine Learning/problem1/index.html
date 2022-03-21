@@ -473,7 +473,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    478
+                    463
                 </div>
                 
 
@@ -498,15 +498,19 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="符号约定"><a href="#符号约定" class="headerlink" title="符号约定"></a>符号约定</h2><p>数据集：$D$</p>
+                <h2 id="符号约定">符号约定</h2>
+<p>数据集：$D$</p>
 <p>$x$ 在数据集中的标记：$y_D$</p>
 <p>$x$ 的真实标记：$y$</p>
 <p>由训练集D学得的模型对 $x$ 的预测输出：$f(\boldsymbol{x} ; D)$</p>
-<h2 id="期望预测"><a href="#期望预测" class="headerlink" title="期望预测"></a>期望预测</h2><p>我们取得的数据集仅仅是全体数据集的一部分，且数据集的取得是随机的，因此经过训练所构建的 $f(\boldsymbol{x} ; D)$ 也可以说是“随机的”，对任意的 $x$ 的期望预测如下：</p>
+<h2 id="期望预测">期望预测</h2>
+<p>我们取得的数据集仅仅是全体数据集的一部分，且数据集的取得是随机的，因此经过训练所构建的 $f(\boldsymbol{x} ; D)$ 也可以说是“随机的”，对任意的 $x$ 的期望预测如下：</p>
 <p>$\bar{f}(\boldsymbol{x})=\mathbb{E}_{D}[f(\boldsymbol{x} ; D)]$</p>
-<h2 id="偏差-bias"><a href="#偏差-bias" class="headerlink" title="偏差 bias"></a>偏差 bias</h2><p>偏差的定义如下：</p>
+<h2 id="偏差-bias">偏差 bias</h2>
+<p>偏差的定义如下：</p>
 <p>$\operatorname{bias}^{2}(\boldsymbol{x})=(\bar{f}(\boldsymbol{x})-y)^{2}$</p>
-<h2 id="泛化误差"><a href="#泛化误差" class="headerlink" title="泛化误差"></a>泛化误差</h2><p>$\begin{aligned} E_{rr}(f(\boldsymbol{x} ; D))=&amp; \mathbb{E}_{D}\left[\left(f(\boldsymbol{x} ; D)-y_{D}\right)^{2}\right] \\=&amp; \mathbb{E}_{D}\left[\left(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x})+\bar{f}(\boldsymbol{x})-y_{D}\right)^{2}\right] \\=&amp; \mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}_{D}\left[\left(\bar{f}(\boldsymbol{x})-y_{D}\right)^{2}\right]+2\mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))\left(\bar{f}(\boldsymbol{x})-y_{D}\right)\right] \\=&amp; \mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}_{D}\left[\left(\bar{f}(\boldsymbol{x})-y_{D}\right)^{2}\right] \\=&amp; \mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}_{D}\left[\left(\bar{f}(\boldsymbol{x})-y+y-y_{D}\right)^{2}\right] \\=&amp; \mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}_{D}\left[(\bar{f}(\boldsymbol{x})-y)^{2}\right]+\mathbb{E}_{D}\left[\left(y-y_{D}\right)^{2}\right] \\ &amp;+2 \mathbb{E}_{D}\left[(\bar{f}(\boldsymbol{x})-y)\left(y-y_{D}\right)\right] \\=&amp; \mathbb{E}_{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+(\bar{f}(\boldsymbol{x})-y)^{2}+\mathbb{E}_{D}[(y_D-y)^2]\end{aligned}$</p>
+<h2 id="泛化误差">泛化误差</h2>
+<p>$\begin{aligned} E_{rr}(f(\boldsymbol{x} ; D))=&amp; \mathbb{E}<em>{D}\left[\left(f(\boldsymbol{x} ; D)-y</em>{D}\right)^{2}\right] \=&amp; \mathbb{E}<em>{D}\left[\left(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x})+\bar{f}(\boldsymbol{x})-y</em>{D}\right)^{2}\right] \=&amp; \mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}</em>{D}\left[\left(\bar{f}(\boldsymbol{x})-y_{D}\right)^{2}\right]+2\mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))\left(\bar{f}(\boldsymbol{x})-y</em>{D}\right)\right] \=&amp; \mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}</em>{D}\left[\left(\bar{f}(\boldsymbol{x})-y_{D}\right)^{2}\right] \=&amp; \mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}</em>{D}\left[\left(\bar{f}(\boldsymbol{x})-y+y-y_{D}\right)^{2}\right] \=&amp; \mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+\mathbb{E}</em>{D}\left[(\bar{f}(\boldsymbol{x})-y)^{2}\right]+\mathbb{E}<em>{D}\left[\left(y-y</em>{D}\right)^{2}\right] \ &amp;+2 \mathbb{E}<em>{D}\left[(\bar{f}(\boldsymbol{x})-y)\left(y-y</em>{D}\right)\right] \=&amp; \mathbb{E}<em>{D}\left[(f(\boldsymbol{x} ; D)-\bar{f}(\boldsymbol{x}))^{2}\right]+(\bar{f}(\boldsymbol{x})-y)^{2}+\mathbb{E}</em>{D}[(y_D-y)^2]\end{aligned}$</p>
 <p>由此得到泛化误差与偏差、方差和噪声的关系如下：</p>
 <p>$E_{rr}(f(\boldsymbol{x} ; D))=\operatorname{bias}^{2}(\boldsymbol{x})+\operatorname{var}(\boldsymbol{x})+\varepsilon^{2}$</p>
 <p>$\left.\bar{f}(\boldsymbol{x})=\mathbb{E}_{D}[f(\boldsymbol{x}; D)\right]$</p>
@@ -1043,7 +1047,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.9k</span>&nbsp;字
+                class="white-color">47k</span>&nbsp;字
             
             
             

@@ -498,9 +498,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>安装完成后，绑定用户名和邮箱，—global表示这台机器上所有的Git仓库都会使用这个配置</p>
+                <p>安装完成后，绑定用户名和邮箱，–global表示这台机器上所有的Git仓库都会使用这个配置</p>
 <blockquote>
-<p>git config —global user.name “Your Name”<br>git config —global user.email “email@example.com”</p>
+<p>git config --global <a target="_blank" rel="noopener" href="http://user.name">user.name</a> “Your Name”<br>
+git config --global user.email “<a href="mailto:email@example.com">email@example.com</a>”</p>
 </blockquote>
 <p>创建版本库</p>
 <blockquote>
@@ -508,7 +509,8 @@
 </blockquote>
 <p>添加到暂存区，提交</p>
 <blockquote>
-<p>git add 文件名<br>git commit -m “本次提交说明”</p>
+<p>git add 文件名<br>
+git commit -m “本次提交说明”</p>
 </blockquote>
 <p>查看当前状态</p>
 <blockquote>
@@ -528,27 +530,28 @@
 </blockquote>
 <p>回退历史版本 HEAD表示当前版本 HEAD＾表示上一版本（可用这些符号代替版本号）</p>
 <blockquote>
-<p>git reset —hard 版本号</p>
+<p>git reset --hard 版本号</p>
 </blockquote>
 <p>让这个文件回到最近一次git commit或git add时的状态</p>
 <blockquote>
-<p>git checkout — 文件名</p>
+<p>git checkout – 文件名</p>
 </blockquote>
 <p>把暂存区的修改撤销掉</p>
 <blockquote>
 <p>git reset HEAD 文件名</p>
 </blockquote>
-<p>从版本库中删除某文件 注意删除后需要commit才真正删除<br>先手动删除文件，然后使用git rm <file>和git add<file>效果是一样的。</file></file></p>
+<p>从版本库中删除某文件 注意删除后需要commit才真正删除<br>
+先手动删除文件，然后使用git rm <file>和git add<file>效果是一样的。</file></file></p>
 <blockquote>
 <p>git rm 文件名</p>
 </blockquote>
 <p>把误删的文件恢复到最新版本,git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。</p>
 <blockquote>
-<p>git checkout — 文件名</p>
+<p>git checkout – 文件名</p>
 </blockquote>
 <p>在GitHub创建一个repository后，将本地库添加至GitHub,origin为远程库名，后边的地址注意修改</p>
 <blockquote>
-<p>git remote add origin git@github.com:michaelliao/learngit.git</p>
+<p>git remote add origin <a href="mailto:git@github.com">git@github.com</a>:michaelliao/learngit.git</p>
 </blockquote>
 <p>将本地库的内容推送到远程库上,由于远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。</p>
 <blockquote>
@@ -560,15 +563,18 @@
 </blockquote>
 <p>删除远程库(解除本地库与远程库的绑定)</p>
 <blockquote>
-<p>git remote -v    //查看远程库的信息 删前可以确认一下 非删除步骤<br>git remote rm origin    //删除指令</p>
+<p>git remote -v	//查看远程库的信息 删前可以确认一下 非删除步骤<br>
+git remote rm origin	//删除指令</p>
 </blockquote>
 <p>从GitHub上克隆一个库到本地,注意更改后面的地址(SSH协议)</p>
 <blockquote>
-<p>git clone git@github.com:michaelliao/gitskills.git</p>
+<p>git clone <a href="mailto:git@github.com">git@github.com</a>:michaelliao/gitskills.git</p>
 </blockquote>
 <p>创建切换分支</p>
 <blockquote>
-<p>git checkout -b dev//命令加上-b参数表示创建并切换,也可以分成下面两条指令<br>git branch dev    //创建<br>git checkout dev    //切换</p>
+<p>git checkout -b dev//命令加上-b参数表示创建并切换,也可以分成下面两条指令<br>
+git branch dev	//创建<br>
+git checkout dev	//切换</p>
 </blockquote>
 <p>查看当前分支</p>
 <blockquote>
@@ -584,15 +590,16 @@
 </blockquote>
 <p>最新的切换分支指令</p>
 <blockquote>
-<p>git switch -c 分支名//创建并切换<br>git switch 分支名//切换</p>
+<p>git switch -c 分支名//创建并切换<br>
+git switch 分支名//切换</p>
 </blockquote>
 <p>分支合并图</p>
 <blockquote>
-<p>git log —graph</p>
+<p>git log --graph</p>
 </blockquote>
 <p>禁用Fast Forward模式，保留分支历史的合并,其实是在当前分支上commit了一次实现的</p>
 <blockquote>
-<p>git merge —no-ff -m “合并说明” 要合并的指定分支</p>
+<p>git merge --no-ff -m “合并说明” 要合并的指定分支</p>
 </blockquote>
 <p>切换分支时，需要保留当前分支的工作现场，即暂存区和工作区的状态</p>
 <blockquote>
@@ -1139,7 +1146,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.9k</span>&nbsp;字
+                class="white-color">47k</span>&nbsp;字
             
             
             

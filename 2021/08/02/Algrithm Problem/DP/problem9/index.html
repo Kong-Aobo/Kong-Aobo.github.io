@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    802
+                    803
                 </div>
                 
 
@@ -503,24 +503,55 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/898/">https://www.acwing.com/problem/content/898/</a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<h2 id="题目描述-23">题目描述</h2>
+<blockquote>
 <p>给定一个长度为 N 的数列，求数值严格单调递增的子序列的长度最长是多少。</p>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行包含整数 N。<br>第二行包含 N 个整数，表示完整序列。</p>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出一个整数，表示最大长度。<br>1≤N≤100000<br>−1e9≤数列中的数≤1e9</p>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>7<br>3 1 2 1 8 5 6</p>
-<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>4</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><h3 id="约定"><a href="#约定" class="headerlink" title="约定"></a>约定</h3><p>记第i个数字为a[i]</p>
-<h3 id="状态表示"><a href="#状态表示" class="headerlink" title="状态表示"></a>状态表示</h3><p>f(j)表示以第j个数字为结尾的子序列的最大长度</p>
-<h3 id="状态划分与计算"><a href="#状态划分与计算" class="headerlink" title="状态划分与计算"></a>状态划分与计算</h3><p>显然，f(j)所对应的最长子序列的最后一个元素为a[j]。<br>那第二个元素是谁呢？这就是我们划分的关键。第二个元素可以是前j-1个数字中任意一个比a[j]小的数字，枚举所有情况并计算，取最大值就是答案！</p>
-<h3 id="状态转移方程"><a href="#状态转移方程" class="headerlink" title="状态转移方程"></a>状态转移方程</h3><p>由上一步的分析，我们得到状态转移方程如下：<br>f(j)=max(f(i))+1 &nbsp;&nbsp;&nbsp;(1 &lt;= i &lt; j , a[i] &lt; a[j])</p>
-<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><p>朴素解法中，求解每一个f(j)都要去遍历[1,j-1]，这就很不好。<br>思考一下，对于一个长度为3的子序列，其最后一个元素为10，另一个长度为3的子序列，其最后一个元素为8，那么在两子序列之后的元素再考虑能否出现长度为4的子序列时只需要比较其和8的大小，大于就可以变成长度为4的子序列。<br>因此，我们可以发现，对于同样长度的子序列，我们仅需要关注各序列末端元素的最小值即可。这就启发我们维护各长度子序列末端元素的最小值。<br>设定一个数组s，s[i]表示长度为i的子序列末端元素的最小值，变量len表示已知子序列的最大长度。<strong>易得该数组的元素单调递增。</strong><br>从前到后遍历a，对于a[j]，找到第一个大于等于a[j]的s[i],若存在这样的s[i]，满足i&lt;=len：  </p>
+</blockquote>
+<h2 id="输入描述-23">输入描述</h2>
+<blockquote>
+<p>第一行包含整数 N。<br>
+第二行包含 N 个整数，表示完整序列。</p>
+</blockquote>
+<h2 id="输出描述-23">输出描述</h2>
+<blockquote>
+<p>输出一个整数，表示最大长度。<br>
+1≤N≤100000<br>
+−1e9≤数列中的数≤1e9</p>
+</blockquote>
+<h2 id="示例-23">示例</h2>
+<h3 id="输入-23">输入</h3>
+<blockquote>
+<p>7<br>
+3 1 2 1 8 5 6</p>
+</blockquote>
+<h3 id="输出-23">输出</h3>
+<blockquote>
+<p>4</p>
+</blockquote>
+<h2 id="分析-22">分析</h2>
+<h3 id="约定-13">约定</h3>
+<p>记第i个数字为a[i]</p>
+<h3 id="状态表示-15">状态表示</h3>
+<p>f(j)表示以第j个数字为结尾的子序列的最大长度</p>
+<h3 id="状态划分与计算-9">状态划分与计算</h3>
+<p>显然，f(j)所对应的最长子序列的最后一个元素为a[j]。<br>
+那第二个元素是谁呢？这就是我们划分的关键。第二个元素可以是前j-1个数字中任意一个比a[j]小的数字，枚举所有情况并计算，取最大值就是答案！</p>
+<h3 id="状态转移方程-9">状态转移方程</h3>
+<p>由上一步的分析，我们得到状态转移方程如下：<br>
+f(j)=max(f(i))+1 &nbsp;&nbsp;&nbsp;(1 &lt;= i &lt; j , a[i] &lt; a[j])</p>
+<h3 id="优化-4">优化</h3>
+<p>朴素解法中，求解每一个f(j)都要去遍历[1,j-1]，这就很不好。<br>
+思考一下，对于一个长度为3的子序列，其最后一个元素为10，另一个长度为3的子序列，其最后一个元素为8，那么在两子序列之后的元素再考虑能否出现长度为4的子序列时只需要比较其和8的大小，大于就可以变成长度为4的子序列。<br>
+因此，我们可以发现，对于同样长度的子序列，我们仅需要关注各序列末端元素的最小值即可。这就启发我们维护各长度子序列末端元素的最小值。<br>
+设定一个数组s，s[i]表示长度为i的子序列末端元素的最小值，变量len表示已知子序列的最大长度。<strong>易得该数组的元素单调递增。</strong><br>
+从前到后遍历a，对于a[j]，找到第一个大于等于a[j]的s[i],若存在这样的s[i]，满足i&lt;=len：</p>
 <ul>
 <li>a[j] &lt; s[i]，令s[i]=a[j]</li>
 <li>a[j] &gt;= s[i]，不处理</li>
 </ul>
-</blockquote>
 <p>若不满足，则执行len++，另a[len]=a[j]。</p>
-<h2 id="朴素解法代码"><a href="#朴素解法代码" class="headerlink" title="朴素解法代码"></a>朴素解法代码</h2><hr>
+<h2 id="朴素解法代码">朴素解法代码</h2>
+<hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 
@@ -553,7 +584,8 @@
 	cout <span class="token operator">&lt;&lt;</span> res <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="优化解法代码"><a href="#优化解法代码" class="headerlink" title="优化解法代码"></a>优化解法代码</h2><hr>
+<h2 id="优化解法代码">优化解法代码</h2>
+<hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
@@ -1119,7 +1151,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.9k</span>&nbsp;字
+                class="white-color">47k</span>&nbsp;字
             
             
             

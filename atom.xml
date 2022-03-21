@@ -28,7 +28,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;在vscode中，tensorflow.keras模块的下属模块无法自动补全，我在github官方respository的issue中找到了解决问题的方法，即进入tensorflow/__init__.py文件，将下列代码粘贴进去即可。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;在vscode中，tensorflow.keras模块的下属模块无法自动补全，我在github官方respository的issue中找到了解决问题的方法，即进入tensorflow/_&lt;em&gt;init&lt;/em&gt;_.py文件，将下列代码粘贴进去即可。&lt;/p&gt;
 &lt;pre</summary>
         
       
@@ -49,7 +49,7 @@
     <link href="https://kong-aobo.github.io/2022/03/03/C++/problem1/"/>
     <id>https://kong-aobo.github.io/2022/03/03/C++/problem1/</id>
     <published>2022-03-03T12:45:18.000Z</published>
-    <updated>2022-03-06T01:10:46.450Z</updated>
+    <updated>2022-03-16T11:13:45.075Z</updated>
     
     
       
@@ -62,6 +62,8 @@
       
     
     
+    
+    <category term="C++" scheme="https://kong-aobo.github.io/categories/C/"/>
     
     
     <category term="C++" scheme="https://kong-aobo.github.io/tags/C/"/>
@@ -110,7 +112,7 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/156/&quot;&gt;https://www.acwing.com/problem/content/156/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+&lt;h2</summary>
         
       
     
@@ -136,7 +138,7 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/832/&quot;&gt;https://www.acwing.com/problem/content/832/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+&lt;h2</summary>
         
       
     
@@ -161,8 +163,9 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given two strings s and t of lengths m and n</summary>
+    <summary type="html">&lt;h2 id=&quot;题目描述-34&quot;&gt;题目描述&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given two strings s and t of lengths m and n respectively, return the minimum window substring</summary>
         
       
     
@@ -187,9 +190,11 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;符号约定&quot;&gt;&lt;a href=&quot;#符号约定&quot; class=&quot;headerlink&quot; title=&quot;符号约定&quot;&gt;&lt;/a&gt;符号约定&lt;/h2&gt;&lt;p&gt;数据集：$D$&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;符号约定&quot;&gt;符号约定&lt;/h2&gt;
+&lt;p&gt;数据集：$D$&lt;/p&gt;
 &lt;p&gt;$x$ 在数据集中的标记：$y_D$&lt;/p&gt;
-&lt;p&gt;$x$</summary>
+&lt;p&gt;$x$ 的真实标记：$y$&lt;/p&gt;
+&lt;p&gt;由训练集D学得的模型对 $x$ 的预测输出：$f(\boldsymbol{x} ;</summary>
         
       
     
@@ -214,7 +219,8 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;lower-bound&quot;&gt;&lt;a href=&quot;#lower-bound&quot; class=&quot;headerlink&quot; title=&quot;lower_bound&quot;&gt;&lt;/a&gt;lower_bound&lt;/h3&gt;&lt;pre class=&quot;line-numbers</summary>
+    <summary type="html">&lt;h3 id=&quot;lower-bound&quot;&gt;lower_bound&lt;/h3&gt;
+&lt;pre class=&quot;line-numbers language-cpp&quot; data-language=&quot;cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span</summary>
         
       
     
@@ -239,8 +245,9 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;电子邮件系统简述&quot;&gt;&lt;a href=&quot;#电子邮件系统简述&quot; class=&quot;headerlink&quot; title=&quot;电子邮件系统简述&quot;&gt;&lt;/a&gt;电子邮件系统简述&lt;/h2&gt;&lt;p&gt;电子邮件系统的组成如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img</summary>
+    <summary type="html">&lt;h2 id=&quot;电子邮件系统简述&quot;&gt;电子邮件系统简述&lt;/h2&gt;
+&lt;p&gt;电子邮件系统的组成如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://gitee.com/kong-aobo/figurebed/raw/master/20211112083215.png&quot;</summary>
         
       
     
@@ -265,9 +272,11 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
+    <summary type="html">&lt;h2 id=&quot;题目描述-6&quot;&gt;题目描述&lt;/h2&gt;
+&lt;blockquote&gt;
 &lt;p&gt;后序+中序序列构造二叉树。&lt;/p&gt;
-&lt;h2 id=&quot;输入描述&quot;&gt;&lt;a href=&quot;#输入描述&quot;</summary>
+&lt;/blockquote&gt;
+&lt;h2</summary>
         
       
     
@@ -292,7 +301,13 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;引入问题&quot;&gt;&lt;a href=&quot;#引入问题&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;引入问题&quot;&gt;引入问题&lt;/h2&gt;
+&lt;p&gt;给出一个长度为nn的数组，完成以下两种操作：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将第i个数加上k&lt;/li&gt;
+&lt;li&gt;输出区间[i,j]内每个数的和&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3</summary>
         
       
     
@@ -318,7 +333,7 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/243/&quot;&gt;https://www.acwing.com/problem/content/243/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+&lt;h2</summary>
         
       
     
@@ -343,8 +358,12 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。&lt;br&gt;A 吃 B，B 吃</summary>
+    <summary type="html">&lt;h2 id=&quot;题目描述-3&quot;&gt;题目描述&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。&lt;br&gt;
+A 吃 B，B 吃 C，C 吃 A。&lt;br&gt;
+现有 N 个动物，以 1∼N 编号。&lt;br&gt;
+每个动物都是</summary>
         
       
     
@@ -370,7 +389,7 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/839/&quot;&gt;https://www.acwing.com/problem/content/839/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+&lt;h2</summary>
         
       
     
@@ -395,7 +414,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;并查集的概念&quot;&gt;&lt;a href=&quot;#并查集的概念&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2</summary>
         
       
     
@@ -421,7 +440,7 @@
         
         
     <summary type="html">&lt;p&gt;题目连接：&lt;a href=&quot;http://poj.org/problem?id=2018&quot;&gt;http://poj.org/problem?id=2018&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot;</summary>
+&lt;h2</summary>
         
       
     
@@ -449,7 +468,7 @@
         
         
     <summary type="html">&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/909/&quot;&gt;https://www.acwing.com/problem/content/909/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+&lt;h2</summary>
         
       
     
@@ -475,7 +494,7 @@
         
         
     <summary type="html">&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/908/&quot;&gt;https://www.acwing.com/problem/content/908/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
+&lt;h2</summary>
         
       
     
@@ -500,7 +519,8 @@
       
         
         
-    <summary type="html">&lt;p&gt;区间选点：&lt;a href=&quot;https://www.acwing.com/problem/content/907/&quot;&gt;https://www.acwing.com/problem/content/907/&lt;/a&gt;&lt;br&gt;最大不相交区间数：&lt;a</summary>
+    <summary type="html">&lt;p&gt;区间选点：&lt;a href=&quot;https://www.acwing.com/problem/content/907/&quot;&gt;https://www.acwing.com/problem/content/907/&lt;/a&gt;&lt;br&gt;
+最大不相交区间数：&lt;a</summary>
         
       
     
@@ -525,7 +545,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;算法介绍&quot;&gt;&lt;a href=&quot;#算法介绍&quot; class=&quot;headerlink&quot; title=&quot;算法介绍&quot;&gt;&lt;/a&gt;算法介绍&lt;/h2&gt;&lt;p&gt;遗传算法（Genetic Algorithm，GA）最早是由美国的 John</summary>
+    <summary type="html">&lt;h2 id=&quot;算法介绍&quot;&gt;算法介绍&lt;/h2&gt;
+&lt;p&gt;遗传算法（Genetic Algorithm，GA）最早是由美国的 John</summary>
         
       
     

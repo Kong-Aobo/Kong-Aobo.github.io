@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    734
+                    759
                 </div>
                 
 
@@ -503,55 +503,144 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/16498">https://ac.nowcoder.com/acm/problem/16498</a></p>
-<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
-<p>在有向图G中，每条边的长度均为1，现给定起点和终点，请你在图中找一条从起点到终点的路径，该路径满足以下条件：<br>1.路径上的所有点的出边所指向的点都直接或间接与终点连通。<br>2.在满足条件1的情况下使路径最短。<br>注意：图G中可能存在重边和自环，题目保证终点没有出边。<br>请你输出符合条件的路径的长度。</p>
-<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行有两个用一个空格隔开的整数n和m，表示图有n个点和m条边。<br>接下来的m行每行2个整数x、y，之间用一个空格隔开，表示有一条边从点x指向点y。<br>最后一行有两个用一个空格隔开的整数s、t，表示起点为s，终点为t。</p>
-<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>输出只有一行，包含一个整数，表示满足题目描述的最短路径的长度。如果这样的路径不存在，输出-1。</p>
-<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>6 6<br>1 2<br>1 3<br>2 6<br>2 5<br>4 5<br>3 4<br>1 5  </p>
-<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>3</p>
-<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题的关键为条件1，如何才能得知一个点是否与终点连通呢？正向思考较为棘手，反向就容易许多，以终点为起点bfs就可以解决这一问题。<br>得知哪些点不与终点连通后，将这些点和被这些点波及的点从图中remove掉，正向bfs即可。<br>有一些细节需要注意，见代码注释。</p>
-<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2><hr>
-<p>```cpp</p>
-<h1 id="include"><a href="#include" class="headerlink" title="include "></a>include <string></string></h1><h1 id="include-1"><a href="#include-1" class="headerlink" title="include "></a>include <iostream></iostream></h1><h1 id="include-2"><a href="#include-2" class="headerlink" title="include "></a>include <cstring></cstring></h1><h1 id="include-3"><a href="#include-3" class="headerlink" title="include "></a>include <queue></queue></h1><p>using namespace std;</p>
+<h2 id="题目描述-41">题目描述</h2>
+<blockquote>
+<p>在有向图G中，每条边的长度均为1，现给定起点和终点，请你在图中找一条从起点到终点的路径，该路径满足以下条件：<br>
+1.路径上的所有点的出边所指向的点都直接或间接与终点连通。<br>
+2.在满足条件1的情况下使路径最短。<br>
+注意：图G中可能存在重边和自环，题目保证终点没有出边。<br>
+请你输出符合条件的路径的长度。</p>
 </blockquote>
-<h1 id="define-maxn-10000"><a href="#define-maxn-10000" class="headerlink" title="define maxn 10000"></a>define maxn 10000</h1><p>int n, m;<br>int s, t;<br>bool graph[maxn][maxn];<br>int dis[maxn];</p>
-<p>void remove(int point) //将一个点及其相关边剔除<br>{<br>    for (int i = 0; i &lt; n; i++)<br>        graph[i][point] = 0;<br>    for (int j = 0; j &lt; n; j++)<br>        graph[point][j] = 0;<br>}</p>
-<p>void bfs1() //正向处理<br>{<br>    queue<int> q;<br>    q.push(s - 1);<br>    dis[s - 1] = 0;<br>    while (!q.empty())<br>    {<br>        int a = q.front();<br>        q.pop();<br>        for (int i = 0; i &lt; n; i++)<br>        {<br>            if (!dis[i] &amp;&amp; graph[a][i])<br>            {<br>                dis[i] = dis[a] + 1;<br>                q.push(i);<br>            }<br>        }<br>    }<br>}</int></p>
-<p>void bfs2() //反向处理<br>{<br>    queue<int> q;<br>    q.push(t - 1);<br>    dis[t - 1] = 0;<br>    while (!q.empty())<br>    {<br>        int a = q.front();<br>        q.pop();<br>        for (int i = 0; i &lt; n; i++)<br>        {<br>            if (!dis[i] &amp;&amp; graph[i][a])<br>            {<br>                dis[i] = dis[a] + 1;<br>                q.push(i);<br>            }<br>        }<br>    }<br>}</int></p>
-<p>int main()<br>{<br>    memset(graph, 0, sizeof(graph));<br>    memset(dis, 0, sizeof(dis));</p>
-<pre><code>cin &gt;&gt; n &gt;&gt; m;
-while (m--)
+<h2 id="输入描述-41">输入描述</h2>
+<blockquote>
+<p>第一行有两个用一个空格隔开的整数n和m，表示图有n个点和m条边。<br>
+接下来的m行每行2个整数x、y，之间用一个空格隔开，表示有一条边从点x指向点y。<br>
+最后一行有两个用一个空格隔开的整数s、t，表示起点为s，终点为t。</p>
+</blockquote>
+<h2 id="输出描述-40">输出描述</h2>
+<blockquote>
+<p>输出只有一行，包含一个整数，表示满足题目描述的最短路径的长度。如果这样的路径不存在，输出-1。</p>
+</blockquote>
+<h2 id="示例-38">示例</h2>
+<h2 id="输入-38">输入</h2>
+<blockquote>
+<p>6 6<br>
+1 2<br>
+1 3<br>
+2 6<br>
+2 5<br>
+4 5<br>
+3 4<br>
+1 5</p>
+</blockquote>
+<h2 id="输出-38">输出</h2>
+<blockquote>
+<p>3</p>
+</blockquote>
+<h2 id="分析-31">分析</h2>
+<p>本题的关键为条件1，如何才能得知一个点是否与终点连通呢？正向思考较为棘手，反向就容易许多，以终点为起点bfs就可以解决这一问题。<br>
+得知哪些点不与终点连通后，将这些点和被这些点波及的点从图中remove掉，正向bfs即可。<br>
+有一些细节需要注意，见代码注释。</p>
+<h2 id="AC代码-37">AC代码</h2>
+<hr>
+<pre><code class="language-cpp">#include &lt;string&gt;
+#include &lt;iostream&gt;
+#include &lt;cstring&gt;
+#include &lt;queue&gt;
+using namespace std;
+
+#define maxn 10000
+int n, m;
+int s, t;
+bool graph[maxn][maxn];
+int dis[maxn];
+
+void remove(int point) //将一个点及其相关边剔除
 {
-    int x, y;
-    cin &gt;&gt; x &gt;&gt; y;
-    if (x == y)
-        continue; //舍弃自环
-    graph[x - 1][y - 1] = 1;
+    for (int i = 0; i &lt; n; i++)
+        graph[i][point] = 0;
+    for (int j = 0; j &lt; n; j++)
+        graph[point][j] = 0;
 }
-cin &gt;&gt; s &gt;&gt; t;
-bfs2();
-dis[t - 1] = 1; //终点是起点 不能被剔除
-for (int i = 0; i &lt; n; i++)
+
+void bfs1() //正向处理
 {
-    if (!dis[i])
+    queue&lt;int&gt; q;
+    q.push(s - 1);
+    dis[s - 1] = 0;
+    while (!q.empty())
     {
-        for (int j = 0; j &lt; n; j++) //注意remove的先后顺序
-        {                           //“波及”关系是需要原来点的边的数据的 
-            if (graph[j][i])        //所以先清除被“波及”点再处理原来的点
-                remove(j);
+        int a = q.front();
+        q.pop();
+        for (int i = 0; i &lt; n; i++)
+        {
+            if (!dis[i] &amp;&amp; graph[a][i])
+            {
+                dis[i] = dis[a] + 1;
+                q.push(i);
+            }
         }
-        remove(i);
     }
 }
 
-memset(dis, 0, sizeof(dis));
-bfs1();
-if (dis[t - 1])
-    cout &lt;&lt; dis[t - 1] &lt;&lt; endl;
-else
-    cout &lt;&lt; -1 &lt;&lt; endl;
-return 0;
-</code></pre><p>}</p>
+void bfs2() //反向处理
+{
+    queue&lt;int&gt; q;
+    q.push(t - 1);
+    dis[t - 1] = 0;
+    while (!q.empty())
+    {
+        int a = q.front();
+        q.pop();
+        for (int i = 0; i &lt; n; i++)
+        {
+            if (!dis[i] &amp;&amp; graph[i][a])
+            {
+                dis[i] = dis[a] + 1;
+                q.push(i);
+            }
+        }
+    }
+}
+
+int main()
+{
+    memset(graph, 0, sizeof(graph));
+    memset(dis, 0, sizeof(dis));
+
+    cin &gt;&gt; n &gt;&gt; m;
+    while (m--)
+    {
+        int x, y;
+        cin &gt;&gt; x &gt;&gt; y;
+        if (x == y)
+            continue; //舍弃自环
+        graph[x - 1][y - 1] = 1;
+    }
+    cin &gt;&gt; s &gt;&gt; t;
+    bfs2();
+    dis[t - 1] = 1; //终点是起点 不能被剔除
+    for (int i = 0; i &lt; n; i++)
+    {
+        if (!dis[i])
+        {
+            for (int j = 0; j &lt; n; j++) //注意remove的先后顺序
+            {                           //“波及”关系是需要原来点的边的数据的 
+                if (graph[j][i])        //所以先清除被“波及”点再处理原来的点
+                    remove(j);
+            }
+            remove(i);
+        }
+    }
+
+    memset(dis, 0, sizeof(dis));
+    bfs1();
+    if (dis[t - 1])
+        cout &lt;&lt; dis[t - 1] &lt;&lt; endl;
+    else
+        cout &lt;&lt; -1 &lt;&lt; endl;
+    return 0;
+}</code></pre>
 
                 
             </div>
@@ -848,19 +937,19 @@ return 0;
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem2/">
+                <a href="/2021/07/01/Algrithm%20Problem/Search/problem3/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="靶形数独">
+                        <img src="/medias/featureimages/33.jpg" class="responsive-img" alt="选择困难症">
                         
-                        <span class="card-title">靶形数独</span>
+                        <span class="card-title">选择困难症</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            搜索顺序影响算法速度
+                            DFS经典入门题目
                         
                     </div>
                     <div class="publish-info">
@@ -901,19 +990,19 @@ return 0;
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem3/">
+                <a href="/2021/07/01/Algrithm%20Problem/Search/problem5/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/33.jpg" class="responsive-img" alt="选择困难症">
+                        <img src="/medias/featureimages/31.jpg" class="responsive-img" alt="幸运数字">
                         
-                        <span class="card-title">选择困难症</span>
+                        <span class="card-title">幸运数字</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            DFS经典入门题目
+                            DFS入门题目
                         
                     </div>
                     <div class="publish-info">
@@ -1089,7 +1178,7 @@ return 0;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">45.9k</span>&nbsp;字
+                class="white-color">47k</span>&nbsp;字
             
             
             
