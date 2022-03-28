@@ -503,25 +503,25 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/93/">https://www.acwing.com/problem/content/93/</a></p>
-<h2 id="题目描述-11">题目描述</h2>
+<h2 id="题目描述-20">题目描述</h2>
 <blockquote>
 <p>给定一张 n 个点的带权无向图，点从 0∼n−1 标号，求起点 0 到终点 n−1 的最短 Hamilton 路径。<br>
 Hamilton 路径的定义是从 0 到 n−1 不重不漏地经过每个点恰好一次。</p>
 </blockquote>
-<h2 id="输入描述-11">输入描述</h2>
+<h2 id="输入描述-20">输入描述</h2>
 <blockquote>
 <p>第一行输入整数 n。<br>
 接下来 n 行每行 n 个整数，其中第 i 行第 j 个整数表示点 i 到 j 的距离（记为 a[i,j]）。<br>
 对于任意的 x,y,z，数据保证 a[x,x]=0，a[x,y]=a[y,x] 并且 a[x,y]+a[y,z]≥a[x,z]。</p>
 </blockquote>
-<h2 id="输出描述-11">输出描述</h2>
+<h2 id="输出描述-20">输出描述</h2>
 <blockquote>
 <p>输出一个整数，表示最短 Hamilton 路径的长度。<br>
 1≤n≤20<br>
 0≤a[i,j]≤10^7</p>
 </blockquote>
-<h2 id="示例-11">示例</h2>
-<h3 id="输入-11">输入</h3>
+<h2 id="示例-17">示例</h2>
+<h3 id="输入-17">输入</h3>
 <blockquote>
 <p>5<br>
 0 2 4 5 1<br>
@@ -530,12 +530,12 @@ Hamilton 路径的定义是从 0 到 n−1 不重不漏地经过每个点恰好�
 5 5 8 0 5<br>
 1 3 3 5 0</p>
 </blockquote>
-<h3 id="输出-11">输出</h3>
+<h3 id="输出-17">输出</h3>
 <blockquote>
 <p>18</p>
 </blockquote>
 <h2 id="分析-10">分析</h2>
-<h3 id="约定-4">约定</h3>
+<h3 id="约定-3">约定</h3>
 <p>记从i到j的距离为s[i][j]</p>
 <h3 id="状态表示-6">状态表示</h3>
 <p>f(i,j)表示满足如下条件行走方案的最小路径长度：</p>
@@ -544,15 +544,15 @@ Hamilton 路径的定义是从 0 到 n−1 不重不漏地经过每个点恰好�
 <li>从0点出发到达j</li>
 </ul>
 <p>将i看作一个二进制数，第k位不为0表示途径k点，为0表示不经过k点。</p>
-<h3 id="状态划分与计算-5">状态划分与计算</h3>
+<h3 id="状态划分与计算-4">状态划分与计算</h3>
 <p>对于f(i,j)，我们还是按照以往的思路，试着将达成f(i,j)的最后一步操作进行划分。<br>
 对应本题中，我们要关注的就是整个路径中的倒数第二个点，通过对倒数第二个点是谁进行分类。<br>
 状态转移方程如下：<br>
 f(i,j)=min(f(i-(1&lt;&lt;j),k)+s[k][j])<br>
 还有一些处理详见代码。</p>
-<h3 id="边界处理-2">边界处理</h3>
+<h3 id="边界处理">边界处理</h3>
 <p>f(1,0)=0，其余都是正无穷。</p>
-<h2 id="AC代码-9">AC代码</h2>
+<h2 id="AC代码-19">AC代码</h2>
 <hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
@@ -1118,7 +1118,7 @@ f(i,j)=min(f(i-(1&lt;&lt;j),k)+s[k][j])<br>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47k</span>&nbsp;字
+                class="white-color">47.4k</span>&nbsp;字
             
             
             

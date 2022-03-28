@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="染色法判定二分图, Kong Aobo&#39;s Blog">
+    <meta name="keywords" content="预训练的Word Embeddings使用方法, Kong Aobo&#39;s Blog">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>染色法判定二分图 | Kong Aobo&#39;s Blog</title>
+    <title>预训练的Word Embeddings使用方法 | Kong Aobo&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/29.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">染色法判定二分图</h1>
+                    <h1 class="description center-align post-title">预训练的Word Embeddings使用方法</h1>
                 </div>
             </div>
         </div>
@@ -434,12 +434,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%9B%BE%E8%AE%BA/">
-                                <span class="chip bg-color">图论</span>
+                            <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                                <span class="chip bg-color">深度学习</span>
                             </a>
                         
-                            <a href="/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/">
-                                <span class="chip bg-color">二分图</span>
+                            <a href="/tags/python/">
+                                <span class="chip bg-color">python</span>
                             </a>
                         
                     </div>
@@ -450,8 +450,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                算法
+                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                机器学习
                             </a>
                         
                     </div>
@@ -463,21 +463,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-08-27
+                    2022-02-26
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-27
+                    2022-03-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    563
+                    346
                 </div>
                 
 
@@ -502,111 +502,51 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/862/">https://www.acwing.com/problem/content/862/</a></p>
-<h2 id="题目描述-14">题目描述</h2>
-<blockquote>
-<p>给定一个 n 个点 m 条边的无向图，图中可能存在重边和自环。<br>
-请你判断这个图是否是二分图。</p>
-</blockquote>
-<h2 id="输入描述-14">输入描述</h2>
-<blockquote>
-<p>第一行包含两个整数 n 和 m。<br>
-接下来 m 行，每行包含两个整数 u 和 v，表示点 u 和点 v 之间存在一条边。</p>
-</blockquote>
-<h2 id="输出描述-14">输出描述</h2>
-<blockquote>
-<p>如果给定图是二分图，则输出 Yes，否则输出 No。<br>
-1≤n,m≤105</p>
-</blockquote>
-<h2 id="示例-13">示例</h2>
-<h3 id="输入-13">输入</h3>
-<blockquote>
-<p>4 4<br>
-1 3<br>
-1 4<br>
-2 3<br>
-2 4</p>
-</blockquote>
-<h3 id="输出-13">输出</h3>
-<blockquote>
-<p>Yes</p>
-</blockquote>
-<h2 id="染色法">染色法</h2>
-<h3 id="二分图的定义和性质">二分图的定义和性质</h3>
-<p>将所有点分成两个集合，使得所有边只出现在集合之间，就是二分图。</p>
-<p>无向图G为二分图的充分必要条件是，G至少有两个顶点，且其<strong>所有回路的长度均为偶数</strong>。</p>
-<h3 id="解决思路">解决思路</h3>
-<p>基于二分图的性质，我们可以从一个点开始DFS，交替给所搜索到的点“上色”，总共两种颜色，1表示一种，2表示另一种，存在环则搜索中一定会碰到已经被染过色的点，若染过色的点的颜色与此时要给该点上的颜色不同，则说明该回路长度为奇数（偶数长度的回路颜色是一致的），不是二分图。</p>
-<h2 id="AC代码-15">AC代码</h2>
-<hr>
-<pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;queue&gt;</span></span>
-
-<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">define</span> <span class="token macro-name">INF</span> <span class="token expression"><span class="token number">0x3f3f3f3f</span></span></span>
-
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
-
-<span class="token keyword">const</span> <span class="token keyword">int</span> N <span class="token operator">=</span> <span class="token number">1e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">const</span> <span class="token keyword">int</span> M <span class="token operator">=</span> <span class="token number">2e5</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
-<span class="token keyword">int</span> n<span class="token punctuation">,</span> m<span class="token punctuation">;</span>
-<span class="token keyword">int</span> h<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">,</span> e<span class="token punctuation">[</span>M<span class="token punctuation">]</span><span class="token punctuation">,</span> ne<span class="token punctuation">[</span>M<span class="token punctuation">]</span><span class="token punctuation">,</span> idx<span class="token punctuation">;</span>
-<span class="token keyword">int</span> color<span class="token punctuation">[</span>N<span class="token punctuation">]</span><span class="token punctuation">;</span>	<span class="token comment">//0表示未染过色 1 2表示两种颜色</span>
-
-<span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> a<span class="token punctuation">,</span> <span class="token keyword">int</span> b<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-	e<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> b<span class="token punctuation">;</span>
-	ne<span class="token punctuation">[</span>idx<span class="token punctuation">]</span> <span class="token operator">=</span> h<span class="token punctuation">[</span>a<span class="token punctuation">]</span><span class="token punctuation">;</span>
-	h<span class="token punctuation">[</span>a<span class="token punctuation">]</span> <span class="token operator">=</span> idx<span class="token operator">++</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">bool</span> <span class="token function">dfs</span><span class="token punctuation">(</span><span class="token keyword">int</span> u<span class="token punctuation">,</span> <span class="token keyword">int</span> c<span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-	color<span class="token punctuation">[</span>u<span class="token punctuation">]</span> <span class="token operator">=</span> c<span class="token punctuation">;</span>
-	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> h<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">;</span> i <span class="token operator">!=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">=</span> ne<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-	<span class="token punctuation">{</span>
-		<span class="token keyword">int</span> j <span class="token operator">=</span> e<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>color<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
-		<span class="token punctuation">{</span>
-			<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">dfs</span><span class="token punctuation">(</span>j<span class="token punctuation">,</span> <span class="token number">3</span> <span class="token operator">-</span> c<span class="token punctuation">)</span><span class="token punctuation">)</span>	<span class="token comment">//通过3-c实现1 2的交替</span>
-				<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-		<span class="token punctuation">}</span>
-		<span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>color<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">==</span> c<span class="token punctuation">)</span>	<span class="token comment">//等于c则颜色出现不一致 存在偶数长度环</span>
-			<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-	<span class="token function">memset</span><span class="token punctuation">(</span>h<span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">sizeof</span><span class="token punctuation">(</span>h<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-	cin <span class="token operator">&gt;&gt;</span> n <span class="token operator">&gt;&gt;</span> m<span class="token punctuation">;</span>
-	<span class="token keyword">while</span> <span class="token punctuation">(</span>m<span class="token operator">--</span><span class="token punctuation">)</span>
-	<span class="token punctuation">{</span>
-		<span class="token keyword">int</span> a<span class="token punctuation">,</span> b<span class="token punctuation">;</span>
-		cin <span class="token operator">&gt;&gt;</span> a <span class="token operator">&gt;&gt;</span> b<span class="token punctuation">;</span>
-		<span class="token function">add</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
-		<span class="token function">add</span><span class="token punctuation">(</span>b<span class="token punctuation">,</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
-	<span class="token punctuation">}</span>
-	<span class="token keyword">bool</span> flag <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
-	<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> n<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span>
-	<span class="token punctuation">{</span>
-		<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>color<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-		<span class="token punctuation">{</span>
-			<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">dfs</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
-			<span class="token punctuation">{</span>
-				flag <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-				<span class="token keyword">break</span><span class="token punctuation">;</span>
-			<span class="token punctuation">}</span>
-		<span class="token punctuation">}</span>
-	<span class="token punctuation">}</span>
-	<span class="token keyword">if</span> <span class="token punctuation">(</span>flag<span class="token punctuation">)</span>
-		cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Yes"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-	<span class="token keyword">else</span>
-		cout <span class="token operator">&lt;&lt;</span> <span class="token string">"No"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                <h3 id="1-读取预训练好的Word-Embeddings文件">1. 读取预训练好的Word Embeddings文件</h3>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'file-path/glove.6B.100d.txt'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+    <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">:</span>
+        word<span class="token punctuation">,</span> coefs <span class="token operator">=</span> line<span class="token punctuation">.</span>split<span class="token punctuation">(</span>maxsplit<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
+        coefs <span class="token operator">=</span> np<span class="token punctuation">.</span>fromstring<span class="token punctuation">(</span>coefs<span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token builtin">float</span><span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span>
+        embeddings_index<span class="token punctuation">[</span>word<span class="token punctuation">]</span> <span class="token operator">=</span> coefs
+<span class="token comment"># 最终得到字典embeddings_index</span>
+<span class="token comment"># 键为字符串(单个单词)</span>
+<span class="token comment"># 值为一个(100, )的向量</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="2-形成本模型中的字典">2. 形成本模型中的字典</h3>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> tensorflow <span class="token keyword">as</span> tf
+encoder <span class="token operator">=</span> tf<span class="token punctuation">.</span>keras<span class="token punctuation">.</span>layers<span class="token punctuation">.</span>TextVectorization<span class="token punctuation">(</span><span class="token punctuation">)</span>
+encoder<span class="token punctuation">.</span>adapt<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
+voc <span class="token operator">=</span> encoder<span class="token punctuation">.</span>get_vocabulary<span class="token punctuation">(</span><span class="token punctuation">)</span>
+word_to_index <span class="token operator">=</span> <span class="token builtin">dict</span><span class="token punctuation">(</span><span class="token builtin">zip</span><span class="token punctuation">(</span>voc<span class="token punctuation">,</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>voc<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># 最终得到一个字典word_to_index</span>
+<span class="token comment"># 键为字符串(单个单词)</span>
+<span class="token comment"># 值为该单词的编号</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="3-从预训练好的Word-Embeddings中抽取出本模型字典的词向量">3. 从预训练好的Word Embeddings中抽取出本模型字典的词向量</h3>
+<p>预训练好的Word Embeddings中的单词数量庞大，我们模型的字典可能并没有这么大，并不需要全部的词向量数据，因此只需要从中抽取出我们模型字典中有的单词的词向量即可。</p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">num_tokens <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>voc<span class="token punctuation">)</span>
+embedding_dim <span class="token operator">=</span> <span class="token number">100</span>
+hits <span class="token operator">=</span> <span class="token number">0</span>
+misses <span class="token operator">=</span> <span class="token number">0</span>
+cnt <span class="token operator">=</span> <span class="token number">0</span>
+embedding_matrix <span class="token operator">=</span> np<span class="token punctuation">.</span>zeros<span class="token punctuation">(</span><span class="token punctuation">(</span>num_tokens<span class="token punctuation">,</span> embedding_dim<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">for</span> word<span class="token punctuation">,</span> i <span class="token keyword">in</span> word_to_index<span class="token punctuation">.</span>items<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    embedding_vector <span class="token operator">=</span> embeddings_index<span class="token punctuation">.</span>get<span class="token punctuation">(</span>word<span class="token punctuation">)</span>
+    <span class="token keyword">if</span> embedding_vector <span class="token keyword">is</span> <span class="token keyword">not</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        embedding_matrix<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> embedding_vector
+        hits <span class="token operator">+=</span> <span class="token number">1</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> cnt <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">:</span>
+            <span class="token keyword">print</span><span class="token punctuation">(</span>word<span class="token punctuation">)</span>
+            cnt <span class="token operator">+=</span><span class="token number">1</span>
+        misses <span class="token operator">+=</span> <span class="token number">1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Converted %d words (%d misses)"</span> <span class="token operator">%</span> <span class="token punctuation">(</span>hits<span class="token punctuation">,</span> misses<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token comment"># 最终得到一个矩阵embedding_matrix</span>
+<span class="token comment"># 有些字典中的单词并没有在预训练的Word Embedding中出现</span>
+<span class="token comment"># 将其初始化为0即可</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="4-利用embedding-matrix构建Embedding层">4. 利用embedding_matrix构建Embedding层</h3>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python">tf<span class="token punctuation">.</span>keras<span class="token punctuation">.</span>layers<span class="token punctuation">.</span>Embedding<span class="token punctuation">(</span>num_tokens<span class="token punctuation">,</span> embedding_dim
+                              <span class="token punctuation">,</span> embeddings_initializer<span class="token operator">=</span>tf<span class="token punctuation">.</span>keras<span class="token punctuation">.</span>initializers<span class="token punctuation">.</span>Constant<span class="token punctuation">(</span>embedding_matrix<span class="token punctuation">)</span>
+                              <span class="token punctuation">,</span> mask_zero<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> trainable<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token comment"># 视情况决定是否冻结Embedding层</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -632,7 +572,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/ran%20se/">https://kong-aobo.github.io/2021/08/27/Algrithm%20Problem/Graph%20Theory/ran%20se/</a>
+                    <a href="https://kong-aobo.github.io/2022/02/26/Machine%20Learning/problem3/">https://kong-aobo.github.io/2022/02/26/Machine%20Learning/problem3/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -670,12 +610,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%9B%BE%E8%AE%BA/">
-                                    <span class="chip bg-color">图论</span>
+                                <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                                    <span class="chip bg-color">深度学习</span>
                                 </a>
                             
-                                <a href="/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/">
-                                    <span class="chip bg-color">二分图</span>
+                                <a href="/tags/python/">
+                                    <span class="chip bg-color">python</span>
                                 </a>
                             
                         </div>
@@ -902,31 +842,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/27/Algrithm%20Problem/Graph%20Theory/hungarian%20algorithm/">
+                <a href="/2022/02/26/Machine%20Learning/problem2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="匈牙利算法">
+                        <img src="/medias/featureimages/30.jpg" class="responsive-img" alt="数据集的打乱方法">
                         
-                        <span class="card-title">匈牙利算法</span>
+                        <span class="card-title">数据集的打乱方法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            匈牙利算法求解二分图的最大匹配
+                            数据和标签的同步打乱
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-08-27
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-02-26
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
+                            <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" class="post-category">
+                                    机器学习
                                 </a>
                             
                             
@@ -936,12 +876,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%9B%BE%E8%AE%BA/">
-                        <span class="chip bg-color">图论</span>
+                    <a href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">深度学习</span>
                     </a>
                     
-                    <a href="/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/">
-                        <span class="chip bg-color">二分图</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>
@@ -955,31 +895,31 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/26/Algrithm%20Problem/Graph%20Theory/floyd/">
+                <a href="/2022/02/11/Data%20Structure/Monotone%20Queue/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Floyd算法">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="滑动窗口">
                         
-                        <span class="card-title">Floyd算法</span>
+                        <span class="card-title">滑动窗口</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Floyd求最短路
+                            单调队列的经典应用
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-02-11
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
+                            <a href="/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" class="post-category">
+                                    数据结构
                                 </a>
                             
                             
@@ -989,12 +929,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%9C%80%E7%9F%AD%E8%B7%AF/">
-                        <span class="chip bg-color">最短路</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%9B%BE%E8%AE%BA/">
-                        <span class="chip bg-color">图论</span>
+                    <a href="/tags/%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97/">
+                        <span class="chip bg-color">单调队列</span>
                     </a>
                     
                 </div>
@@ -1125,6 +1061,13 @@
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
 
 
 

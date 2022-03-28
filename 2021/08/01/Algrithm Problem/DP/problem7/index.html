@@ -503,37 +503,37 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/899/">https://www.acwing.com/problem/content/899/</a></p>
-<h2 id="题目描述-20">题目描述</h2>
+<h2 id="题目描述-30">题目描述</h2>
 <blockquote>
 <p>给定两个长度分别为 N 和 M 的字符串 A 和 B，求既是 A 的子序列又是 B 的子序列的字符串长度最长是多少。</p>
 </blockquote>
-<h2 id="输入描述-20">输入描述</h2>
+<h2 id="输入描述-30">输入描述</h2>
 <blockquote>
 <p>第一行包含两个整数 N 和 M。<br>
 第二行包含一个长度为 N 的字符串，表示字符串 A。<br>
 第三行包含一个长度为 M 的字符串，表示字符串 B。<br>
 字符串均由小写字母构成。</p>
 </blockquote>
-<h2 id="输出描述-20">输出描述</h2>
+<h2 id="输出描述-30">输出描述</h2>
 <blockquote>
 <p>输出一个整数，表示最大长度。<br>
 1≤N,M≤1000</p>
 </blockquote>
-<h2 id="示例-20">示例</h2>
-<h3 id="输入-20">输入</h3>
+<h2 id="示例-27">示例</h2>
+<h3 id="输入-27">输入</h3>
 <blockquote>
 <p>4 5<br>
 acbd<br>
 abedc</p>
 </blockquote>
-<h3 id="输出-20">输出</h3>
+<h3 id="输出-27">输出</h3>
 <blockquote>
 <p>3</p>
 </blockquote>
-<h2 id="分析-19">分析</h2>
+<h2 id="分析-20">分析</h2>
 <h3 id="约定-11">约定</h3>
 <p>记第一个字符串为a，第二个为b</p>
-<h3 id="状态表示-13">状态表示</h3>
+<h3 id="状态表示-14">状态表示</h3>
 <p>f(i,j)所代表的集合和属性如下：</p>
 <ul>
 <li>集合：从a中前i个字母，b中前j个字母中选择出的公共子序列</li>
@@ -555,7 +555,7 @@ f(i-1,j-1)<br>
 我们一般会想到f(i,j-1)，但请思考这个式子所代表的集合与我们要求解的情况一致吗？<br>
 肯定不一致，f(i,j-1)是一个包含了该情况的更大的集合，但恰恰该情况的最大值已经被f(i,j-1)所考虑了。即我们虽然不能说f(i,j-1)就是该情况的最大值，但通过它就能将该情况的最大值考虑进去。<br>
 另一种情况同理，通过f(i-1,j)间接考虑。</p>
-<h3 id="状态转移方程-7">状态转移方程</h3>
+<h3 id="状态转移方程-8">状态转移方程</h3>
 <p>由上一步的分析，我们得到状态转移方程如下：</p>
 <ul>
 <li>f(i,j)=max(f(i-1,j-1),f(i,j-1),f(i-1,j))&nbsp;&nbsp;&nbsp;a[i]!=b[j]</li>
@@ -563,7 +563,7 @@ f(i-1,j-1)<br>
 </ul>
 <p>在此，再对我们的状态计算的方法进行说明，我们的目的是求出四种情况中的最大值，但我们并不是通过先分别求出最大值再比较得到的，而是间接的实现，状态转移方程中的各个比较项是存在交叉的，但它们的并集涵盖了f(i,j)集合中的所有元素，从而实现的求解，这是集合思想的巧妙运用。<br>
 另外，虽然状态转移方程中有f(i-1,j-1)，但该值其实已经被f(i,j-1)或f(i-1,j)所考虑，因此实际编程时我们通常不写它。</p>
-<h2 id="AC代码-16">AC代码</h2>
+<h2 id="AC代码-27">AC代码</h2>
 <hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
@@ -1130,7 +1130,7 @@ string a<span class="token punctuation">,</span> b<span class="token punctuation
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47k</span>&nbsp;字
+                class="white-color">47.4k</span>&nbsp;字
             
             
             

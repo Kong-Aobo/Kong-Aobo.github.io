@@ -503,7 +503,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/description/904/">https://www.acwing.com/problem/content/description/904/</a></p>
-<h2 id="题目描述-8">题目描述</h2>
+<h2 id="题目描述-18">题目描述</h2>
 <blockquote>
 <p>给定两个字符串 A 和 B，现在要将 A 经过若干操作变为 B，可进行的操作有：<br>
 删除–将字符串 A 中的某个字符删除。<br>
@@ -511,7 +511,7 @@
 替换–将字符串 A 中的某个字符替换为另一个字符。<br>
 现在请你求出，将 A 变为 B 至少需要进行多少次操作。</p>
 </blockquote>
-<h2 id="输入描述-8">输入描述</h2>
+<h2 id="输入描述-18">输入描述</h2>
 <blockquote>
 <p>第一行包含整数 n，表示字符串 A 的长度。<br>
 第二行包含一个长度为 n 的字符串 A。<br>
@@ -519,28 +519,28 @@
 第四行包含一个长度为 m 的字符串 B。<br>
 字符串中均只包含大写字母。</p>
 </blockquote>
-<h2 id="输出描述-8">输出描述</h2>
+<h2 id="输出描述-18">输出描述</h2>
 <blockquote>
 <p>输出一个整数，表示最少操作次数。<br>
 1≤n,m≤1000</p>
 </blockquote>
-<h2 id="示例-8">示例</h2>
-<h3 id="输入-8">输入</h3>
+<h2 id="示例-15">示例</h2>
+<h3 id="输入-15">输入</h3>
 <blockquote>
 <p>10<br>
 AGTCTGACGC<br>
 11<br>
 AGTAAGTAGGC</p>
 </blockquote>
-<h3 id="输出-8">输出</h3>
+<h3 id="输出-15">输出</h3>
 <blockquote>
 <p>4</p>
 </blockquote>
-<h2 id="分析-8">分析</h2>
+<h2 id="分析-9">分析</h2>
 <h3 id="约定-2">约定</h3>
 <p>第一个字符串表示为a，长度为n<br>
 第二个字符串表示为b，长度为m</p>
-<h3 id="状态表示-2">状态表示</h3>
+<h3 id="状态表示-3">状态表示</h3>
 <p>f(i,j)表示a的前i个字符变为b的前j个字符所需要的最少操作次数</p>
 <h3 id="状态划分与计算">状态划分与计算</h3>
 <p>关于本题的状态划分和计算，我没有找到非常严谨的分析过程，只能综合各种回答，给出我认为最好的分析。<br>
@@ -553,7 +553,7 @@ AGTAAGTAGGC</p>
 <li>删除操作：此时要删除a[i]，说明a的前i-1个字符已经变成了b的前j个字符，此时f(i,j)=f(i-1,j)+1</li>
 <li>替换操作: 此时先判断a[i]是否等于b[j]，如果不等，则应将a[i]替换为b[j]，说明a的前i-1个字已经变成了b的前j-1个字符，此时f(i,j)=f(i-1,j-1)+1。如果a[i]=b[j]，则无需操作，此时f(i,j)=f(i-1,j-1)</li>
 </ul>
-<h3 id="状态转移方程-2">状态转移方程</h3>
+<h3 id="状态转移方程-3">状态转移方程</h3>
 <p>再来考虑一下边界条件：</p>
 <ul>
 <li>f(0,0)，代表两个字符串均空，等于0</li>
@@ -562,7 +562,7 @@ AGTAAGTAGGC</p>
 </ul>
 <p>由上一步的分析和对边界的考虑，我们得到状态转移方程如下：</p>
 <p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210802170755.png" alt=""></p>
-<h2 id="AC代码-7">AC代码</h2>
+<h2 id="AC代码-18">AC代码</h2>
 <hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
@@ -1130,7 +1130,7 @@ AGTAAGTAGGC</p>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47k</span>&nbsp;字
+                class="white-color">47.4k</span>&nbsp;字
             
             
             
