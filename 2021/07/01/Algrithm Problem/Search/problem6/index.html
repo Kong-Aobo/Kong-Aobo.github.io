@@ -503,26 +503,26 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/15665">https://ac.nowcoder.com/acm/problem/15665</a></p>
-<h2 id="题目描述-44">题目描述</h2>
+<h2 id="题目描述-42">题目描述</h2>
 <blockquote>
 <p>小明来到一个由n x m个格子组成的迷宫，有些格子是陷阱，用’#‘表示，小明进入陷阱就会死亡，’.'表示没有陷阱。小明所在的位置用’S’表示，目的地用’T’表示。<br>
 小明只能向上下左右相邻的格子移动，每移动一次花费1秒。<br>
 有q个单向传送阵，每个传送阵各有一个入口和一个出口，入口和出口都在迷宫的格子里，当走到或被*传送到一个有传送阵入口的格子时，小明可以选择是否开启传送阵。如果开启传送阵,小明就会被传送到出口对应的格子里，这个过程会花费3秒；如果不开启传送阵，将不会发生任何事情，小明可以继续向上下左右四个方向移动。<br>
 一个格子可能既有多个入口，又有多个出口，小明可以选择任意一个入口开启传送阵。使用传送阵是非常危险的，因为有的传送阵的出口在陷阱里，如果小明使用这样的传送阵，那他就会死亡。也有一些传送阵的入口在陷阱里，这样的传送阵是没有用的，因为小明不能活着进入。请告诉小明活着到达目的地的最短时间。</p>
 </blockquote>
-<h2 id="输入描述-44">输入描述</h2>
+<h2 id="输入描述-42">输入描述</h2>
 <blockquote>
 <p>有多组数据。对于每组数据：<br>
 第一行有三个整数n,m,q(2≤ n,m≤300,0≤ q ≤ 1000)。<br>
 接下来是一个n行m列的矩阵，表示迷宫。<br>
 最后q行，每行四个整数x1,y1,x2,y2(0≤ x1,x2&lt; n,0≤ y1,y2&lt; m)，表示一个传送阵的入口在x1行y1列，出口在x2行y2列。</p>
 </blockquote>
-<h2 id="输出描述-43">输出描述</h2>
+<h2 id="输出描述-41">输出描述</h2>
 <blockquote>
 <p>如果小明能够活着到达目的地，则输出最短时间，否则输出-1。</p>
 </blockquote>
-<h2 id="示例-41">示例</h2>
-<h2 id="输入-41">输入</h2>
+<h2 id="示例-39">示例</h2>
+<h2 id="输入-39">输入</h2>
 <blockquote>
 <p>5 5 1<br>
 …S…<br>
@@ -553,18 +553,18 @@ S#.T<br>
 0 0 0 3<br>
 2 0 2 2</p>
 </blockquote>
-<h2 id="输出-41">输出</h2>
+<h2 id="输出-39">输出</h2>
 <blockquote>
 <p>6<br>
 8<br>
 -1<br>
 3</p>
 </blockquote>
-<h2 id="分析-34">分析</h2>
+<h2 id="分析-32">分析</h2>
 <p>本题是普通迷宫问题的变种，但仍是在求迷宫中某点是否可达，以及其路径长度(本题为耗费时间)，因此我们的主要思路依然为广搜。<br>
 回忆一下，通常我们广搜就是按照远近，从近到远挨着搜，本题中传送阵的出现虽然有所变化，但仅仅是扩充了试探的原则，不仅仅是"挨着搜"，增加了传送阵搜，其余不变，因此为了保持由近及远的原则，我们可以使用优先队列，出队顺序由耗时决定。<br>
 以上即为本题主要思路，还有一些细节均在代码注释中不再赘述。</p>
-<h2 id="AC代码-39">AC代码</h2>
+<h2 id="AC代码-38">AC代码</h2>
 <hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
@@ -973,19 +973,19 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem5/">
+                <a href="/2021/07/01/Algrithm%20Problem/Search/problem4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/31.jpg" class="responsive-img" alt="幸运数字">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="寻找道路">
                         
-                        <span class="card-title">幸运数字</span>
+                        <span class="card-title">寻找道路</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            DFS入门题目
+                            BFS与图论
                         
                     </div>
                     <div class="publish-info">
@@ -1011,8 +1011,8 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
                         <span class="chip bg-color">搜索</span>
                     </a>
                     
-                    <a href="/tags/DFS/">
-                        <span class="chip bg-color">DFS</span>
+                    <a href="/tags/BFS/">
+                        <span class="chip bg-color">BFS</span>
                     </a>
                     
                 </div>
@@ -1023,22 +1023,22 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem6/">
+                <a href="/2021/07/01/Algrithm%20Problem/Search/problem5/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/39.jpg" class="responsive-img" alt="maze">
+                        <img src="/medias/featureimages/31.jpg" class="responsive-img" alt="幸运数字">
                         
-                        <span class="card-title">maze</span>
+                        <span class="card-title">幸运数字</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            BFS普通迷宫问题的变种
+                            DFS入门题目
                         
                     </div>
                     <div class="publish-info">
@@ -1057,7 +1057,6 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -1065,8 +1064,8 @@ map<span class="token operator">&lt;</span><span class="token keyword">int</span
                         <span class="chip bg-color">搜索</span>
                     </a>
                     
-                    <a href="/tags/BFS/">
-                        <span class="chip bg-color">BFS</span>
+                    <a href="/tags/DFS/">
+                        <span class="chip bg-color">DFS</span>
                     </a>
                     
                 </div>

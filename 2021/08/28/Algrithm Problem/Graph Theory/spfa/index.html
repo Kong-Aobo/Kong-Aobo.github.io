@@ -508,18 +508,18 @@
 <h2 id="最短路">最短路</h2>
 <p>注意：Bellman Ford算法可以存在负权回路，是因为其循环的次数是有限制的因此最终不会发生死循环；但是SPFA算法不可以，由于用了队列来存储，只要发生了更新就会不断的入队，因此<strong>假如有负权回路请你不要用SPFA否则会死循环</strong>。</p>
 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/853/">https://www.acwing.com/problem/content/853/</a></p>
-<h3 id="题目描述-15">题目描述</h3>
+<h3 id="题目描述-34">题目描述</h3>
 <blockquote>
 <p>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环， 边权可能为负数。<br>
 请你求出 1 号点到 n 号点的最短距离，如果无法从 1 号点走到 n 号点，则输出 impossible。<br>
 数据保证不存在负权回路。</p>
 </blockquote>
-<h3 id="输入描述-15">输入描述</h3>
+<h3 id="输入描述-34">输入描述</h3>
 <blockquote>
 <p>第一行包含整数 n 和 m。<br>
 接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
 </blockquote>
-<h3 id="输出描述-15">输出描述</h3>
+<h3 id="输出描述-34">输出描述</h3>
 <blockquote>
 <p>输出一个整数，表示 1 号点到 n 号点的最短距离。<br>
 如果路径不存在，则输出 impossible。<br>
@@ -533,7 +533,7 @@
 1 3 4</p>
 <h3 id="示例输出">示例输出</h3>
 <p>2</p>
-<h3 id="AC代码-16">AC代码</h3>
+<h3 id="AC代码-30">AC代码</h3>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
@@ -609,17 +609,17 @@
 <p>注意：该题是判断是否存在负环，并非判断是否存在从1开始的负环，因此需要将所有的点都加入队列中，更新周围的点。初始时将所有点插入队列中可以按如下方式理解：</p>
 <p>在原图的基础上新建一个虚拟源点，从该点向其他所有点连一条权值为0的有向边。那么原图有负环等价于新图有负环。此时在新图上做spfa，将虚拟源点加入队列中。然后进行spfa的第一次迭代，这时会将所有点的距离更新并将所有点插入队列中。执行到这一步，就等价于视频中的做法了。那么视频中的做法可以找到负环，等价于这次spfa可以找到负环，等价于新图有负环，等价于原图有负环。</p>
 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/854/">https://www.acwing.com/problem/content/854/</a></p>
-<h3 id="题目描述-16">题目描述</h3>
+<h3 id="题目描述-35">题目描述</h3>
 <blockquote>
 <p>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环， 边权可能为负数。<br>
 请你判断图中是否存在负权回路。</p>
 </blockquote>
-<h3 id="输入描述-16">输入描述</h3>
+<h3 id="输入描述-35">输入描述</h3>
 <blockquote>
 <p>第一行包含整数 n 和 m。<br>
 接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
 </blockquote>
-<h3 id="输出描述-16">输出描述</h3>
+<h3 id="输出描述-35">输出描述</h3>
 <blockquote>
 <p>如果图中存在负权回路，则输出 Yes，否则输出 No。<br>
 1≤n≤2000<br>
@@ -633,7 +633,7 @@
 3 1 -4</p>
 <h3 id="示例输出-2">示例输出</h3>
 <p>Yes</p>
-<h3 id="AC代码-17">AC代码</h3>
+<h3 id="AC代码-31">AC代码</h3>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
