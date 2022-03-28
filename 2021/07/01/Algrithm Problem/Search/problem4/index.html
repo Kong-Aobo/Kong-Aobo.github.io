@@ -503,7 +503,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/16498">https://ac.nowcoder.com/acm/problem/16498</a></p>
-<h2 id="题目描述-41">题目描述</h2>
+<h2 id="题目描述-40">题目描述</h2>
 <blockquote>
 <p>在有向图G中，每条边的长度均为1，现给定起点和终点，请你在图中找一条从起点到终点的路径，该路径满足以下条件：<br>
 1.路径上的所有点的出边所指向的点都直接或间接与终点连通。<br>
@@ -511,7 +511,7 @@
 注意：图G中可能存在重边和自环，题目保证终点没有出边。<br>
 请你输出符合条件的路径的长度。</p>
 </blockquote>
-<h2 id="输入描述-41">输入描述</h2>
+<h2 id="输入描述-40">输入描述</h2>
 <blockquote>
 <p>第一行有两个用一个空格隔开的整数n和m，表示图有n个点和m条边。<br>
 接下来的m行每行2个整数x、y，之间用一个空格隔开，表示有一条边从点x指向点y。<br>
@@ -521,8 +521,8 @@
 <blockquote>
 <p>输出只有一行，包含一个整数，表示满足题目描述的最短路径的长度。如果这样的路径不存在，输出-1。</p>
 </blockquote>
-<h2 id="示例-38">示例</h2>
-<h2 id="输入-38">输入</h2>
+<h2 id="示例-37">示例</h2>
+<h2 id="输入-37">输入</h2>
 <blockquote>
 <p>6 6<br>
 1 2<br>
@@ -533,15 +533,15 @@
 3 4<br>
 1 5</p>
 </blockquote>
-<h2 id="输出-38">输出</h2>
+<h2 id="输出-37">输出</h2>
 <blockquote>
 <p>3</p>
 </blockquote>
-<h2 id="分析-31">分析</h2>
+<h2 id="分析-30">分析</h2>
 <p>本题的关键为条件1，如何才能得知一个点是否与终点连通呢？正向思考较为棘手，反向就容易许多，以终点为起点bfs就可以解决这一问题。<br>
 得知哪些点不与终点连通后，将这些点和被这些点波及的点从图中remove掉，正向bfs即可。<br>
 有一些细节需要注意，见代码注释。</p>
-<h2 id="AC代码-37">AC代码</h2>
+<h2 id="AC代码-36">AC代码</h2>
 <hr>
 <pre><code class="language-cpp">#include &lt;string&gt;
 #include &lt;iostream&gt;
@@ -990,19 +990,19 @@ int main()
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem6/">
+                <a href="/2021/07/01/Algrithm%20Problem/Search/problem5/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/39.jpg" class="responsive-img" alt="maze">
+                        <img src="/medias/featureimages/31.jpg" class="responsive-img" alt="幸运数字">
                         
-                        <span class="card-title">maze</span>
+                        <span class="card-title">幸运数字</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            BFS普通迷宫问题的变种
+                            DFS入门题目
                         
                     </div>
                     <div class="publish-info">
@@ -1028,8 +1028,8 @@ int main()
                         <span class="chip bg-color">搜索</span>
                     </a>
                     
-                    <a href="/tags/BFS/">
-                        <span class="chip bg-color">BFS</span>
+                    <a href="/tags/DFS/">
+                        <span class="chip bg-color">DFS</span>
                     </a>
                     
                 </div>

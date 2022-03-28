@@ -503,27 +503,27 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/860/">https://www.acwing.com/problem/content/860/</a></p>
-<h2 id="题目描述-32">题目描述</h2>
+<h2 id="题目描述-29">题目描述</h2>
 <blockquote>
 <p>给定一个 n 个点 m 条边的无向图，图中可能存在重边和自环，边权可能为负数。<br>
 求最小生成树的树边权重之和，如果最小生成树不存在则输出 impossible。<br>
 给定一张边带权的无向图 G=(V,E)，其中 V 表示图中点的集合，E 表示图中边的集合，n=|V|，m=|E|。<br>
 由 V 中的全部 n 个顶点和 E 中 n−1 条边构成的无向连通子图被称为 G 的一棵生成树，其中边的权值之和最小的生成树被称为无向图 G 的最小生成树。</p>
 </blockquote>
-<h2 id="输入描述-32">输入描述</h2>
+<h2 id="输入描述-29">输入描述</h2>
 <blockquote>
 <p>第一行包含两个整数 n 和 m。<br>
 接下来 m 行，每行包含三个整数 u,v,w，表示点 u 和点 v 之间存在一条权值为 w 的边。</p>
 </blockquote>
-<h2 id="输出描述-32">输出描述</h2>
+<h2 id="输出描述-29">输出描述</h2>
 <blockquote>
 <p>共一行，若存在最小生成树，则输出一个整数，表示最小生成树的树边权重之和，如果最小生成树不存在则输出 impossible。<br>
 1≤n≤500<br>
 1≤m≤105<br>
 图中涉及边的边权的绝对值均不超过 10000</p>
 </blockquote>
-<h2 id="示例-31">示例</h2>
-<h3 id="输入-31">输入</h3>
+<h2 id="示例-28">示例</h2>
+<h3 id="输入-28">输入</h3>
 <blockquote>
 <p>4 5<br>
 1 2 1<br>
@@ -532,7 +532,7 @@
 2 3 2<br>
 3 4 4</p>
 </blockquote>
-<h3 id="输出-31">输出</h3>
+<h3 id="输出-28">输出</h3>
 <blockquote>
 <p>6</p>
 </blockquote>
@@ -540,9 +540,9 @@
 <h3 id="算法介绍-5">算法介绍</h3>
 <p>一个有 n 个结点的连通图的最小生成树是原图的极小连通子图，且包含原图中的所有 n 个结点，并且有保持图连通的最少的边。</p>
 <p>Prim算法是求最小生成树的经典算法，时间复杂度为O(n^2)。</p>
-<h3 id="算法过程-6">算法过程</h3>
+<h3 id="算法过程-3">算法过程</h3>
 <p>每次将离连通部分的最近的点和点对应的边加入的连通部分，连通部分逐渐扩大，最后将整个图连通起来，并且边长之和最小。具体见代码。</p>
-<h2 id="AC代码-28">AC代码</h2>
+<h2 id="AC代码-25">AC代码</h2>
 <hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
@@ -895,19 +895,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/08/28/Algrithm%20Problem/Graph%20Theory/kruskal/">
+                <a href="/2021/08/28/Algrithm%20Problem/Graph%20Theory/km/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="Kruskal算法">
+                        <img src="/medias/featureimages/32.jpg" class="responsive-img" alt="KM算法">
                         
-                        <span class="card-title">Kruskal算法</span>
+                        <span class="card-title">KM算法</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Kruskal算法求最小生成树
+                            KM算法求解二分图的最大权、最小权匹配
                         
                     </div>
                     <div class="publish-info">
@@ -933,8 +933,8 @@
                         <span class="chip bg-color">图论</span>
                     </a>
                     
-                    <a href="/tags/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/">
-                        <span class="chip bg-color">最小生成树</span>
+                    <a href="/tags/%E4%BA%8C%E5%88%86%E5%9B%BE/">
+                        <span class="chip bg-color">二分图</span>
                     </a>
                     
                 </div>

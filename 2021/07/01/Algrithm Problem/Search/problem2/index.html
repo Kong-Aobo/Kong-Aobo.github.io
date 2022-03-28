@@ -503,7 +503,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/16612">https://ac.nowcoder.com/acm/problem/16612</a></p>
-<h2 id="题目描述-39">题目描述</h2>
+<h2 id="题目描述-38">题目描述</h2>
 <blockquote>
 <p>图片略  见链接<br>
 小城和小华都是热爱数学的好学生，最近，他们不约而同地迷上了数独游戏，好胜的他们想用数独来一比高低。但普通的数独对他们来说都过于简单了，于是他们向Z博士请教，Z博士拿出了他最近发明的“靶形数独”，作为这两个孩子比试的题目。<br>
@@ -511,7 +511,7 @@
 上图具体的分值分布是：最里面一格（黄色区域）为10分，黄色区域外面的一圈（红色区域）每个格子为9分，再外面一圈（蓝色区域）每个格子为8分，蓝色区域外面一圈（棕色区域）每个格子为7分，最外面一圈（白色区域）每个格子为6分，如上图所示。比赛的要求是：每个人必须完成一个给定的数独（每个给定数独有可能有不同的填法），而且要争取更高的总分数。而这个总分数即每个方格上的分值和完成这个数独时填在相应格上的数字的乘积的总和。如图，在以下这个已经填完数字的靶形数独游戏中，总分为2829。游戏规定，将以总分数的高低决出胜负。<br>
 由于求胜心切，小城找到了善于编程的你，让你帮他求出，对于给定的靶形数独，能够得到的最高分数。</p>
 </blockquote>
-<h2 id="输入描述-39">输入描述</h2>
+<h2 id="输入描述-38">输入描述</h2>
 <blockquote>
 <p>一共9行，每行9个整数（每个数都在0—9的范围内），表示一个尚未填满的数独方格，未填满的空格用“0”表示。每两个数字之间用一个空格隔开。</p>
 </blockquote>
@@ -519,8 +519,8 @@
 <blockquote>
 <p>输出可以得到的靶形数独的最高分数。如果这个数独无解，则输出整数-1。</p>
 </blockquote>
-<h2 id="示例-36">示例</h2>
-<h3 id="输入-36">输入</h3>
+<h2 id="示例-35">示例</h2>
+<h3 id="输入-35">输入</h3>
 <blockquote>
 <p>7 0 0 9 0 0 0 0 1<br>
 1 0 0 0 0 5 9 0 0<br>
@@ -532,14 +532,14 @@
 2 0 1 0 6 0 8 0 4<br>
 0 8 0 5 0 4 0 1 2</p>
 </blockquote>
-<h3 id="输出-36">输出</h3>
+<h3 id="输出-35">输出</h3>
 <blockquote>
 <p>2829</p>
 </blockquote>
-<h2 id="分析-29">分析</h2>
+<h2 id="分析-28">分析</h2>
 <p>本题为数独填空，采取深搜的策略，但是单纯深搜必然超时。优化方案，正如我们自己处理这类问题时一样，先将可能填入数个数少的确定下来，再确定其他，这能帮助我们更快的找到答案，本题中则是将所有空白坐标信息和其行、列、九宫的限制数的最大值放入vector中，并排序。<br>
 注意细节，见代码注释。</p>
-<h2 id="AC代码-35">AC代码</h2>
+<h2 id="AC代码-34">AC代码</h2>
 <hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;string&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
