@@ -503,51 +503,27 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/851/">朴素版</a> <a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/852/">优化版</a></p>
-<h2 id="题目描述-23">题目描述</h2>
-<blockquote>
-<p>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环，所有边权均为正值。<br>
-请你求出 1 号点到 n 号点的最短距离，如果无法从 1 号点走到 n 号点，则输出 −1。</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>给定一个 n 个点 m 条边的有向图，图中可能存在重边和自环，所有边权均为正值。<br>请你求出 1 号点到 n 号点的最短距离，如果无法从 1 号点走到 n 号点，则输出 −1。</p>
 </blockquote>
-<h2 id="输入描述-23">输入描述</h2>
-<blockquote>
-<p>第一行包含整数 n 和 m。<br>
-接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><blockquote>
+<p>第一行包含整数 n 和 m。<br>接下来 m 行每行包含三个整数 x,y,z，表示存在一条从点 x 到点 y 的有向边，边长为 z。</p>
 </blockquote>
-<h2 id="输出描述-23">输出描述</h2>
-<blockquote>
-<p>输出一个整数，表示 1 号点到 n 号点的最短距离。<br>
-如果路径不存在，则输出 −1。<br>
-朴素版：<br>
-1≤n≤500,<br>
-1≤m≤105,<br>
-图中涉及边长均不超过10000。<br>
-优化版：<br>
-1≤n,m≤1.5×105,<br>
-图中涉及边长均不小于 0，且不超过 10000。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><blockquote>
+<p>输出一个整数，表示 1 号点到 n 号点的最短距离。<br>如果路径不存在，则输出 −1。<br>朴素版：<br>1≤n≤500,<br>1≤m≤105,<br>图中涉及边长均不超过10000。<br>优化版：<br>1≤n,m≤1.5×105,<br>图中涉及边长均不小于 0，且不超过 10000。</p>
 </blockquote>
-<h2 id="示例-22">示例</h2>
-<h3 id="输入-22">输入</h3>
-<blockquote>
-<p>3 3<br>
-1 2 2<br>
-2 3 1<br>
-1 3 4</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><blockquote>
+<p>3 3<br>1 2 2<br>2 3 1<br>1 3 4  </p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>3</p>
 </blockquote>
-<h3 id="输出-22">输出</h3>
-<blockquote>
-<p>3</p>
-</blockquote>
-<h2 id="Dijkstra算法">Dijkstra算法</h2>
-<p>Dijkstra算法是经典的解决<strong>无负权边</strong>单源最短路问题的算法，按照路径长度递增的次序产生最短路径。</p>
+<h2 id="Dijkstra算法"><a href="#Dijkstra算法" class="headerlink" title="Dijkstra算法"></a>Dijkstra算法</h2><p>Dijkstra算法是经典的解决<strong>无负权边</strong>单源最短路问题的算法，按照路径长度递增的次序产生最短路径。</p>
 <p>该算法非常经典，具体算法过程不再细述，下面给出算法的核心及其证明。</p>
 <p>我们设图G的顶点集合为V，再设一个集合S表示已求得最短路径的终点的集合（S怎么来的下面再说）。</p>
-<p>设下一条最短路径（终点为x），那么它只能是弧（v，x）或者只通过S中的顶点到达x即（v，vi,…,x）。我们来证明一下：</p>
+<p>设下一条最短路径（终点为x），那么它只能是弧（v，x）或者只通过S中的顶点到达x即（v，vi,….,x）。我们来证明一下：</p>
 <p>假设（v，…,x）路径上有一个顶点不在S中，则说明存在一条终点不在S中而长度比此路径还短的路径。但这是不可能的。因为我们按长度递增的顺序来产生各最短路径，所以长度比此路径还短的所有路径均已产生，他们的终点一定在S中。</p>
 <p>另外，如果要求到达某个点的最短路径的数量，可以在找到当前距离最近点后更新其它点距离时做记录，更新后如果等于原来的说明存在一条新的最短路径。</p>
-<h2 id="堆优化">堆优化</h2>
-<p>算法中有一步是从未在S中的点当中选出到起点路径长度最短的一个点。对于这一步，我们可以通过一个小根堆来实现优化，大大降低这一步的时间复杂度。</p>
-<h2 id="朴素版代码">朴素版代码</h2>
-<hr>
+<h2 id="堆优化"><a href="#堆优化" class="headerlink" title="堆优化"></a>堆优化</h2><p>算法中有一步是从未在S中的点当中选出到起点路径长度最短的一个点。对于这一步，我们可以通过一个小根堆来实现优化，大大降低这一步的时间复杂度。</p>
+<h2 id="朴素版代码"><a href="#朴素版代码" class="headerlink" title="朴素版代码"></a>朴素版代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
@@ -591,8 +567,7 @@
 	cout <span class="token operator">&lt;&lt;</span> <span class="token function">dijkstra</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
 	<span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h2 id="堆优化代码">堆优化代码</h2>
-<hr>
+<h2 id="堆优化代码"><a href="#堆优化代码" class="headerlink" title="堆优化代码"></a>堆优化代码</h2><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;algorithm&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstring&gt;</span></span>
@@ -1190,7 +1165,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47.4k</span>&nbsp;字
+                class="white-color">46.4k</span>&nbsp;字
             
             
             

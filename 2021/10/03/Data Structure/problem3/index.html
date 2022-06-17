@@ -473,7 +473,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    248
                 </div>
                 
 
@@ -499,42 +499,17 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/243/">https://www.acwing.com/problem/content/243/</a></p>
-<h2 id="题目描述-5">题目描述</h2>
-<blockquote>
-<p>在完成了分配任务之后，西部 314 来到了楼兰古城的西部。<br>
-相传很久以前这片土地上(比楼兰古城还早)生活着两个部落，一个部落崇拜尖刀(V)，一个部落崇拜铁锹(∧)，他们分别用 V 和 ∧ 的形状来代表各自部落的图腾。<br>
-西部 314 在楼兰古城的下面发现了一幅巨大的壁画，壁画上被标记出了 n 个点，经测量发现这 n 个点的水平位置和竖直位置是两两不同的。<br>
-西部 314 认为这幅壁画所包含的信息与这 n 个点的相对位置有关，因此不妨设坐标分别为 (1,y1),(2,y2),…,(n,yn)，其中 y1∼yn 是 1 到 n 的一个排列。<br>
-西部 314 打算研究这幅壁画中包含着多少个图腾。<br>
-如果三个点 (i,yi),(j,yj),(k,yk) 满足 1≤i&lt;j&lt;k≤n 且 yi&gt;yj,yj&lt;yk，则称这三个点构成 V 图腾;<br>
-如果三个点 (i,yi),(j,yj),(k,yk) 满足 1≤i&lt;j&lt;k≤n 且 yi&lt;yj,yj&gt;yk，则称这三个点构成 ∧ 图腾;<br>
-西部 314 想知道，这 n 个点中两个部落图腾的数目。<br>
-因此，你需要编写一个程序来求出 V 的个数和 ∧ 的个数。</p>
-</blockquote>
-<h2 id="输入描述-5">输入描述</h2>
-<blockquote>
-<p>第一行一个数 n。<br>
-第二行是 n 个数，分别代表 y1，y2,…,yn。</p>
-</blockquote>
-<h2 id="输出描述-5">输出描述</h2>
-<blockquote>
-<p>两个数，中间用空格隔开，依次为 V 的个数和 ∧ 的个数。<br>
-对于所有数据，n≤200000，且输出答案不会超过 int64。<br>
-y1∼yn 是 1 到 n 的一个排列。</p>
-</blockquote>
-<h2 id="示例-5">示例</h2>
-<h3 id="输入-5">输入</h3>
-<p>5<br>
-1 5 3 2 4</p>
-<h3 id="输出-5">输出</h3>
-<p>3 4</p>
-<h2 id="分析-5">分析</h2>
-<p>本题暴力枚举的时间复杂度为O(n^2)超时，采用树状数组则可降至O(nlongn)。步骤如下：</p>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>在完成了分配任务之后，西部 314 来到了楼兰古城的西部。<br>相传很久以前这片土地上(比楼兰古城还早)生活着两个部落，一个部落崇拜尖刀(V)，一个部落崇拜铁锹(∧)，他们分别用 V 和 ∧ 的形状来代表各自部落的图腾。<br>西部 314 在楼兰古城的下面发现了一幅巨大的壁画，壁画上被标记出了 n 个点，经测量发现这 n 个点的水平位置和竖直位置是两两不同的。<br>西部 314 认为这幅壁画所包含的信息与这 n 个点的相对位置有关，因此不妨设坐标分别为 (1,y1),(2,y2),…,(n,yn)，其中 y1∼yn 是 1 到 n 的一个排列。<br>西部 314 打算研究这幅壁画中包含着多少个图腾。<br>如果三个点 (i,yi),(j,yj),(k,yk) 满足 1≤i<j<k≤n 且="" yi="">yj,yj<yk，则称这三个点构成 v="" 图腾;="" 如果三个点="" (i,yi),(j,yj),(k,yk)="" 满足="" 1≤i<j<k≤n="" 且="" yi<yj,yj="">yk，则称这三个点构成 ∧ 图腾;<br>西部 314 想知道，这 n 个点中两个部落图腾的数目。<br>因此，你需要编写一个程序来求出 V 的个数和 ∧ 的个数。</yk，则称这三个点构成></j<k≤n></p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>第一行一个数 n。<br>第二行是 n 个数，分别代表 y1，y2,…,yn。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>两个数，中间用空格隔开，依次为 V 的个数和 ∧ 的个数。<br>对于所有数据，n≤200000，且输出答案不会超过 int64。<br>y1∼yn 是 1 到 n 的一个排列。</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h3><p>5<br>1 5 3 2 4</p>
+<h3 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h3><p>3 4</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题暴力枚举的时间复杂度为O(n^2)超时，采用树状数组则可降至O(nlongn)。步骤如下：</p>
 <ol>
 <li>从左向右依次遍历每个数a[i]，使用树状数组统计在i位置之前所有比a[i]大的数的个数、以及比a[i]小的数的个数。统计完成后，将a[i]加入到树状数组。</li>
-<li>从右向左依次遍历每个数a[i]，使用树状数组统计在i位置之后所有比a[i]大的数的个数、以及比a[i]小的数的个数，同时完成计算。统计完成后，将a[i]加入到树状数组。</li>
+<li>从右向左依次遍历每个数a[i]，使用树状数组统计在i位置之后所有比a[i]大的数的个数、以及比a[i]小的数的个数，同时完成计算。统计完成后，将a[i]加入到树状数组。<h2 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h2></li>
 </ol>
-<h2 id="AC代码-5">AC代码</h2>
 <hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;cstdio&gt;</span></span>
@@ -611,7 +586,8 @@ y1∼yn 是 1 到 n 的一个排列。</p>
     <span class="token function">printf</span><span class="token punctuation">(</span><span class="token string">"%lld %lld\n"</span><span class="token punctuation">,</span> resV<span class="token punctuation">,</span> resA<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
+
                 
             </div>
             <hr/>
@@ -1136,7 +1112,7 @@ y1∼yn 是 1 到 n 的一个排列。</p>
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47.4k</span>&nbsp;字
+                class="white-color">46.4k</span>&nbsp;字
             
             
             

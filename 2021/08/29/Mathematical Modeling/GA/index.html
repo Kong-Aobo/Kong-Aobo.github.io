@@ -502,17 +502,13 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="算法介绍">算法介绍</h2>
-<p>遗传算法（Genetic Algorithm，GA）最早是由美国的 John holland于20世纪70年代提出,该算法是根据大自然中生物体进化规律而设计提出的。是模拟达尔文生物进化论的自然选择和遗传学机理的生物进化过程的计算模型，是一种通过模拟自然进化过程搜索最优解的方法。</p>
-<h2 id="算法过程">算法过程</h2>
-<p>遗传算法的过程如下：</p>
+                <h2 id="算法介绍"><a href="#算法介绍" class="headerlink" title="算法介绍"></a>算法介绍</h2><p>遗传算法（Genetic Algorithm，GA）最早是由美国的 John holland于20世纪70年代提出,该算法是根据大自然中生物体进化规律而设计提出的。是模拟达尔文生物进化论的自然选择和遗传学机理的生物进化过程的计算模型，是一种通过模拟自然进化过程搜索最优解的方法。</p>
+<h2 id="算法过程"><a href="#算法过程" class="headerlink" title="算法过程"></a>算法过程</h2><p>遗传算法的过程如下：</p>
 <p><img src="https://gitee.com/kong-aobo/figurebed/raw/master/20210829185125.png" alt=""></p>
-<h2 id="代码及说明">代码及说明</h2>
-<p>代码的选择操作采用了精英保留策略。</p>
+<h2 id="代码及说明"><a href="#代码及说明" class="headerlink" title="代码及说明"></a>代码及说明</h2><p>代码的选择操作采用了精英保留策略。</p>
 <p>为了防止当前群体的最优个体在下一代发生丢失，导致遗传算法不能收敛到全局最优解，De Jong在其博士论文中提出了“精英选择(elitist selection or elitism)”策略，也称为“精英保留”(elitist preservation)策略。该策略的思想是，把群体在进化过程中迄今出现的最好个体(称为精英个体elitist)不进行配对交叉而直接复制到下一代中。这种选择操作又称为复制(copy)。</p>
 <p>在进行适应度评估时，保留一定比例适应度最高的个体，在交叉变异完成后，将种群中适应度最低的那部分个体用精英替换。</p>
-<p>注意：轮盘赌的实现代码决定<strong>个体的适应度应当是非负的</strong>，否则会出现错误。</p>
-<pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token keyword">function</span> <span class="token punctuation">[</span>bestChromosome<span class="token punctuation">,</span>fitnessBest<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">GA</span><span class="token punctuation">(</span>numOfChromosome<span class="token punctuation">,</span>numOfGene<span class="token punctuation">,</span>iterationNum<span class="token punctuation">)</span>
+<p>注意：轮盘赌的实现代码决定<strong>个体的适应度应当是非负的</strong>，否则会出现错误。<br></p><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token keyword">function</span> <span class="token punctuation">[</span>bestChromosome<span class="token punctuation">,</span>fitnessBest<span class="token punctuation">]</span><span class="token operator">=</span><span class="token function">GA</span><span class="token punctuation">(</span>numOfChromosome<span class="token punctuation">,</span>numOfGene<span class="token punctuation">,</span>iterationNum<span class="token punctuation">)</span>
 <span class="token comment">%% 函数功能：基于自适应遗传算法最值求解</span>
 <span class="token comment">%   输入：</span>
 <span class="token comment">%       numOfChromosome：染色体数量，即迭代的种群大小</span>
@@ -622,9 +618,7 @@ newPopulation<span class="token operator">=</span><span class="token function">z
 
 <span class="token comment">%% 遗传迭代结束后，获得最优适应度值和对应的基因</span>
 fitnessBest<span class="token operator">=</span><span class="token function">max</span><span class="token punctuation">(</span>fitnessAll<span class="token punctuation">)</span><span class="token punctuation">;</span>
-bestChromosome<span class="token operator">=</span><span class="token function">newPopulation</span><span class="token punctuation">(</span><span class="token function">find</span><span class="token punctuation">(</span>fitnessAll<span class="token operator">==</span>fitnessBest<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token operator">:</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<p>适应度评估函数</p>
-<pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token keyword">function</span> fitness<span class="token operator">=</span><span class="token function">fitnessFunc</span><span class="token punctuation">(</span>chromosome<span class="token punctuation">)</span>
+bestChromosome<span class="token operator">=</span><span class="token function">newPopulation</span><span class="token punctuation">(</span><span class="token function">find</span><span class="token punctuation">(</span>fitnessAll<span class="token operator">==</span>fitnessBest<span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token operator">:</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br>适应度评估函数<br><pre class="line-numbers language-matlab" data-language="matlab"><code class="language-matlab"><span class="token keyword">function</span> fitness<span class="token operator">=</span><span class="token function">fitnessFunc</span><span class="token punctuation">(</span>chromosome<span class="token punctuation">)</span>
 <span class="token comment">%% 函数功能：计算染色体的表现型及其适应度</span>
 <span class="token comment">% 输入：</span>
 <span class="token comment">%       chromosome：染色体的基因序列</span>
@@ -645,7 +639,8 @@ x<span class="token operator">=</span><span class="token function">sum</span><sp
     <span class="token keyword">else</span>
         fitness<span class="token operator">=</span><span class="token number">1024</span><span class="token punctuation">;</span>
     <span class="token keyword">end</span>
-<span class="token keyword">end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token keyword">end</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p></p>
+
                 
             </div>
             <hr/>
@@ -1174,7 +1169,7 @@ x<span class="token operator">=</span><span class="token function">sum</span><sp
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47.4k</span>&nbsp;字
+                class="white-color">46.4k</span>&nbsp;字
             
             
             

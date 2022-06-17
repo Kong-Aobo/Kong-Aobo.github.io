@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    346
+                    343
                 </div>
                 
 
@@ -502,8 +502,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="1-读取预训练好的Word-Embeddings文件">1. 读取预训练好的Word Embeddings文件</h3>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'file-path/glove.6B.100d.txt'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
+                <h3 id="1-读取预训练好的Word-Embeddings文件"><a href="#1-读取预训练好的Word-Embeddings文件" class="headerlink" title="1. 读取预训练好的Word Embeddings文件"></a>1. 读取预训练好的Word Embeddings文件</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">with</span> <span class="token builtin">open</span><span class="token punctuation">(</span><span class="token string">'file-path/glove.6B.100d.txt'</span><span class="token punctuation">,</span> encoding<span class="token operator">=</span><span class="token string">'utf-8'</span><span class="token punctuation">)</span> <span class="token keyword">as</span> f<span class="token punctuation">:</span>
     <span class="token keyword">for</span> line <span class="token keyword">in</span> f<span class="token punctuation">:</span>
         word<span class="token punctuation">,</span> coefs <span class="token operator">=</span> line<span class="token punctuation">.</span>split<span class="token punctuation">(</span>maxsplit<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span>
         coefs <span class="token operator">=</span> np<span class="token punctuation">.</span>fromstring<span class="token punctuation">(</span>coefs<span class="token punctuation">,</span> dtype<span class="token operator">=</span><span class="token builtin">float</span><span class="token punctuation">,</span> sep<span class="token operator">=</span><span class="token string">" "</span><span class="token punctuation">)</span>
@@ -511,8 +510,7 @@
 <span class="token comment"># 最终得到字典embeddings_index</span>
 <span class="token comment"># 键为字符串(单个单词)</span>
 <span class="token comment"># 值为一个(100, )的向量</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="2-形成本模型中的字典">2. 形成本模型中的字典</h3>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> tensorflow <span class="token keyword">as</span> tf
+<h3 id="2-形成本模型中的字典"><a href="#2-形成本模型中的字典" class="headerlink" title="2. 形成本模型中的字典"></a>2. 形成本模型中的字典</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">import</span> tensorflow <span class="token keyword">as</span> tf
 encoder <span class="token operator">=</span> tf<span class="token punctuation">.</span>keras<span class="token punctuation">.</span>layers<span class="token punctuation">.</span>TextVectorization<span class="token punctuation">(</span><span class="token punctuation">)</span>
 encoder<span class="token punctuation">.</span>adapt<span class="token punctuation">(</span>X<span class="token punctuation">)</span>
 voc <span class="token operator">=</span> encoder<span class="token punctuation">.</span>get_vocabulary<span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -520,8 +518,7 @@ word_to_index <span class="token operator">=</span> <span class="token builtin">
 <span class="token comment"># 最终得到一个字典word_to_index</span>
 <span class="token comment"># 键为字符串(单个单词)</span>
 <span class="token comment"># 值为该单词的编号</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="3-从预训练好的Word-Embeddings中抽取出本模型字典的词向量">3. 从预训练好的Word Embeddings中抽取出本模型字典的词向量</h3>
-<p>预训练好的Word Embeddings中的单词数量庞大，我们模型的字典可能并没有这么大，并不需要全部的词向量数据，因此只需要从中抽取出我们模型字典中有的单词的词向量即可。</p>
+<h3 id="3-从预训练好的Word-Embeddings中抽取出本模型字典的词向量"><a href="#3-从预训练好的Word-Embeddings中抽取出本模型字典的词向量" class="headerlink" title="3. 从预训练好的Word Embeddings中抽取出本模型字典的词向量"></a>3. 从预训练好的Word Embeddings中抽取出本模型字典的词向量</h3><p>预训练好的Word Embeddings中的单词数量庞大，我们模型的字典可能并没有这么大，并不需要全部的词向量数据，因此只需要从中抽取出我们模型字典中有的单词的词向量即可。</p>
 <pre class="line-numbers language-python" data-language="python"><code class="language-python">num_tokens <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>voc<span class="token punctuation">)</span>
 embedding_dim <span class="token operator">=</span> <span class="token number">100</span>
 hits <span class="token operator">=</span> <span class="token number">0</span>
@@ -542,8 +539,7 @@ embedding_matrix <span class="token operator">=</span> np<span class="token punc
 <span class="token comment"># 最终得到一个矩阵embedding_matrix</span>
 <span class="token comment"># 有些字典中的单词并没有在预训练的Word Embedding中出现</span>
 <span class="token comment"># 将其初始化为0即可</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-<h3 id="4-利用embedding-matrix构建Embedding层">4. 利用embedding_matrix构建Embedding层</h3>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">tf<span class="token punctuation">.</span>keras<span class="token punctuation">.</span>layers<span class="token punctuation">.</span>Embedding<span class="token punctuation">(</span>num_tokens<span class="token punctuation">,</span> embedding_dim
+<h3 id="4-利用embedding-matrix构建Embedding层"><a href="#4-利用embedding-matrix构建Embedding层" class="headerlink" title="4. 利用embedding_matrix构建Embedding层"></a>4. 利用embedding_matrix构建Embedding层</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python">tf<span class="token punctuation">.</span>keras<span class="token punctuation">.</span>layers<span class="token punctuation">.</span>Embedding<span class="token punctuation">(</span>num_tokens<span class="token punctuation">,</span> embedding_dim
                               <span class="token punctuation">,</span> embeddings_initializer<span class="token operator">=</span>tf<span class="token punctuation">.</span>keras<span class="token punctuation">.</span>initializers<span class="token punctuation">.</span>Constant<span class="token punctuation">(</span>embedding_matrix<span class="token punctuation">)</span>
                               <span class="token punctuation">,</span> mask_zero<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> trainable<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
 <span class="token comment"># 视情况决定是否冻结Embedding层</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
@@ -1081,7 +1077,7 @@ embedding_matrix <span class="token operator">=</span> np<span class="token punc
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47.4k</span>&nbsp;字
+                class="white-color">46.4k</span>&nbsp;字
             
             
             

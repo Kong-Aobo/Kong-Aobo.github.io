@@ -28,8 +28,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;1-读取预训练好的Word-Embeddings文件&quot;&gt;1. 读取预训练好的Word Embeddings文件&lt;/h3&gt;
-&lt;pre class=&quot;line-numbers language-python&quot; data-language=&quot;python&quot;&gt;&lt;code</summary>
+    <summary type="html">&lt;h3 id=&quot;1-读取预训练好的Word-Embeddings文件&quot;&gt;&lt;a href=&quot;#1-读取预训练好的Word-Embeddings文件&quot; class=&quot;headerlink&quot; title=&quot;1. 读取预训练好的Word Embeddings文件&quot;&gt;&lt;/a&gt;1.</summary>
         
       
     
@@ -56,8 +55,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;临时更改镜像源&quot;&gt;临时更改镜像源&lt;/h2&gt;
-&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code class=&quot;language-none&quot;&gt;pip install -i</summary>
+    <summary type="html">&lt;h2 id=&quot;临时更改镜像源&quot;&gt;&lt;a href=&quot;#临时更改镜像源&quot; class=&quot;headerlink&quot; title=&quot;临时更改镜像源&quot;&gt;&lt;/a&gt;临时更改镜像源&lt;/h2&gt;&lt;pre class=&quot;line-numbers language-none&quot;&gt;&lt;code</summary>
         
       
     
@@ -82,7 +80,7 @@
       
         
         
-    <summary type="html">&lt;p&gt;在vscode中，tensorflow.keras模块的下属模块无法自动补全，我在github官方respository的issue中找到了解决问题的方法，即进入tensorflow/_&lt;em&gt;init&lt;/em&gt;_.py文件，将下列代码粘贴进去即可。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;在vscode中，tensorflow.keras模块的下属模块无法自动补全，我在github官方respository的issue中找到了解决问题的方法，即进入tensorflow/__init__.py文件，将下列代码粘贴进去即可。&lt;/p&gt;
 &lt;pre</summary>
         
       
@@ -95,6 +93,32 @@
     <category term="python" scheme="https://kong-aobo.github.io/tags/python/"/>
     
     <category term="vscode" scheme="https://kong-aobo.github.io/tags/vscode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用python解压各种格式的文件</title>
+    <link href="https://kong-aobo.github.io/2022/03/16/Python/problem3/"/>
+    <id>https://kong-aobo.github.io/2022/03/16/Python/problem3/</id>
+    <published>2022-03-16T12:00:18.000Z</published>
+    <updated>2022-04-02T07:48:07.962Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;每碰到一种就记录下来，暂时先来.7z格式。&lt;/p&gt;
+&lt;h2 id=&quot;7z格式&quot;&gt;&lt;a href=&quot;#7z格式&quot; class=&quot;headerlink&quot; title=&quot;7z格式&quot;&gt;&lt;/a&gt;7z格式&lt;/h2&gt;&lt;pre class=&quot;line-numbers</summary>
+        
+      
+    
+    
+    
+    <category term="python" scheme="https://kong-aobo.github.io/categories/python/"/>
+    
+    
+    <category term="python" scheme="https://kong-aobo.github.io/tags/python/"/>
     
   </entry>
   
@@ -166,7 +190,7 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/156/&quot;&gt;https://www.acwing.com/problem/content/156/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -192,7 +216,7 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/832/&quot;&gt;https://www.acwing.com/problem/content/832/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -217,9 +241,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述-43&quot;&gt;题目描述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given two strings s and t of lengths m and n respectively, return the minimum window substring</summary>
+    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given two strings s and t of lengths m and n</summary>
         
       
     
@@ -244,11 +267,9 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;符号约定&quot;&gt;符号约定&lt;/h2&gt;
-&lt;p&gt;数据集：$D$&lt;/p&gt;
+    <summary type="html">&lt;h2 id=&quot;符号约定&quot;&gt;&lt;a href=&quot;#符号约定&quot; class=&quot;headerlink&quot; title=&quot;符号约定&quot;&gt;&lt;/a&gt;符号约定&lt;/h2&gt;&lt;p&gt;数据集：$D$&lt;/p&gt;
 &lt;p&gt;$x$ 在数据集中的标记：$y_D$&lt;/p&gt;
-&lt;p&gt;$x$ 的真实标记：$y$&lt;/p&gt;
-&lt;p&gt;由训练集D学得的模型对 $x$ 的预测输出：$f(\boldsymbol{x} ;</summary>
+&lt;p&gt;$x$</summary>
         
       
     
@@ -273,8 +294,7 @@
       
         
         
-    <summary type="html">&lt;h3 id=&quot;lower-bound&quot;&gt;lower_bound&lt;/h3&gt;
-&lt;pre class=&quot;line-numbers language-cpp&quot; data-language=&quot;cpp&quot;&gt;&lt;code class=&quot;language-cpp&quot;&gt;&lt;span</summary>
+    <summary type="html">&lt;h3 id=&quot;lower-bound&quot;&gt;&lt;a href=&quot;#lower-bound&quot; class=&quot;headerlink&quot; title=&quot;lower_bound&quot;&gt;&lt;/a&gt;lower_bound&lt;/h3&gt;&lt;pre class=&quot;line-numbers</summary>
         
       
     
@@ -299,9 +319,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;电子邮件系统简述&quot;&gt;电子邮件系统简述&lt;/h2&gt;
-&lt;p&gt;电子邮件系统的组成如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://gitee.com/kong-aobo/figurebed/raw/master/20211112083215.png&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;电子邮件系统简述&quot;&gt;&lt;a href=&quot;#电子邮件系统简述&quot; class=&quot;headerlink&quot; title=&quot;电子邮件系统简述&quot;&gt;&lt;/a&gt;电子邮件系统简述&lt;/h2&gt;&lt;p&gt;电子邮件系统的组成如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img</summary>
         
       
     
@@ -326,11 +345,9 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述-6&quot;&gt;题目描述&lt;/h2&gt;
-&lt;blockquote&gt;
+    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;后序+中序序列构造二叉树。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;输入描述&quot;&gt;&lt;a href=&quot;#输入描述&quot;</summary>
         
       
     
@@ -355,13 +372,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;引入问题&quot;&gt;引入问题&lt;/h2&gt;
-&lt;p&gt;给出一个长度为nn的数组，完成以下两种操作：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;将第i个数加上k&lt;/li&gt;
-&lt;li&gt;输出区间[i,j]内每个数的和&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h3</summary>
+    <summary type="html">&lt;h2 id=&quot;引入问题&quot;&gt;&lt;a href=&quot;#引入问题&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -387,7 +398,7 @@
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/243/&quot;&gt;https://www.acwing.com/problem/content/243/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -412,12 +423,8 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;题目描述-4&quot;&gt;题目描述&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。&lt;br&gt;
-A 吃 B，B 吃 C，C 吃 A。&lt;br&gt;
-现有 N 个动物，以 1∼N 编号。&lt;br&gt;
-每个动物都是</summary>
+    <summary type="html">&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;动物王国中有三类动物 A,B,C，这三类动物的食物链构成了有趣的环形。&lt;br&gt;A 吃 B，B 吃</summary>
         
       
     
@@ -443,7 +450,7 @@ A 吃 B，B 吃 C，C 吃 A。&lt;br&gt;
         
         
     <summary type="html">&lt;p&gt;题目链接：&lt;a href=&quot;https://www.acwing.com/problem/content/839/&quot;&gt;https://www.acwing.com/problem/content/839/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     
@@ -468,7 +475,7 @@ A 吃 B，B 吃 C，C 吃 A。&lt;br&gt;
       
         
         
-    <summary type="html">&lt;h2</summary>
+    <summary type="html">&lt;h2 id=&quot;并查集的概念&quot;&gt;&lt;a href=&quot;#并查集的概念&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -494,7 +501,7 @@ A 吃 B，B 吃 C，C 吃 A。&lt;br&gt;
         
         
     <summary type="html">&lt;p&gt;题目连接：&lt;a href=&quot;http://poj.org/problem?id=2018&quot;&gt;http://poj.org/problem?id=2018&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -522,33 +529,7 @@ A 吃 B，B 吃 C，C 吃 A。&lt;br&gt;
         
         
     <summary type="html">&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/909/&quot;&gt;https://www.acwing.com/problem/content/909/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
-        
-      
-    
-    
-    
-    <category term="算法" scheme="https://kong-aobo.github.io/categories/%E7%AE%97%E6%B3%95/"/>
-    
-    
-    <category term="贪心" scheme="https://kong-aobo.github.io/tags/%E8%B4%AA%E5%BF%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>区间分组</title>
-    <link href="https://kong-aobo.github.io/2021/09/20/Algrithm%20Problem/Greedy%20Algorithm/problem3/"/>
-    <id>https://kong-aobo.github.io/2021/09/20/Algrithm%20Problem/Greedy%20Algorithm/problem3/</id>
-    <published>2021-09-20T08:44:18.000Z</published>
-    <updated>2021-09-20T09:08:22.701Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;题目连接：&lt;a href=&quot;https://www.acwing.com/problem/content/908/&quot;&gt;https://www.acwing.com/problem/content/908/&lt;/a&gt;&lt;/p&gt;
-&lt;h2</summary>
+&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a</summary>
         
       
     

@@ -477,7 +477,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    373
+                    374
                 </div>
                 
 
@@ -503,35 +503,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <p>题目链接：<a target="_blank" rel="noopener" href="https://ac.nowcoder.com/acm/problem/15291">https://ac.nowcoder.com/acm/problem/15291</a></p>
-<h2 id="题目描述-41">题目描述</h2>
-<blockquote>
-<p>定义一个数字为幸运数字当且仅当它的所有数位都是4或者7。<br>
-比如说，47、744、4都是幸运数字而5、17、467都不是。<br>
-定义next(x)为大于等于x的第一个幸运数字。给定l，r，请求出next(l) + next(l + 1) + … + next(r - 1) + next®。</p>
-</blockquote>
-<h2 id="输入描述-41">输入描述</h2>
-<blockquote>
-<p>两个整数l和r (1 &lt;= l &lt;= r &lt;= 1000,000,000)。</p>
-</blockquote>
-<h2 id="输出描述-41">输出描述</h2>
-<blockquote>
-<p>一个数字表示答案。</p>
-</blockquote>
-<h2 id="示例-38">示例</h2>
-<h2 id="输入-38">输入</h2>
-<blockquote>
-<p>2 7</p>
-</blockquote>
-<h2 id="输出-38">输出</h2>
-<blockquote>
-<p>33</p>
-</blockquote>
-<h2 id="分析-31">分析</h2>
-<p>本题利用深搜打表，之后处理一波数据即可。<br>
-注意打完表后要排序，处理数据采用的方法见代码，较为巧妙。<br>
-另外，本题用int过不去，上long long。<br>
-#AC代码</p>
-<hr>
+<h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><blockquote>
+<p>定义一个数字为幸运数字当且仅当它的所有数位都是4或者7。<br>比如说，47、744、4都是幸运数字而5、17、467都不是。<br>定义next(x)为大于等于x的第一个幸运数字。给定l，r，请求出next(l) + next(l + 1) + … + next(r - 1) + next(r)。</p>
+<h2 id="输入描述"><a href="#输入描述" class="headerlink" title="输入描述"></a>输入描述</h2><p>两个整数l和r (1 &lt;= l &lt;= r &lt;= 1000,000,000)。</p>
+<h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述"></a>输出描述</h2><p>一个数字表示答案。</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h2 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h2><p>2 7</p>
+<h2 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h2><p>33</p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>本题利用深搜打表，之后处理一波数据即可。<br>注意打完表后要排序，处理数据采用的方法见代码，较为巧妙。<br>另外，本题用int过不去，上long long。</p>
+<h1 id="AC代码"><a href="#AC代码" class="headerlink" title="AC代码"></a>AC代码</h1><hr>
 <pre class="line-numbers language-cpp" data-language="cpp"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;vector&gt;</span></span>
 <span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;queue&gt;</span></span>
@@ -573,7 +552,8 @@
     <span class="token punctuation">}</span>
     cout <span class="token operator">&lt;&lt;</span> ans <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
     <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></blockquote>
+
                 
             </div>
             <hr/>
@@ -869,19 +849,19 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem4/">
+                <a href="/2021/07/01/Algrithm%20Problem/Search/problem2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="寻找道路">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="靶形数独">
                         
-                        <span class="card-title">寻找道路</span>
+                        <span class="card-title">靶形数独</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            BFS与图论
+                            搜索顺序影响算法速度
                         
                     </div>
                     <div class="publish-info">
@@ -907,8 +887,8 @@
                         <span class="chip bg-color">搜索</span>
                     </a>
                     
-                    <a href="/tags/BFS/">
-                        <span class="chip bg-color">BFS</span>
+                    <a href="/tags/DFS/">
+                        <span class="chip bg-color">DFS</span>
                     </a>
                     
                 </div>
@@ -922,19 +902,19 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/07/01/Algrithm%20Problem/Search/problem6/">
+                <a href="/2021/07/01/Algrithm%20Problem/Search/problem3/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/39.jpg" class="responsive-img" alt="maze">
+                        <img src="/medias/featureimages/33.jpg" class="responsive-img" alt="选择困难症">
                         
-                        <span class="card-title">maze</span>
+                        <span class="card-title">选择困难症</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            BFS普通迷宫问题的变种
+                            DFS经典入门题目
                         
                     </div>
                     <div class="publish-info">
@@ -960,8 +940,8 @@
                         <span class="chip bg-color">搜索</span>
                     </a>
                     
-                    <a href="/tags/BFS/">
-                        <span class="chip bg-color">BFS</span>
+                    <a href="/tags/DFS/">
+                        <span class="chip bg-color">DFS</span>
                     </a>
                     
                 </div>
@@ -1110,7 +1090,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">47.4k</span>&nbsp;字
+                class="white-color">46.4k</span>&nbsp;字
             
             
             
